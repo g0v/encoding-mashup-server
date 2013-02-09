@@ -1,13 +1,15 @@
+{-# LANGUAGE OverloadedStrings #-}
 module CharDatabase where
 
 import Snap.Snaplet
 
 import Type
 
-type CharDatabase = ()
+data CharDatabase = CharDatabase
 
 initCharDatabase :: SnapletInit b CharDatabase
-initCharDatabase = undefined
+initCharDatabase = makeSnaplet "charDatabase" "字元資料庫" Nothing $ do
+  return $ CharDatabase
 
 getChars :: Handler b CharDatabase CharMap
 getChars = undefined
