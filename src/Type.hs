@@ -9,7 +9,7 @@ import Data.HashMap.Strict (HashMap)
 import Control.Lens.TH
 import Data.Aeson.TH
 
-type CNSCode = Text
+type CnsCode = Text
 
 -- | 字元顯示資訊
 data CharDisplay = CharDisplay
@@ -23,7 +23,7 @@ $(deriveJSON (drop 1) ''CharDisplay)
 
 -- | 字元顯示資訊
 data CharExact = CharExact
-  { _cns :: Maybe CNSCode
+  { _cns :: Maybe CnsCode
   , _manualUni :: Maybe Text
   }
 
