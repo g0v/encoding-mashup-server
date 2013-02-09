@@ -13,9 +13,9 @@ type CNSCode = Text
 
 -- | 字元顯示資訊
 data CharDisplay = CharDisplay
-  { _uni :: !Text -- ^ Unicode 認同碼
-  , _ids :: !Text -- ^ Unicode 描述字串
-  , _pua :: !Text -- ^ 使用者造字
+  { _uni :: Maybe Text -- ^ Unicode 認同碼
+  , _ids :: Maybe Text -- ^ Unicode 描述字串
+  , _pua :: Maybe Text -- ^ 使用者造字
   }
 
 $(makeLenses ''CharDisplay)
