@@ -12,6 +12,10 @@ Executable encoding-mashup-server
   Hs-source-dirs: src
   Main-is: Main.hs
 
+  if impl(ghc < 7.6)
+    Build-depends:
+      template-haskell          < 2.8
+
   Build-depends:
     base                      >= 4     && < 5,
     bytestring                >= 0.9.1 && < 0.11,
@@ -24,6 +28,7 @@ Executable encoding-mashup-server
     snap                      >= 0.11  && < 0.13,
     snap-core                 >= 0.9   && < 0.11,
     snap-server               >= 0.9   && < 0.11,
+    snaplet-sqlite-simple     >= 0.4,
     aeson                     >= 0.6   && < 0.8
 
   Ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2

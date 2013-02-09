@@ -1,15 +1,26 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE TemplateHaskell #-}
 module CharDatabase where
 
+import Control.Lens
+
 import Snap.Snaplet
+import Snap.Snaplet.SqliteSimple
 
 import Type
 
-data CharDatabase = CharDatabase
+data CharDatabase = CharDatabase { _db :: Snaplet Sqlite
+                                 }
+
+
+$(makeLenses ''CharDatabase)
+
 
 initCharDatabase :: SnapletInit b CharDatabase
 initCharDatabase = makeSnaplet "charDatabase" "字元資料庫" Nothing $ do
-  return $ CharDatabase
+    d <- nestSnaplet "db" db sqliteInit
+    return $ CharDatabase d
 
 getChars :: Handler b CharDatabase CharMap
 getChars = undefined
