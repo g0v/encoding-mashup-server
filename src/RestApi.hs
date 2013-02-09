@@ -87,7 +87,7 @@ updatedCharsHandler = methods [GET, HEAD] . with charDatabase $ do
 
 lookupCnsHandler :: ByteString -> Handler b RestApi ()
 lookupCnsHandler unicode' = methods [GET, HEAD] . with encodingTable $
-  writeJson =<< makeJson <$> lookupUnicode (decodeUtf8 unicode')
+  writeJson =<< makeJson <$> lookupCns (decodeUtf8 unicode')
   where makeJson x = object ["cns" .= x]
 
 lookupUnicodeHandler :: ByteString -> Handler b RestApi ()
