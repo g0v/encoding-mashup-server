@@ -21,7 +21,7 @@ Executable encoding-mashup-server
     bytestring                >= 0.9.1 && < 0.11,
     text                      >= 0.11  && < 0.13,
     lens                      >= 3.8   && < 4,
-    containers                >= 0.4   && < 0.6,
+    unordered-containers      >= 0.2   && < 0.4,
     stm                       >= 2.4   && < 3,
     MonadCatchIO-transformers >= 0.2.1 && < 0.4,
     mtl                       >= 2     && < 3,
