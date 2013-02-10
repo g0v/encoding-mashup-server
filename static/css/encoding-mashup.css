@@ -1,0 +1,19 @@
+.char-info {
+  margin: 2px;
+  height: 40px;
+}
+
+.char-info-display {
+  float: left;
+
+  height: 30px;
+  width: 100px;
+
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+.char-info input {
+  float: left;
+}
+
