@@ -46,7 +46,7 @@ withUniqueCapture name handler = do
 initRestApi :: Snaplet CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
-initRestApi cs es = makeSnaplet "api" "JSON 介面" Nothing $ do
+initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
   addRoutes [ ("meta",                 metaHandler)
             , ("char/:uri",            withUniqueCapture "uri" charHandler)
             , ("chars/all",            allCharsHandler)
@@ -88,9 +88,9 @@ updatedCharsHandler = methods [GET, HEAD] . with charDatabase $ do
 lookupCnsHandler :: ByteString -> Handler b RestApi ()
 lookupCnsHandler unicode' = methods [GET, HEAD] . with encodingTable $
   writeJson =<< makeJson <$> lookupCns (decodeUtf8 unicode')
-  where makeJson x = object ["cns" .= x]
+  where makeJson x = object ["unicode" .= x]
 
 lookupUnicodeHandler :: ByteString -> Handler b RestApi ()
 lookupUnicodeHandler cns' = methods [GET, HEAD] . with encodingTable $
   writeJson =<< makeJson <$> lookupUnicode (decodeUtf8 cns')
-  where makeJson x = object ["unicode" .= x]
+  where makeJson x = object ["cns" .= x]

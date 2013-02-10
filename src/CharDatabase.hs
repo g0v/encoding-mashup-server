@@ -18,7 +18,7 @@ $(makeLenses ''CharDatabase)
 
 
 initCharDatabase :: SnapletInit b CharDatabase
-initCharDatabase = makeSnaplet "charDatabase" "字元資料庫" Nothing $ do
+initCharDatabase = makeSnaplet "char-database" "字元資料庫" Nothing $ do
     d <- nestSnaplet "db" db sqliteInit
     return $ CharDatabase d
 
