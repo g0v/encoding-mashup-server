@@ -40,8 +40,9 @@ Executable encoding-mashup-server
 
   if flag(development)
     Build-depends:
-      snap-loader-dynamic == 0.10.*
+      snap-loader-dynamic == 0.10.*,
+      ekg                 == 0.3.1.*
     Cpp-options: -DDEVELOPMENT
-    Ghc-options: -threaded -w
+    Ghc-options: -threaded -w -with-rtsopts=-T
   else
     Ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2
