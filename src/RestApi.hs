@@ -72,10 +72,11 @@ charHandler charName' = with charDatabase $
   method  PUT         setter  <|>
   method  DELETE      deleter
   where
-    charName = decodeUtf8 charName'
-    getter   = writeJson =<< getChar charName
-    setter   = updateChar charName =<< readJson
-    deleter  = deleteChar charName
+    charName   = decodeUtf8 charName'
+    getter     = maybe getterFail writeJson =<< getChar charName
+    getterFail = logError "Cannot find the char." >> pass
+    setter     = updateChar charName =<< readJson
+    deleter    = deleteChar charName
 
 allCharsHandler :: Handler b RestApi ()
 allCharsHandler = methods [GET, HEAD] $ writeJson =<< with charDatabase getChars
