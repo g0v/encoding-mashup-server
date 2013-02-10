@@ -1,18 +1,30 @@
 Name:                encoding-mashup-server
 Version:             0.0
 License:             BSD3
-Author:              Favonia
-Maintainer:          favonia@gmail.com
+License-file:        LICENSE
+Author:              Favonia, MnO2
+Maintainer:          favonia@gmail.com, mno2.csie@gmail.com
+Synopsis:            Encoding Mashup Server 
+Description:
+    /Overview/
+    .
+    Encoding Mashup Server
 Stability:           Experimental
 Category:            Web
 Build-type:          Simple
-Cabal-version:       >=1.2
+Cabal-version:       >=1.10
+Homepage:            https://github.com/g0v/encoding-mashup-server
+Bug-reports:         https://github.com/g0v/encoding-mashup-server/issues
+Source-Repository    head
+    Type: git
+    Location: git@github.com:g0v/encoding-mashup-server.git
 
 Flag development
   Description: Whether to build the server in development (interpreted) mode
   Default: False
 
 Executable encoding-mashup-server
+  Default-language: Haskell2010
   Hs-source-dirs: src
   Main-is: Main.hs
 
@@ -46,3 +58,37 @@ Executable encoding-mashup-server
     Ghc-options: -threaded -w -with-rtsopts=-T
   else
     Ghc-options: -threaded -Wall -fwarn-tabs -funbox-strict-fields -O2
+
+
+------------------------------------------------------------------------------
+Test-suite testsuite
+    Default-language: Haskell2010
+    Type: exitcode-stdio-1.0
+    Hs-source-dirs: src tests/testsuite
+    Main-is:
+        TestSuite.hs
+    Other-modules:
+        Tests.RestApi
+    Build-depends:
+        base                      >= 4     && < 5,
+        bytestring                >= 0.9.1 && < 0.11,
+        text                      >= 0.11  && < 0.13,
+        lens                      >= 3.8   && < 4,
+        configurator              >= 0.2   && < 0.4,
+        unordered-containers      >= 0.2   && < 0.4,
+        stm                       >= 2.4   && < 3,
+        MonadCatchIO-transformers >= 0.2.1 && < 0.4,
+        mtl                       >= 2     && < 3,
+        snap                      >= 0.11  && < 0.13,
+        snap-core                 >= 0.9   && < 0.11,
+        snap-server               >= 0.9   && < 0.11,
+        snap-loader-static        >= 0.9   && < 0.11,
+        snaplet-sqlite-simple     >= 0.4   && < 0.6,
+        aeson                     >= 0.6   && < 0.8,
+        sqlite-simple             >= 0.4   && < 0.6,
+        HUnit                      >= 1.2       && < 2,
+        QuickCheck                 >= 2.4       && < 3,
+        test-framework             >= 0.8       && <0.9,
+        test-framework-hunit       >= 0.3       && <0.4,
+        test-framework-quickcheck2 >= 0.3       && <0.4
+    Ghc-options: -O2 -Wall -fwarn-tabs
