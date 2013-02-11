@@ -33,12 +33,18 @@ onReady = ->
       view.display = datum.display.uni
 
       match = /^moe:revised\/([0-9a-f]+)$/.exec(key)
-      if match?
-        view.moe = "<img src=\"http://140.111.34.46/dict/fonts/#{match[1]}.gif\">"
+      view.moe =
+        if match?
+          "<img src=\"http://140.111.34.46/dict/fonts/#{match[1]}.gif\">"
+        else
+          '？'
 
       match = /^(\d+)-([0-9A-F]+$)/.exec(datum.exact.cns)
-      if match?
-        view.exact = "<img src=\"http://www.cns11643.gov.tw/MAIDB/png.do?page=#{match[1]}&code=#{match[2]}\">"
+      view.exact =
+        if match?
+          "<img src=\"http://www.cns11643.gov.tw/MAIDB/png.do?page=#{match[1]}&code=#{match[2]}\">"
+        else
+          '？'
 
       datum.view = view
 
