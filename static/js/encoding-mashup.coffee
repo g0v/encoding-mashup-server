@@ -8,7 +8,8 @@ template = Handlebars.compile("""
       </div>
       <input type="text" name="cns" value="{{exact.cns}}"></input>
       <input type="text" name="comments" value="{{comments}}"></input>
-      <button class="btn btn-small btn-primary" type="button">Save</button>
+      <button class="btn btn-small btn-primary" type="button">儲存</button>
+      <span class="saved" style="display: none">已儲存！</span>
     </form>
   </div>
 """)
@@ -64,10 +65,14 @@ onReady = ->
       # TODO: Refactoring: Move extra info from `view` to somewhere else
       delete datum.view
 
+      $saved = $form.children('.saved')
       $.ajax {
         url: url
         type: 'PUT'
         data: JSON.stringify(datum)
+        success: ->
+          $saved.show()
+          $saved.fadeOut(1000)
       }
 
     )
