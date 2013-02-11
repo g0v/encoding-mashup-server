@@ -22,7 +22,7 @@ DDL_COMMANDS = [
       exact_manualuni TEXT,
       comments TEXT NOT NULL DEFAULT '',
       checked INTEGER NOT NULL DEFAULT 0,
-      timestamp INTEGER NOT NULL DEFAULT CURRENT_TIME
+      timestamp INTEGER NOT NULL DEFAULT 0
   );"""
 ]
 
