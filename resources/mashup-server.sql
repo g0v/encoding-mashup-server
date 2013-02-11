@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS char_info (
     exact_manualuni TEXT,
     comments TEXT NOT NULL DEFAULT '',
     checked INTEGER NOT NULL DEFAULT 0,
-    timestamp INTEGER NOT NULL DEFAULT 0
+    timestamp INTEGER NOT NULL DEFAULT CURRENT_TIME
 );
 
 -- CREATE UNIQUE INDEX charname_unique ON char_info (charname ASC);
