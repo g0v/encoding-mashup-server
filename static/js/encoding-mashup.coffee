@@ -32,7 +32,7 @@ onReady = ->
       # TODO: Select display from multiple sources pua -> uni -> ids
       view.display = datum.display.uni
 
-      match = /^moe:revised\/([0-9a-f]+)$/.exec(key)
+      match = /^moe\/revised\/([0-9a-f]+)$/.exec(key)
       view.moe =
         if match?
           "<img src=\"http://140.111.34.46/dict/fonts/#{match[1]}.gif\">"

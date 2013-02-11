@@ -45,7 +45,7 @@ def write_sqlite(sqlite_filename, rows):
   data = []
   for row in rows:
     datum = {
-      u'charname': (u'moe:revised/%s' % row[0]),
+      u'charname': (u'moe/revised/%s' % row[0]),
       u'hidden': 0,
       u'tabled': 1 if (row[2]==u'是') else 0,
       u'display_uni': row[4],
