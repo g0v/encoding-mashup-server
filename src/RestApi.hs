@@ -3,6 +3,7 @@
 module RestApi
   ( RestApi
   , initRestApi
+  , metaHandler
   ) where
 
 import Prelude hiding (getChar)
