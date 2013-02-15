@@ -21,7 +21,7 @@ We are trying to follow these coding styles and conventions:
 The backend is written in Haskell with the Snap web framework.
 To set up the development environment, you first have to install GHC. For example, on Ubuntu
 
-    sudo apt-get install ghc haskell-platform
+    sudo apt-get install ghc haskell-platform postgresql-9.1 postgresql-contrib-9.1
 
 Using GHC of version at least 7.4 is recommended. Also, using cabal-dev to build up a virtual environment is a good practice. To install it using cabal-install
 
@@ -42,6 +42,32 @@ Currently, to test the server with existing data, do the following:
     wget 'https://docs.google.com/spreadsheet/pub?key=0AttD1zENsweydFhtZXhKVjdId1JTRkFrSmhvZXozNGc&single=true&gid=0&output=txt' -O sym-google.txt
     python2 ./resources/csv2sqlite.py google.csv [path to the database]
     [run the server]
+
+
+## Database Auditing
+
+We are using postgresql's [91plus](http://wiki.postgresql.org/wiki/Audit_trigger_91plus) trigger to audit table.
+Please make sure you have installed the [hstore](http://www.postgresql.org/docs/9.1/static/hstore.html) extension (contained in postgresql-contrib-9.1).
+After you install it, execute the following steps.
+
+    sudo -u postgres psql < /usr/share/postgresql/9.1/extension/hstore--unpackaged--1.0.sql
+    sudo -u postgres psql < <this_repo_dir>/resources/audit.sql
+
+Any INSERT, UPDATE and DELETE will be audited, to look up the log, execute:
+
+    SELECT * FROM audit.logged_actions LIMIT 5;
+
+## Deployment
+
+We use [keter](https://github.com/snoyberg/keter) deploy the project. To install it, execute:
+
+    wget -O - https://raw.github.com/snoyberg/keter/master/setup-keter.sh | bash
+
+To deploy, tarball ``config``, ``dist/build/encoding-mashup-server/encoding-mashup-server`` and ``static`` as ``.keter``
+
+    tar zcvf encoding-mashup.keter config static dist/build/encoding-mashup-server/encoding-mashup-server
+
+Then copy ``encoding-mashup.keter`` to ``/opt/keter/incoming/`` on the server. It will automatically deploy it..
 
 ## Copyright
 
