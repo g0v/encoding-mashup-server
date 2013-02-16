@@ -3,32 +3,32 @@
 {-# LANGUAGE TemplateHaskell #-}
 module Type where
 
+import Data.ByteString (ByteString)
 import Data.Text (Text)
-import Data.Int (Int64)
 import Data.HashMap.Strict (HashMap)
 import Control.Lens.TH
-import Data.Aeson.TH
 
+type CharName = ByteString
 type CnsCode = Text
+type UniChar = Text -- 可能有 IVD, 所以不用 Char
+type Etag = ByteString
 
 -- | 字元顯示資訊
 data CharDisplay = CharDisplay
-  { _uni :: Maybe Text -- ^ Unicode 認同碼
-  , _ids :: Maybe Text -- ^ Unicode 描述字串
-  , _pua :: Maybe Text -- ^ 使用者造字
+  { _uni :: Maybe UniChar -- ^ Unicode 認同碼
+  , _ids :: Maybe UniChar -- ^ Unicode 描述字串
+  , _pua :: Maybe UniChar -- ^ 使用者造字
   }
 
 $(makeLenses ''CharDisplay)
-$(deriveJSON (drop 1) ''CharDisplay)
 
 -- | 字元顯示資訊
 data CharExact = CharExact
   { _cns :: Maybe CnsCode
-  , _manualUni :: Maybe Text
+  , _forcedUni :: Maybe Text
   }
 
 $(makeLenses ''CharExact)
-$(deriveJSON (drop 1) ''CharExact)
 
 -- | 字元資訊
 data CharInfo = CharInfo
@@ -36,15 +36,10 @@ data CharInfo = CharInfo
   , _tabled :: !Bool         -- ^ 有爭議、沒有好答案、沒有好編碼的字
   , _display :: !CharDisplay -- ^ 顯示用資訊
   , _exact :: !CharExact     -- ^ 精確資訊
-  , _comments :: !Text       -- ^ 註解
-  , _checked :: !Int64       -- ^ 資料存取過的次數
-  , _timestamp :: !Int64     -- ^ 時間。 JSON 的時間很亂，所以採用 Unix 時間
+  , _comment :: !Text        -- ^ 註解
   }
 
 $(makeLenses ''CharInfo)
-$(deriveJSON (drop 1) ''CharInfo)
 
-type CharName = Text
 type CharMap = HashMap CharName CharInfo
-type NullableCharMap = HashMap CharName (Maybe CharInfo)
-
+type EtagMap = HashMap CharName Etag

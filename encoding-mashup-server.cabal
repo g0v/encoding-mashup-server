@@ -46,9 +46,7 @@ Executable encoding-mashup-server
     snap-core                 >= 0.9   && < 0.11,
     snap-server               >= 0.9   && < 0.11,
     snap-loader-static        >= 0.9   && < 0.11,
-    snaplet-sqlite-simple     >= 0.4   && < 0.6,
-    aeson                     >= 0.6   && < 0.8,
-    sqlite-simple             >= 0.4   && < 0.6
+    aeson                     >= 0.6   && < 0.8
 
   if flag(development)
     Build-depends:

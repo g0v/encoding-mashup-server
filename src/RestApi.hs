@@ -3,7 +3,6 @@
 module RestApi
   ( RestApi
   , initRestApi
-  , metaHandler
   ) where
 
 import Prelude hiding (getChar)
@@ -20,13 +19,6 @@ import Snap
 import Type hiding (_timestamp, timestamp)
 import CharDatabase
 import EncodingTable
-
-data CharFilter = CharFilter
-  { _timestamp :: Integer
-  , _charNames :: [CharName]
-  }
-$(makeLenses ''CharFilter)
-$(deriveJSON (drop 1) ''CharFilter)
 
 data RestApi = RestApi
   { _charDatabase         :: Snaplet CharDatabase
@@ -48,6 +40,7 @@ initRestApi :: Snaplet CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
+{-
   addRoutes [ ("meta",                 metaHandler)
             , ("char/:uri",            withUniqueCapture "uri" charHandler)
             , ("chars/all",            allCharsHandler)
@@ -55,8 +48,10 @@ initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
             , ("lookup/cns/:char",     withUniqueCapture "char" lookupCnsHandler)
             , ("lookup/unicode/:code", withUniqueCapture "code" lookupUnicodeHandler)
             ]
+-}
   return $ RestApi cs es
 
+{-
 writeJson :: ToJSON a => a -> Handler b v ()
 writeJson = writeLBS . encode . toJSON
 
@@ -68,24 +63,23 @@ metaHandler :: Handler b v ()
 metaHandler = methods [GET, HEAD] $ writeJson $ object ["version" .= version]
 
 charHandler :: ByteString -> Handler b RestApi ()
-charHandler charName' = with charDatabase $
+charHandler charName = with charDatabase $
   methods [GET, HEAD] getter  <|>
   method  PUT         setter  <|>
   method  DELETE      deleter
   where
-    charName   = decodeUtf8 charName'
-    getter     = maybe getterFail writeJson =<< getChar charName
+    getter     = maybe getterFail writeJson =<< undefined charName
     getterFail = logError "Cannot find the char." >> pass
     setter     = updateChar charName =<< readJson
     deleter    = deleteChar charName
 
 allCharsHandler :: Handler b RestApi ()
-allCharsHandler = methods [GET, HEAD] $ writeJson =<< with charDatabase getChars
+allCharsHandler = methods [GET, HEAD] $ writeJson =<< with charDatabase undefined
 
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = methods [GET, HEAD] . with charDatabase $ do
   cond <- readJson
-  writeJson =<< getUpdatedChars (cond^.timestamp) (cond^.charNames)
+  writeJson =<< getUpdatedChars undefined
 
 lookupCnsHandler :: ByteString -> Handler b RestApi ()
 lookupCnsHandler unicode' = methods [GET, HEAD] . with encodingTable $
@@ -96,3 +90,4 @@ lookupUnicodeHandler :: ByteString -> Handler b RestApi ()
 lookupUnicodeHandler cns' = methods [GET, HEAD] . with encodingTable $
   writeJson =<< makeJson <$> lookupUnicode (decodeUtf8 cns')
   where makeJson x = object ["cns" .= x]
+-}
