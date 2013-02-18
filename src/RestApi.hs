@@ -20,6 +20,7 @@ import           Data.Attoparsec.ByteString.Char8
 import           Data.Aeson
 import           Data.Aeson.Types (parseMaybe)
 import           Data.Aeson.TH
+import           Control.Monad
 import           Control.Monad.CatchIO (catch)
 import           Control.Lens hiding ((.=))
 import           Crypto.Hash
@@ -111,7 +112,7 @@ finishWithCode :: Int -> Maybe Etag -> Handler b v a
 finishWithCode code maybetag = finishWith
   $ setResponseCode code
   $ maybe id (setHeader "Etag" . quoteEtag) maybetag
-  $ emptyResponse
+    emptyResponse
 
 err :: Int -> Handler b v a
 err code = finishWithCode code Nothing
@@ -141,15 +142,13 @@ checkMatch :: Maybe Etag -> Handler b v ()
 checkMatch tag = do
   rq <- getRequest
   when (isJust $ getHeader "If-Unmodified-Since" rq) $ err 412
-  F.forM_ (getHeader "If-Match" rq) $ \c -> parseEP c >>= ifMatchHandler
-  F.forM_ (getHeader "If-None-Match" rq) $ \c -> parseEP c >>= ifNoneMatchHandler
+  F.forM_ (getHeader "If-Match" rq) $ parseEP >=> ifMatchHandler
+  F.forM_ (getHeader "If-None-Match" rq) $ parseEP >=> ifNoneMatchHandler
   where
     parseEP = errIfNothing 400 . maybeResult . parse pEtagPattern
     ifMatchHandler pat = unless (pat `etagMatch` tag) $ err 412
     ifNoneMatchHandler pat = when (pat `etagMatch` tag) $
-       (  methods [GET, HEAD] $ finishWithCode 304 tag
-      <|> err 412
-       )
+      methods [GET, HEAD] (finishWithCode 304 tag) <|> err 412
 
 --------------------------------------------------------------------------------
 -- JSON and ETag and version checking
