@@ -140,17 +140,17 @@ checkPutRequest = do
   when (isJust $ getHeader "Content-Range" rq) $ err 501
 
 -- | @If-Match@, @If-None-Match@ and @If-Unmodified-Since@
-checkMatch :: Maybe Etag -> Maybe Etag -> Handler b v ()
-checkMatch oldtag newtag = do
+checkMatch :: Maybe Etag -> Handler b v ()
+checkMatch tag = do
   rq <- getRequest
   when (isJust $ getHeader "If-Unmodified-Since" rq) $ err 412
   F.forM_ (getHeader "If-Match" rq) $ \c -> parseEP c >>= ifMatchHandler
   F.forM_ (getHeader "If-None-Match" rq) $ \c -> parseEP c >>= ifNoneMatchHandler
   where
     parseEP = err400IfNull . maybeResult . parse pEtagPattern
-    ifMatchHandler pat = unless (pat `etagMatch` oldtag) $ err 412
-    ifNoneMatchHandler pat = when (pat `etagMatch` oldtag) $
-       (  methods [GET, HEAD] $ finishWithCode 304 newtag
+    ifMatchHandler pat = unless (pat `etagMatch` tag) $ err 412
+    ifNoneMatchHandler pat = when (pat `etagMatch` tag) $
+       (  methods [GET, HEAD] $ finishWithCode 304 tag
       <|> err 412
        )
 
@@ -236,7 +236,7 @@ charHandler charName = with charDatabase $
       output <- errIfNull 404 =<< getChar'
 
       let tag = etag output
-      checkMatch (Just tag) (Just tag)
+      checkMatch (Just tag)
 
       finishWithJson' output (Just tag)
 
@@ -249,7 +249,7 @@ charHandler charName = with charDatabase $
       charInfo <- readJsonMember rq "charinfo"
 
       oldtag' <- fmap etag <$> getChar'
-      checkMatch oldtag' Nothing
+      checkMatch oldtag'
 
       C.updateChar charName charInfo
       let tag = etag . frameChar $ charInfo
@@ -262,7 +262,7 @@ charHandler charName = with charDatabase $
 
       oldtag <- errIfNull 404 =<< fmap etag <$> getChar'
 
-      checkMatch (Just oldtag) Nothing
+      checkMatch (Just oldtag)
 
       C.deleteChar charName
       finishWithCode 204 Nothing
