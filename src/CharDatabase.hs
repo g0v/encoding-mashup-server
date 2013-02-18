@@ -66,6 +66,3 @@ deleteChar :: CharName -> Handler b CharDatabase ()
 deleteChar cn = do
     with db $ execute "update char_info set status = 'deleted' where charname = ?" $ Only cn
     return ()
-
-getUpdatedChars :: [CharName] -> Handler b CharDatabase CharMap
-getUpdatedChars etagmap = undefined
