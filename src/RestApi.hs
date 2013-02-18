@@ -116,11 +116,8 @@ finishWithCode code maybetag = finishWith
 err :: Int -> Handler b v a
 err code = finishWithCode code Nothing
 
-errIfNull :: Int -> Maybe a -> Handler b v a
-errIfNull code = maybe (err code) return
-
-err400IfNull :: Maybe a -> Handler b v a
-err400IfNull = errIfNull 400
+errIfNothing :: Int -> Maybe a -> Handler b v a
+errIfNothing code = maybe (err code) return
 
 -- | Check HTTP 1.1 request headers.
 checkRequest :: Handler b v ()
@@ -147,7 +144,7 @@ checkMatch tag = do
   F.forM_ (getHeader "If-Match" rq) $ \c -> parseEP c >>= ifMatchHandler
   F.forM_ (getHeader "If-None-Match" rq) $ \c -> parseEP c >>= ifNoneMatchHandler
   where
-    parseEP = err400IfNull . maybeResult . parse pEtagPattern
+    parseEP = errIfNothing 400 . maybeResult . parse pEtagPattern
     ifMatchHandler pat = unless (pat `etagMatch` tag) $ err 412
     ifNoneMatchHandler pat = when (pat `etagMatch` tag) $
        (  methods [GET, HEAD] $ finishWithCode 304 tag
@@ -176,13 +173,13 @@ readJson' = readRequestBody maxBodyLen
     \(_ :: I.TooManyBytesReadException) -> err 413
 
 fromJson' :: FromJSON a => LB.ByteString -> Handler b v a
-fromJson' = err400IfNull . decode'
+fromJson' = errIfNothing 400 . decode'
 
 readJson :: FromJSON a => Handler b v a
 readJson = fromJson' =<< readJson'
 
 readJsonMember :: FromJSON a => Object -> Text -> Handler b v a
-readJsonMember obj = err400IfNull . parseMaybe  (obj .:)
+readJsonMember obj = errIfNothing 400 . parseMaybe (obj .:)
 
 checkVersion :: Object -> Handler b v ()
 checkVersion obj = do
@@ -233,7 +230,7 @@ charHandler charName = with charDatabase $
     getter = do
       checkRequest
 
-      output <- errIfNull 404 =<< getChar'
+      output <- errIfNothing 404 =<< getChar'
 
       let tag = etag output
       checkMatch (Just tag)
@@ -260,7 +257,7 @@ charHandler charName = with charDatabase $
     deleter = do
       checkRequest
 
-      oldtag <- errIfNull 404 =<< fmap etag <$> getChar'
+      oldtag <- errIfNothing 404 =<< fmap etag <$> getChar'
 
       checkMatch (Just oldtag)
 
