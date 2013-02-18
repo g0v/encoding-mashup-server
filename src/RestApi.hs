@@ -6,6 +6,8 @@ module RestApi
   , initRestApi
   ) where
 
+import           Prelude hiding (catch)
+------------------------------------------------------------------------------
 import           Data.Int (Int64)
 import qualified Data.Foldable as F
 import           Data.Maybe
