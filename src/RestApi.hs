@@ -16,6 +16,7 @@ import           Data.Text.Encoding
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Lazy as LB
 import qualified Data.ByteString.Char8 as C8
+import qualified Data.HashMap.Strict as H
 import           Blaze.ByteString.Builder
 import           Data.Attoparsec
 import           Data.Attoparsec.ByteString.Char8
@@ -201,7 +202,8 @@ initRestApi :: Snaplet C.CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
-  addRoutes [ ("char/:uri",            withUniqueCapture "uri" charHandler)
+  addRoutes [ ("char/:uri", withUniqueCapture "uri" charHandler)
+            , ("chars/all",                         allCharsHandler)
             ]
   return $ RestApi cs es
   where
@@ -213,8 +215,14 @@ initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
         _     -> logError "Capturing failed." >> pass
 
 --------------------------------------------------------------------------------
--- Handlers
+-- Handlers for CharInfo
 --------------------------------------------------------------------------------
+
+frameChar :: CharInfo -> LB.ByteString
+frameChar c = toJson' $ object
+  [ "version"  .= version
+  , "charinfo" .= c
+  ]
 
 charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
@@ -223,9 +231,6 @@ charHandler charName = with charDatabase $
   method  DELETE      deleter <|>
   err405  [GET, HEAD, PUT, DELETE]
   where
-    frameChar :: CharInfo -> LB.ByteString
-    frameChar c = toJson' $ object ["version" .= version, "charinfo" .= c]
-
     getChar' = fmap frameChar <$> C.getChar charName
 
     getter = do
@@ -265,11 +270,27 @@ charHandler charName = with charDatabase $
       C.deleteChar charName
       finishWithCode 204 Nothing
 
-{-
-
 allCharsHandler :: Handler b RestApi ()
-allCharsHandler = methods [GET, HEAD] $ writeJson =<< with charDatabase undefined
+allCharsHandler = with charDatabase $
+  methods [GET, HEAD] getter <|>
+  err405  [GET, HEAD]
+  where
+    getter = do
+      charmap <- C.getChars
+      -- FIXME: THIS MUST BE SLOW!
+      let etagmap = H.map (etag . frameChar) charmap
+      let output = toJson' $ object
+            [ "version" .= version
+            , "charmap" .= charmap
+            , "etagmap" .= etagmap
+            ]
+      -- FIXME: THIS MUST BE SLOW!
+      let tag = etag output
+      checkMatch (Just tag)
+      -------------------------------------------
+      finishWithJson' output (Just tag)
 
+{-
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = methods [GET, HEAD] . with charDatabase $ do
   cond <- readJson
