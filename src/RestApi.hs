@@ -228,8 +228,8 @@ charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
   methods [GET, HEAD] getter  <|>
   method  PUT         setter  <|>
-  method  DELETE      deleter <|>
-  err405  [GET, HEAD, PUT, DELETE]
+  -- method  DELETE      deleter <|>
+  err405  [GET, HEAD, PUT]
   where
     getChar' = fmap frameChar <$> C.getChar charName
 
@@ -260,6 +260,7 @@ charHandler charName = with charDatabase $
         Nothing -> finishWithCode 201 (Just tag)
         Just _  -> finishWithCode 204 (Just tag)
 
+    {-
     deleter = do
       checkRequest
       -------------------------------------------
@@ -269,6 +270,7 @@ charHandler charName = with charDatabase $
       -------------------------------------------
       C.deleteChar charName
       finishWithCode 204 Nothing
+    -}
 
 allCharsHandler :: Handler b RestApi ()
 allCharsHandler = with charDatabase $
