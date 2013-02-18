@@ -16,9 +16,9 @@ import qualified Snap.Test as ST
 import Snap.Snaplet.Test
 
 tests :: [Test]
-tests = [testGetMeta, testGetAllChars]
+tests = [testGetAllChars]
 
-
+{-
 testGetMeta :: Test
 testGetMeta = testCase "RestApi/testGetMeta" $ assertMetaInfo
     where assertMetaInfo :: Assertion
@@ -26,6 +26,7 @@ testGetMeta = testCase "RestApi/testGetMeta" $ assertMetaInfo
                 let hdl = with restApi metaHandler
                 res <- runHandler (ST.get "" Map.empty) hdl appInit
                 either (assertFailure . show) (ST.assertBodyContains "version") res
+-}
 
 testGetAllChars :: Test
 testGetAllChars = testCase "RestApi/testGetAllChars" $ do
