@@ -1,3 +1,5 @@
+CREATE TYPE STATUS AS ENUM ('exist', 'deleted')
+
 CREATE TABLE IF NOT EXISTS char_info (
     charname VARCHAR(64) NOT NULL PRIMARY KEY,
     hidden BOOLEAN NOT NULL DEFAULT FALSE,
@@ -6,8 +8,8 @@ CREATE TABLE IF NOT EXISTS char_info (
     display_ids VARCHAR(8),
     display_pua VARCHAR(8),
     exact_cns VARCHAR(8),
-    exact_manualuni VARCHAR(8),
-    comments TEXT NOT NULL DEFAULT '',
-    checked BOOLEAN NOT NULL DEFAULT FALSE,
+    exact_forceduni VARCHAR(8),
+    comment TEXT NOT NULL DEFAULT '',
+    status STATUS NOT NULL DEFAULT 'exist',
     timestamp TIMESTAMP with time zone DEFAULT CURRENT_TIMESTAMP
 );
