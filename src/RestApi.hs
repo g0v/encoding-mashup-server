@@ -88,8 +88,9 @@ initRestApi :: Snaplet C.CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
-  addRoutes [ ("char/:uri", withUniqueCapture "uri" charHandler)
-            , ("chars/all",                         allCharsHandler)
+  addRoutes [ ("char/:uri",     withUniqueCapture "uri" charHandler)
+            , ("chars/all",                             allCharsHandler)
+            , ("chars/updated",                         updatedCharsHandler)
             ]
   return $ RestApi cs es
   where
@@ -110,6 +111,13 @@ frameChar c = toLBS $ object
   , "charinfo" .= c
   ]
 
+checkMatchAndFinishWithLBS :: Mime -> LB.ByteString -> Handler b v a
+checkMatchAndFinishWithLBS mime output = do
+  checkMatch (Just tag)
+  finishWithLBS mime output (Just tag)
+  where
+    tag = etag output
+
 charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
   methods [GET, HEAD] getter  <|>
@@ -124,10 +132,7 @@ charHandler charName = with charDatabase $
       -------------------------------------------
       output <- errIfNothing 404 =<< getChar'
       -------------------------------------------
-      let tag = etag output
-      checkMatch (Just tag)
-      -------------------------------------------
-      finishWithLBS jsonMime output (Just tag)
+      checkMatchAndFinishWithLBS jsonMime output
 
     setter = do
       checkExpect
@@ -165,25 +170,49 @@ allCharsHandler = with charDatabase $
   where
     getter = do
       charmap <- C.getChars
-      -- FIXME: THIS MUST BE SLOW!
+      -- FIXME: THIS COULD BE SLOW!
       let etagmap = H.map (etag . frameChar) charmap
       let output = toLBS $ object
             [ "version" .= version
             , "charmap" .= charmap
             , "etagmap" .= etagmap
             ]
-      -- FIXME: THIS MUST BE SLOW!
-      let tag = etag output
-      checkMatch (Just tag)
       -------------------------------------------
-      finishWithLBS jsonMime output (Just tag)
+      -- FIXME: THIS COULD BE SLOW!
+      checkMatchAndFinishWithLBS jsonMime output
+
+updatedCharsHandler :: Handler b RestApi ()
+updatedCharsHandler = with charDatabase $
+  method POST getter <|>
+  err405 [POST]
+  where
+    getter = do
+      checkExpect
+      -------------------------------------------
+      rq <- readJson
+      checkVersion rq
+      etagmap' <- jsonLookup rq "etagmap"
+      -------------------------------------------
+      updatemap <- flip H.traverseWithKey etagmap' $ \name cachetag -> do
+        output' <- fmap frameChar <$> C.getChar name
+        return $ case output' of
+          Nothing  -> (Just Nothing, Nothing)
+          Just output -> let tag = etag output in
+            if tag == cachetag
+              then (Nothing, Nothing)
+              else (Just (Just output), Just tag)
+      let charmap = H.filter isJust . H.map fst $ updatemap
+      let etagmap = H.filter isJust . H.map snd $ updatemap
+      -------------------------------------------
+      let output = toLBS $ object
+            [ "version" .= version
+            , "charmap" .= charmap
+            , "etagmap" .= etagmap
+            ]
+      -------------------------------------------
+      finishWithLBS jsonMime output Nothing
 
 {-
-updatedCharsHandler :: Handler b RestApi ()
-updatedCharsHandler = methods [GET, HEAD] . with charDatabase $ do
-  cond <- readJson
-  writeJson =<< getUpdatedChars undefined
-
 lookupCnsHandler :: ByteString -> Handler b RestApi ()
 lookupCnsHandler unicode' = methods [GET, HEAD] . with encodingTable $
   writeJson =<< makeJson <$> lookupCns (decodeUtf8 unicode')
