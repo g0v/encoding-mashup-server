@@ -1,77 +1,273 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 module RestApi
   ( RestApi
   , initRestApi
   ) where
 
-import Prelude hiding (getChar)
+import           Data.Int (Int64)
+import qualified Data.Foldable as F
+import           Data.Maybe
+import           Data.Text (Text)
+import           Data.Text.Encoding
+import           Data.ByteString (ByteString)
+import qualified Data.ByteString.Lazy as LB
+import qualified Data.ByteString.Char8 as C8
+import           Blaze.ByteString.Builder
+import           Data.Attoparsec
+import           Data.Attoparsec.ByteString.Char8
+import           Data.Aeson
+import           Data.Aeson.Types (parseMaybe)
+import           Data.Aeson.TH
+import           Control.Monad.CatchIO (catch)
+import           Control.Lens hiding ((.=))
+import           Crypto.Hash
+------------------------------------------------------------------------------
+import           Snap
+import qualified Snap.Iteratee as I
+import           Snap.Internal.Parsing
+------------------------------------------------------------------------------
+import           Type
+import qualified CharDatabase as C
+import           EncodingTable
 
-import Data.Maybe
-import Data.Text.Encoding
-import Data.ByteString (ByteString)
-import Data.Aeson
-import Data.Aeson.TH
-import Control.Lens hiding ((.=))
+------------------------------------------------------------------------------
+-- Meta
+------------------------------------------------------------------------------
 
-import Snap
+version :: Int
+version = 0
 
-import Type hiding (_timestamp, timestamp)
-import CharDatabase
-import EncodingTable
+maxBodyLen :: Int64
+maxBodyLen = 4096
+
+------------------------------------------------------------------------------
+-- Haskell Datatype <-> JSON
+------------------------------------------------------------------------------
+
+$(deriveJSON (drop 1) ''CharDisplay)
+$(deriveJSON (drop 1) ''CharInfo)
+
+instance FromJSON CharExact where
+   parseJSON (Object v) = CharExact         <$>
+                          v .: "cns"        <*>
+                          v .: "forced_uni"
+   parseJSON _          = mzero
+
+instance ToJSON CharExact where
+   toJSON charexact = object
+                        [ "cns"        .= view cns       charexact
+                        , "forced_uni" .= view forcedUni charexact
+                        ]
+
+------------------------------------------------------------------------------
+-- Etag
+------------------------------------------------------------------------------
+
+data NormalEtag = StrongNE Etag | WeakNE Etag deriving Eq
+data EtagPattern = WildE | NormalE [NormalEtag]
+
+pEtagPattern :: Parser EtagPattern
+pEtagPattern = pSpaces *> (pWildPattern <|> pNormalPatterns) <* pSpaces
+  where
+    pWildPattern = char '*' *> return WildE
+    pNormalPatterns = do
+      a <- pNormalPattern
+      b <- many (pSpaces *> char ',' *> pSpaces *> pNormalPattern)
+      return . NormalE $ a:b
+    pNormalPattern = choice
+      [ StrongNE <$> pQuotedString
+      , WeakNE <$> (string "W/" *> pQuotedString)
+      ]
+
+etagMatch :: EtagPattern -> Maybe Etag -> Bool
+etagMatch _           Nothing  = False
+etagMatch WildE       (Just _) = True
+etagMatch (NormalE l) (Just t) = StrongNE t `elem` l
+
+etag :: LB.ByteString -> Etag
+etag str = digestToHexByteString (hashlazy str :: Digest Skein256_256)
+
+quoteEtag :: Etag -> ByteString
+quoteEtag = C8.concatMap quote
+  where
+    quote '"' = "\""
+    quote x   = C8.singleton x
+
+------------------------------------------------------------------------------
+-- Basic @finishWith@ and checking
+------------------------------------------------------------------------------
+
+err405 :: [Method] -> Handler b v a
+err405 allowed = finishWith
+  =<< setResponseCode 405
+  <$> setHeader "Allow" allowed'
+  <$> getResponse
+  where
+    allowed' = C8.intercalate ", " $ map (C8.pack . show) allowed
+
+finishWithCode :: Int -> Maybe Etag -> Handler b v a
+finishWithCode code maybetag = finishWith
+  $ setResponseCode code
+  $ maybe id (setHeader "Etag" . quoteEtag) maybetag
+  $ emptyResponse
+
+err :: Int -> Handler b v a
+err code = finishWithCode code Nothing
+
+errIfNull :: Int -> Maybe a -> Handler b v a
+errIfNull code = maybe (err code) return
+
+err400IfNull :: Maybe a -> Handler b v a
+err400IfNull = errIfNull 400
+
+-- | Check HTTP 1.1 request headers.
+checkRequest :: Handler b v ()
+checkRequest = do
+  rq <- getRequest
+  when (isJust $ getHeader "Expect" rq) $ err 417
+
+-- | Filter out Content-*.
+--   TODO: Check @Content-Type@.
+checkPutRequest :: Handler b v ()
+checkPutRequest = do
+  rq <- getRequest
+  when (isJust $ getHeader "Content-Range" rq) $ err 501
+  when (isJust $ getHeader "Content-Encoding" rq) $ err 501
+  when (isJust $ getHeader "Content-Language" rq) $ err 501
+  when (isJust $ getHeader "Content-MD5" rq) $ err 501
+  when (isJust $ getHeader "Content-Range" rq) $ err 501
+
+-- | @If-Match@, @If-None-Match@ and @If-Unmodified-Since@
+checkMatch :: Maybe Etag -> Maybe Etag -> Handler b v ()
+checkMatch oldtag newtag = do
+  rq <- getRequest
+  when (isJust $ getHeader "If-Unmodified-Since" rq) $ err 412
+  F.forM_ (getHeader "If-Match" rq) $ \c -> parseEP c >>= ifMatchHandler
+  F.forM_ (getHeader "If-None-Match" rq) $ \c -> parseEP c >>= ifNoneMatchHandler
+  where
+    parseEP = err400IfNull . maybeResult . parse pEtagPattern
+    ifMatchHandler pat = unless (pat `etagMatch` oldtag) $ err 412
+    ifNoneMatchHandler pat = when (pat `etagMatch` oldtag) $
+       (  methods [GET, HEAD] $ finishWithCode 304 newtag
+      <|> err 412
+       )
+
+--------------------------------------------------------------------------------
+-- JSON and ETag and version checking
+--------------------------------------------------------------------------------
+
+toJson' :: ToJSON a => a -> LB.ByteString
+toJson' = encode . toJSON
+
+finishWithJson' :: LB.ByteString -> Maybe Etag -> Handler b v c
+finishWithJson' str tag = finishWith
+  =<< setResponseBody body
+  <$> maybe id (setHeader "ETag" . quoteEtag) tag
+  <$> setContentType "application/json"
+  <$> getResponse
+  where
+    body = I.enumBuilder $ fromLazyByteString str
+
+readJson' :: Handler b v LB.ByteString
+readJson' = readRequestBody maxBodyLen
+  `catch`
+    \(_ :: I.TooManyBytesReadException) -> err 413
+
+fromJson' :: FromJSON a => LB.ByteString -> Handler b v a
+fromJson' = err400IfNull . decode'
+
+readJson :: FromJSON a => Handler b v a
+readJson = fromJson' =<< readJson'
+
+readJsonMember :: FromJSON a => Object -> Text -> Handler b v a
+readJsonMember obj = err400IfNull . parseMaybe  (obj .:)
+
+checkVersion :: Object -> Handler b v ()
+checkVersion obj = do
+  version' <- readJsonMember obj "version"
+  when (version' /= version) $ err 400
+
+--------------------------------------------------------------------------------
+-- Snaplet state and initializer
+--------------------------------------------------------------------------------
 
 data RestApi = RestApi
-  { _charDatabase         :: Snaplet CharDatabase
+  { _charDatabase         :: Snaplet C.CharDatabase
   , _encodingTable        :: Snaplet EncodingTable
   }
 $(makeLenses ''RestApi)
 
-version :: ByteString
-version = "0.0"
-
-withUniqueCapture :: ByteString -> (ByteString -> Handler b v a) -> Handler b v a
-withUniqueCapture name handler = do
-  names <- join <$> maybeToList <$> rqParam name <$> getRequest
-  case names of
-    [val] -> handler val
-    _     -> logError "Capturing failed." >> pass
-
-initRestApi :: Snaplet CharDatabase
+initRestApi :: Snaplet C.CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
-{-
-  addRoutes [ ("meta",                 metaHandler)
-            , ("char/:uri",            withUniqueCapture "uri" charHandler)
-            , ("chars/all",            allCharsHandler)
-            , ("chars/updated",        updatedCharsHandler)
-            , ("lookup/cns/:char",     withUniqueCapture "char" lookupCnsHandler)
-            , ("lookup/unicode/:code", withUniqueCapture "code" lookupUnicodeHandler)
+  addRoutes [ ("char/:uri",            withUniqueCapture "uri" charHandler)
             ]
--}
   return $ RestApi cs es
+  where
+    withUniqueCapture :: ByteString -> (ByteString -> Handler b v a) -> Handler b v a
+    withUniqueCapture name handler = do
+      names <- join <$> maybeToList <$> rqParam name <$> getRequest
+      case names of
+        [val] -> handler val
+        _     -> logError "Capturing failed." >> pass
 
-{-
-writeJson :: ToJSON a => a -> Handler b v ()
-writeJson = writeLBS . encode . toJSON
-
-readJson :: FromJSON a => Handler b v a
-readJson = fromMaybe error' <$> decode <$> readRequestBody 2048
-  where error' = error "JSON decoding failed."
-
-metaHandler :: Handler b v ()
-metaHandler = methods [GET, HEAD] $ writeJson $ object ["version" .= version]
+--------------------------------------------------------------------------------
+-- Handlers
+--------------------------------------------------------------------------------
 
 charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
   methods [GET, HEAD] getter  <|>
   method  PUT         setter  <|>
-  method  DELETE      deleter
+  method  DELETE      deleter <|>
+  err405  [GET, HEAD, PUT, DELETE]
   where
-    getter     = maybe getterFail writeJson =<< undefined charName
-    getterFail = logError "Cannot find the char." >> pass
-    setter     = updateChar charName =<< readJson
-    deleter    = deleteChar charName
+    frameChar :: CharInfo -> LB.ByteString
+    frameChar c = toJson' $ object ["version" .= version, "charinfo" .= c]
+
+    getChar' = fmap frameChar <$> C.getChar charName
+
+    getter = do
+      checkRequest
+
+      output <- errIfNull 404 =<< getChar'
+
+      let tag = etag output
+      checkMatch (Just tag) (Just tag)
+
+      finishWithJson' output (Just tag)
+
+    setter = do
+      checkRequest
+      checkPutRequest
+
+      rq <- readJson
+      checkVersion rq
+      charInfo <- readJsonMember rq "charinfo"
+
+      oldtag' <- fmap etag <$> getChar'
+      checkMatch oldtag' Nothing
+
+      C.updateChar charName charInfo
+      let tag = etag . frameChar $ charInfo
+      case oldtag' of
+        Nothing -> finishWithCode 201 (Just tag)
+        Just _  -> finishWithCode 204 (Just tag)
+
+    deleter = do
+      checkRequest
+
+      oldtag <- errIfNull 404 =<< fmap etag <$> getChar'
+
+      checkMatch (Just oldtag) Nothing
+
+      C.deleteChar charName
+      finishWithCode 204 Nothing
+
+{-
 
 allCharsHandler :: Handler b RestApi ()
 allCharsHandler = methods [GET, HEAD] $ writeJson =<< with charDatabase undefined
