@@ -88,18 +88,11 @@ initRestApi :: Snaplet C.CharDatabase
             -> Snaplet EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
-  addRoutes [ ("char/:uri",     withUniqueCapture "uri" charHandler)
-            , ("chars/all",                             allCharsHandler)
-            , ("chars/updated",                         updatedCharsHandler)
+  addRoutes [ ("char",          pathArg charHandler)
+            , ("chars/all",             allCharsHandler)
+            , ("chars/updated",         updatedCharsHandler)
             ]
   return $ RestApi cs es
-  where
-    withUniqueCapture :: ByteString -> (ByteString -> Handler b v a) -> Handler b v a
-    withUniqueCapture name handler = do
-      names <- join <$> maybeToList <$> rqParam name <$> getRequest
-      case names of
-        [val] -> handler val
-        _     -> logError "Capturing failed." >> pass
 
 --------------------------------------------------------------------------------
 -- Handlers for CharInfo.
