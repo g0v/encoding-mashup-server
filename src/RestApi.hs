@@ -104,9 +104,9 @@ quoteEtag = C8.concatMap quote
 
 err405 :: [Method] -> Handler b v a
 err405 allowed = finishWith
-  =<< setResponseCode 405
-  <$> setHeader "Allow" allowed'
-  <$> getResponse
+  $ setResponseCode 405
+  $ setHeader "Allow" allowed'
+    emptyResponse
   where
     allowed' = C8.intercalate ", " $ map (C8.pack . show) allowed
 
@@ -161,10 +161,10 @@ toJson' = encode . toJSON
 
 finishWithJson' :: LB.ByteString -> Maybe Etag -> Handler b v c
 finishWithJson' str tag = finishWith
-  =<< setResponseBody body
-  <$> maybe id (setHeader "ETag" . quoteEtag) tag
-  <$> setContentType "application/json"
-  <$> getResponse
+  $ setResponseBody body
+  $ maybe id (setHeader "ETag" . quoteEtag) tag
+  $ setContentType "application/json"
+    emptyResponse
   where
     body = I.enumBuilder $ fromLazyByteString str
 
@@ -230,25 +230,25 @@ charHandler charName = with charDatabase $
 
     getter = do
       checkRequest
-
+      -------------------------------------------
       output <- errIfNothing 404 =<< getChar'
-
+      -------------------------------------------
       let tag = etag output
       checkMatch (Just tag)
-
+      -------------------------------------------
       finishWithJson' output (Just tag)
 
     setter = do
       checkRequest
       checkPutRequest
-
+      -------------------------------------------
       rq <- readJson
       checkVersion rq
       charInfo <- readJsonMember rq "charinfo"
-
+      -------------------------------------------
       oldtag' <- fmap etag <$> getChar'
       checkMatch oldtag'
-
+      -------------------------------------------
       C.updateChar charName charInfo
       let tag = etag . frameChar $ charInfo
       case oldtag' of
@@ -257,11 +257,11 @@ charHandler charName = with charDatabase $
 
     deleter = do
       checkRequest
-
+      -------------------------------------------
       oldtag <- errIfNothing 404 =<< fmap etag <$> getChar'
-
+      -------------------------------------------
       checkMatch (Just oldtag)
-
+      -------------------------------------------
       C.deleteChar charName
       finishWithCode 204 Nothing
 
