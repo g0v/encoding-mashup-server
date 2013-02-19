@@ -69,7 +69,7 @@ errIfNothing code = maybe (err code) return
 supportedMethods :: [Method]
 supportedMethods = [GET, HEAD, POST, PUT, DELETE]
 
--- | Method-based routing. The mapping need to be exhaustive so that
+-- | Method-based routing. The mapping needs to be exhaustive so that
 --   a proper HTTP @405@ error message can be generated,
 --   where methods without handlers are assumed to be disallowed.
 --   Multiple handlers for the same method are joined with '<|>'.
