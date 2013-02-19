@@ -157,7 +157,10 @@ quoteEtag = C8.concatMap quote
 --   wild patterns.
 --
 --   We always reject @If-Unmodified-Since@ with @501@
---   because we don't use timestamps.
+--   because we don't use timestamps. The HTTP 1.1 standard
+--   is not crystal clear on the proper error code, but we think
+--   this is a more reasonable choice than the @412@ error code
+--   when the timestamps are intentionally avoided.
 checkMatch :: Maybe Etag -> Handler b v ()
 checkMatch tag = do
   rq <- getRequest
