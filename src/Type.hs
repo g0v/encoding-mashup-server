@@ -3,10 +3,15 @@
 {-# LANGUAGE TemplateHaskell #-}
 module Type where
 
-import Data.ByteString (ByteString)
-import Data.Text (Text)
-import Data.HashMap.Strict (HashMap)
-import Control.Lens.TH
+import           Data.ByteString (ByteString)
+import           Data.Text (Text)
+import           Data.HashMap.Strict (HashMap)
+import           Data.Aeson
+import           Data.Aeson.TH
+import           Control.Applicative
+import           Control.Monad
+import           Control.Lens (view)
+import           Control.Lens.TH
 
 type CharName = ByteString
 type CnsCode = Text
@@ -19,16 +24,27 @@ data CharDisplay = CharDisplay
   , _ids :: Maybe UniChar -- ^ Unicode 描述字串
   , _pua :: Maybe UniChar -- ^ 使用者造字
   }
-
 $(makeLenses ''CharDisplay)
+$(deriveJSON (drop 1) ''CharDisplay)
 
 -- | 字元顯示資訊
 data CharExact = CharExact
   { _cns :: Maybe CnsCode
   , _forcedUni :: Maybe Text
   }
-
 $(makeLenses ''CharExact)
+
+instance FromJSON CharExact where
+   parseJSON (Object v) = CharExact         <$>
+                          v .: "cns"        <*>
+                          v .: "forced_uni"
+   parseJSON _          = mzero
+
+instance ToJSON CharExact where
+   toJSON charexact = object
+                        [ "cns"        .= view cns       charexact
+                        , "forced_uni" .= view forcedUni charexact
+                        ]
 
 -- | 字元資訊
 data CharInfo = CharInfo
@@ -38,8 +54,11 @@ data CharInfo = CharInfo
   , _exact :: !CharExact     -- ^ 精確資訊
   , _comment :: !Text        -- ^ 註解
   }
-
 $(makeLenses ''CharInfo)
+$(deriveJSON (drop 1) ''CharInfo)
 
+-- | CharInfo Map
 type CharMap = HashMap CharName CharInfo
+
+-- | Etag Map
 type EtagMap = HashMap CharName Etag

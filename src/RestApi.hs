@@ -1,19 +1,16 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
-{-# LANGUAGE ScopedTypeVariables #-}
 module RestApi
   ( RestApi
   , initRestApi
   ) where
 
-import           Data.Maybe
 import           Data.Text (Text)
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Lazy as LB
 import qualified Data.HashMap.Strict as H
 import           Data.Aeson
 import           Data.Aeson.Types (parseMaybe)
-import           Data.Aeson.TH
 import           Control.Monad
 import           Control.Lens hiding ((.=))
 ------------------------------------------------------------------------------
@@ -22,7 +19,7 @@ import           Snap
 import           Type
 import           Utils
 import qualified CharDatabase as C
-import           EncodingTable
+import qualified EncodingTable as E
 
 ------------------------------------------------------------------------------
 -- Meta
@@ -30,25 +27,6 @@ import           EncodingTable
 
 version :: Int
 version = 0
-
-------------------------------------------------------------------------------
--- Haskell Datatype <-> JSON
-------------------------------------------------------------------------------
-
-$(deriveJSON (drop 1) ''CharDisplay)
-$(deriveJSON (drop 1) ''CharInfo)
-
-instance FromJSON CharExact where
-   parseJSON (Object v) = CharExact         <$>
-                          v .: "cns"        <*>
-                          v .: "forced_uni"
-   parseJSON _          = mzero
-
-instance ToJSON CharExact where
-   toJSON charexact = object
-                        [ "cns"        .= view cns       charexact
-                        , "forced_uni" .= view forcedUni charexact
-                        ]
 
 --------------------------------------------------------------------------------
 -- JSON tools.
@@ -80,12 +58,12 @@ checkVersion obj = do
 
 data RestApi = RestApi
   { _charDatabase         :: Snaplet C.CharDatabase
-  , _encodingTable        :: Snaplet EncodingTable
+  , _encodingTable        :: Snaplet E.EncodingTable
   }
 $(makeLenses ''RestApi)
 
 initRestApi :: Snaplet C.CharDatabase
-            -> Snaplet EncodingTable
+            -> Snaplet E.EncodingTable
             -> SnapletInit b RestApi
 initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
   addRoutes [ ("char",          pathArg charHandler)
@@ -171,10 +149,21 @@ allCharsHandler = with charDatabase $
       -- FIXME: THIS COULD BE SLOW!
       checkMatchAndFinishWithLBS jsonMime output
 
+-- | A data type for 'updatedCharsHandler' to use.
+data Diff = Same | Updated LB.ByteString Etag | Deleted deriving Eq
+
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = with charDatabase $
   exhaustiveMethodRoutes [ ([POST], getter) ]
   where
+    diffToMaybeBS (Updated bs _) = Just bs
+    diffToMaybeBS Deleted        = Nothing
+    diffToMaybeBS Same           = error "The impossible happened!"
+    -------------------------------------------
+    diffToMaybeEtag (Updated _ tag) = Just tag
+    diffToMaybeEtag Deleted         = Nothing
+    diffToMaybeEtag Same            = error "The impossible happened!"
+    -------------------------------------------
     getter = do
       checkExpect
       -------------------------------------------
@@ -185,13 +174,14 @@ updatedCharsHandler = with charDatabase $
       updatemap <- flip H.traverseWithKey etagmap' $ \name cachetag -> do
         output' <- fmap frameChar <$> C.getChar name
         return $ case output' of
-          Nothing  -> (Just Nothing, Nothing)
+          Nothing  -> Deleted
           Just output -> let tag = etag output in
             if tag == cachetag
-              then (Nothing, Nothing)
-              else (Just (Just output), Just tag)
-      let charmap = H.filter isJust . H.map fst $ updatemap
-      let etagmap = H.filter isJust . H.map snd $ updatemap
+              then Same
+              else Updated output tag
+      let diffmap = H.filter (not . (/= Same)) updatemap
+      let charmap = H.map diffToMaybeBS   diffmap :: H.HashMap CharName (Maybe LB.ByteString)
+      let etagmap = H.map diffToMaybeEtag diffmap :: H.HashMap CharName (Maybe Etag)
       -------------------------------------------
       let output = toLBS $ object
             [ "version" .= version
