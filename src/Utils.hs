@@ -2,17 +2,18 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 {- |
 
-This module contains all the code to deal with HTTP 1.1
-that can be used in other projects.
+This module contains some code to deal with HTTP 1.1
+that can possibly be used in other REST projects.
 
 -}
 module Utils
   (
   -- * HTTP 1.1 tools.
-    err405
-  , finishWithCode
+    finishWithCode
   , err
   , errIfNothing
+  , implementedMethods
+  , methodRoutes
   , checkExpect
   , checkContent
   -- * 'Etag' manipulation and checking.
@@ -36,6 +37,7 @@ import qualified Data.ByteString.Char8 as C8
 import           Blaze.ByteString.Builder
 import           Data.Attoparsec
 import           Data.Attoparsec.ByteString.Char8
+import qualified Data.Map.Strict as M
 import           Control.Monad
 import           Control.Monad.CatchIO (catch)
 import           Crypto.Hash
@@ -50,15 +52,6 @@ import           Type
 -- HTTP 1.1 tools specialized in JSON.
 ------------------------------------------------------------------------------
 
--- | HTTP 405. Needs to put allowed methods in the header @Allow@.
-err405 :: [Method] -> Handler b v a
-err405 allowed = finishWith
-  $ setResponseCode 405
-  $ setHeader "Allow" allowed'
-    emptyResponse
-  where
-    allowed' = C8.intercalate ", " $ map (C8.pack . show) allowed
-
 -- | Finish with an empty response, along with the code and the @ETag@ (if available).
 finishWithCode :: Int -> Maybe Etag -> Handler b v a
 finishWithCode code maybetag = finishWith
@@ -70,9 +63,38 @@ finishWithCode code maybetag = finishWith
 err :: Int -> Handler b v a
 err code = finishWithCode code Nothing
 
--- | A convenience function to call 'err' when the result is 'Nothing'.
+-- | A convenience function which calls 'err' when the result is 'Nothing'.
 errIfNothing :: Int -> Maybe a -> Handler b v a
 errIfNothing code = maybe (err code) return
+
+-- | Supported methods in this module.
+implementedMethods :: [Method]
+implementedMethods = [GET, HEAD, POST, PUT, DELETE]
+
+-- | Method-based routing.
+methodRoutes :: [(Method, Handler b v a)] -> Handler b v a
+methodRoutes mr = do
+  when hasHead $ logError "Assign a handler to HEAD." >> err 500
+  when hasUnimplemented $ logError "Assign a handler to an unimplemented method." >> err 500
+  m <- rqMethod <$> getRequest
+  when (m `notElem` implementedMethods) $ err 501
+  let m' = if m == HEAD then GET else m
+  fromMaybe err405 $ m' `M.lookup` mr'
+  where
+    mr' = foldr (uncurry $ M.insertWith (<|>)) M.empty mr
+    -------------------------------------------
+    allowed = M.keys mr'
+    -------------------------------------------
+    hasHead = HEAD `elem` allowed
+    -------------------------------------------
+    hasUnimplemented = any (`notElem` implementedMethods) allowed
+    -------------------------------------------
+    err405 = finishWith
+      $ setResponseCode 405
+      $ setHeader "Allow" allowed'
+        emptyResponse
+      where
+        allowed' = C8.intercalate ", " $ map (C8.pack . show) allowed
 
 -- | Check the HTTP 1.1 header @Expect@.
 checkExpect :: Handler b v ()
@@ -85,7 +107,6 @@ checkExpect = do
 checkContent :: Handler b v ()
 checkContent = do
   rq <- getRequest
-  when (isJust $ getHeader "Content-Range" rq) $ err 501
   when (isJust $ getHeader "Content-Encoding" rq) $ err 501
   when (isJust $ getHeader "Content-Language" rq) $ err 501
   when (isJust $ getHeader "Content-MD5" rq) $ err 501
@@ -136,11 +157,12 @@ quoteEtag = C8.concatMap quote
 --   The check is still required in that case because HTTP 1.1 allows
 --   wild patterns.
 --
---   We always reject @If-Unmodified-Since@ because we don't use timestamp.
+--   We always reject @If-Unmodified-Since@ with @501@
+--   because we don't use timestamps.
 checkMatch :: Maybe Etag -> Handler b v ()
 checkMatch tag = do
   rq <- getRequest
-  when (isJust $ getHeader "If-Unmodified-Since" rq) $ err 412
+  when (isJust $ getHeader "If-Unmodified-Since" rq) $ err 501
   F.forM_ (getHeader "If-Match" rq) $ parseEP >=> ifMatchHandler
   F.forM_ (getHeader "If-None-Match" rq) $ parseEP >=> ifNoneMatchHandler
   where
