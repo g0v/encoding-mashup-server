@@ -12,8 +12,8 @@ module Utils
     finishWithCode
   , err
   , errIfNothing
-  , implementedMethods
-  , methodRoutes
+  , supportedMethods
+  , exhaustiveMethodRoutes
   , checkExpect
   , checkContent
   -- * 'Etag' manipulation and checking.
@@ -26,9 +26,8 @@ module Utils
   , finishWithLBS
   ) where
 
-import           Prelude hiding (catch)
-------------------------------------------------------------------------------
 import           Data.Int (Int64)
+import           Data.List
 import qualified Data.Foldable as F
 import           Data.Maybe
 import           Data.ByteString (ByteString)
@@ -37,9 +36,8 @@ import qualified Data.ByteString.Char8 as C8
 import           Blaze.ByteString.Builder
 import           Data.Attoparsec
 import           Data.Attoparsec.ByteString.Char8
-import qualified Data.Map.Strict as M
 import           Control.Monad
-import           Control.Monad.CatchIO (catch)
+import qualified Control.Monad.CatchIO as MIO (catch)
 import           Crypto.Hash
 ------------------------------------------------------------------------------
 import           Snap
@@ -68,33 +66,34 @@ errIfNothing :: Int -> Maybe a -> Handler b v a
 errIfNothing code = maybe (err code) return
 
 -- | Supported methods in this module.
-implementedMethods :: [Method]
-implementedMethods = [GET, HEAD, POST, PUT, DELETE]
+supportedMethods :: [Method]
+supportedMethods = [GET, HEAD, POST, PUT, DELETE]
 
--- | Method-based routing.
-methodRoutes :: [(Method, Handler b v a)] -> Handler b v a
-methodRoutes mr = do
-  when hasHead $ logError "Assign a handler to HEAD." >> err 500
-  when hasUnimplemented $ logError "Assign a handler to an unimplemented method." >> err 500
+-- | Method-based routing. The mapping need to be exhaustive so that
+--   a proper HTTP @405@ error message can be generated,
+--   where methods without handlers are assumed to be disallowed.
+--   Multiple handlers for the same method are joined with '<|>'.
+--   HTTP error @501@ is generated for any method not in 'supportedMethods'.
+--
+--   Assigning a handler to an unsupported method has no effect
+--   (except increasing the computation time).
+exhaustiveMethodRoutes :: [([Method], Handler b v a)] -> Handler b v a
+exhaustiveMethodRoutes r = do
   m <- rqMethod <$> getRequest
-  when (m `notElem` implementedMethods) $ err 501
-  let m' = if m == HEAD then GET else m
-  fromMaybe err405 $ m' `M.lookup` mr'
+  when (m `notElem` supportedMethods) $ err 501
+  let handlers = matchedHandlers m
+  when (null handlers) err405
+  foldl1 (<|>) handlers
   where
-    mr' = foldr (uncurry $ M.insertWith (<|>)) M.empty mr
-    -------------------------------------------
-    allowed = M.keys mr'
-    -------------------------------------------
-    hasHead = HEAD `elem` allowed
-    -------------------------------------------
-    hasUnimplemented = any (`notElem` implementedMethods) allowed
+    matchedHandlers m = map snd $ filter (elem m . fst) r
     -------------------------------------------
     err405 = finishWith
       $ setResponseCode 405
-      $ setHeader "Allow" allowed'
+      $ setHeader "Allow" assigned'
         emptyResponse
       where
-        allowed' = C8.intercalate ", " $ map (C8.pack . show) allowed
+        assigned = nub $ concatMap fst r
+        assigned' = C8.intercalate ", " $ map (C8.pack . show) assigned
 
 -- | Check the HTTP 1.1 header @Expect@.
 checkExpect :: Handler b v ()
@@ -185,7 +184,7 @@ maxBodyLen = 4096
 -- | Read the HTTP request up to 'maxBodyLen'.
 readLBS :: Handler b v LB.ByteString
 readLBS = readRequestBody maxBodyLen
-  `catch`
+  `MIO.catch`
     \(_ :: I.TooManyBytesReadException) -> err 413
 
 -- | Finish with the given body immediately.

@@ -113,8 +113,8 @@ checkMatchAndFinishWithLBS mime output = do
 
 charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
-  methodRoutes [ (GET, getter), (PUT, setter) ]
-  -- , (DELETE, deleter)
+  exhaustiveMethodRoutes [ ([GET, HEAD], getter), ([PUT], setter) ]
+  -- , ([DELETE], deleter)
   where
     getChar' = fmap frameChar <$> C.getChar charName
 
@@ -156,7 +156,7 @@ charHandler charName = with charDatabase $
 
 allCharsHandler :: Handler b RestApi ()
 allCharsHandler = with charDatabase $
-  methodRoutes [ (GET, getter) ]
+  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
   where
     getter = do
       charmap <- C.getChars
@@ -173,7 +173,7 @@ allCharsHandler = with charDatabase $
 
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = with charDatabase $
-  methodRoutes [ (POST, getter) ]
+  exhaustiveMethodRoutes [ ([POST], getter) ]
   where
     getter = do
       checkExpect
