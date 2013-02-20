@@ -6,15 +6,16 @@ module Site where
 import Control.Lens
 
 import Snap
-import Snap.Util.FileServe
 
 import CharDatabase
 import EncodingTable
+import WebUi
 import RestApi
 
 data App = App
   { _charDatabase  :: Snaplet CharDatabase
   , _encodingTable :: Snaplet EncodingTable
+  , _webUi         :: Snaplet WebUi
   , _restApi       :: Snaplet RestApi
   }
 
@@ -24,7 +25,7 @@ initApp :: SnapletInit App App
 initApp = makeSnaplet "app" "萌典校正系統" Nothing $ do
   cs <- nestSnaplet "db"     charDatabase   $ initCharDatabase
   es <- nestSnaplet "encode" encodingTable  $ initEncodingTable
+  ws <- nestSnaplet "wui"    webUi          $ initWebUi
   as <- nestSnaplet "api"    restApi        $ initRestApi cs es
-  addRoutes [("static", serveDirectory "static")]
-  return $ App cs es as
+  return $ App cs es ws as
 

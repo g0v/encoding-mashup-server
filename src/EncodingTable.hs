@@ -21,6 +21,7 @@ import           Control.Lens
 import           Snap.Snaplet
 ------------------------------------------------------------------------------
 import           Type
+import           Utils
 
 data EncodingTable = EncodingTable
   { _cns2uniTable :: HashMap CnsCode UniChar
@@ -29,11 +30,15 @@ data EncodingTable = EncodingTable
 $(makeLenses ''EncodingTable)
 
 initEncodingTable :: SnapletInit b EncodingTable
-initEncodingTable = makeSnaplet "encoding-table" "Unicode 和 Cns 表格" Nothing $ do
+initEncodingTable = makeSnaplet name description getData $ do
   snapletDir <- getSnapletFilePath
   cns2uni <- liftIO $ fromJust . decode' <$> LB.readFile (snapletDir </> "cns2uni.json")
   uni2cns <- liftIO $ fromJust . decode' <$> LB.readFile (snapletDir </> "uni2cns.json")
   return $ EncodingTable cns2uni uni2cns
+  where
+    name = "encoding-table"
+    description = "Unicode 和 Cns 表格"
+    getData = Just $ getResourceDir "encoding-table"
 
 -- | CNS-11643 code to Unicode code point(s).
 cnsCodeToUniChar :: CnsCode -> Handler b EncodingTable (Maybe UniChar)

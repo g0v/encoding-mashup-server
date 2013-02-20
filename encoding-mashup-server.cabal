@@ -15,9 +15,18 @@ Build-type:          Simple
 Cabal-version:       >=1.10
 Homepage:            https://github.com/g0v/encoding-mashup-server
 Bug-reports:         https://github.com/g0v/encoding-mashup-server/issues
-Source-Repository    head
+
+Data-files:
+  resources/wui/static/*.html
+  resources/wui/static/css/*.css
+  resources/wui/static/img/*.png
+  resources/wui/static/js/*.js
+  resources/encoding-table/*.json
+
+Source-Repository head
     Type: git
     Location: git@github.com:g0v/encoding-mashup-server.git
+
 
 Flag development
   Description: Whether to build the server in development (interpreted) mode
