@@ -10,6 +10,7 @@ module EncodingTable
   ) where
 
 import           System.FilePath
+import           Data.String
 import           Data.Maybe
 import           Control.Applicative
 import qualified Data.ByteString.Lazy as LB
@@ -36,9 +37,10 @@ initEncodingTable = makeSnaplet name description getData $ do
   uni2cns <- liftIO $ fromJust . decode' <$> LB.readFile (snapletDir </> "uni2cns.json")
   return $ EncodingTable cns2uni uni2cns
   where
+    name :: IsString a => a
     name = "encoding-table"
     description = "Unicode 和 Cns 表格"
-    getData = Just $ getResourceDir "encoding-table"
+    getData = Just $ getResourceDir name
 
 -- | CNS-11643 code to Unicode code point(s).
 cnsCodeToUniChar :: CnsCode -> Handler b EncodingTable (Maybe UniChar)

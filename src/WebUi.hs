@@ -6,6 +6,7 @@ module WebUi
   , initWebUi
   ) where
 
+import           Data.String
 import           System.FilePath
 ------------------------------------------------------------------------------
 import           Snap.Snaplet
@@ -21,6 +22,7 @@ initWebUi = makeSnaplet name description getData $ do
   addRoutes [("", serveDirectory $ snapletDir </> "static")]
   return WebUi
   where
-    name = "wui"
+    name :: IsString a => a
+    name = "web-ui"
     description = "Web-based User Interface"
-    getData = Just $ getResourceDir "wui"
+    getData = Just $ getResourceDir name
