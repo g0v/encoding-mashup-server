@@ -5,6 +5,7 @@ module RestApi
   , initRestApi
   ) where
 
+import           Data.Maybe
 import           Data.Text (Text)
 import           Data.ByteString (ByteString)
 import qualified Data.ByteString.Lazy as LB
@@ -152,19 +153,19 @@ allCharsHandler = with charDatabase $
       checkMatchAndFinishWithLBS jsonMime output
 
 -- | A data type for 'updatedCharsHandler' to use.
-data Diff = Same | Updated LB.ByteString Etag | Deleted deriving Eq
+data Change = Updated CharName LB.ByteString Etag | Deleted CharName
 
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = with charDatabase $
   routeByMethodWith405 [([POST], getter)]
   where
-    diffToMaybeBS (Updated bs _) = Just bs
-    diffToMaybeBS Deleted        = Nothing
-    diffToMaybeBS Same           = error "The impossible happened!"
+    projInfo :: Change -> (CharName, Maybe LB.ByteString)
+    projInfo (Updated name bs _) = (name, Just bs)
+    projInfo (Deleted name)      = (name, Nothing)
     -------------------------------------------
-    diffToMaybeEtag (Updated _ tag) = Just tag
-    diffToMaybeEtag Deleted         = Nothing
-    diffToMaybeEtag Same            = error "The impossible happened!"
+    projEtag :: Change -> (CharName, Maybe Etag)
+    projEtag (Updated name _ tag) = (name, Just tag)
+    projEtag (Deleted name)       = (name, Nothing)
     -------------------------------------------
     getter = do
       checkExpect
@@ -173,17 +174,16 @@ updatedCharsHandler = with charDatabase $
       checkVersion rq
       etagmap' <- jsonLookup rq "etagmap"
       -------------------------------------------
-      updatemap <- flip H.traverseWithKey etagmap' $ \name cachetag -> do
+      updatemap <- liftM catMaybes . forM (H.toList etagmap') $ \(name, cachetag) -> do
         output' <- fmap frameChar <$> C.getChar name
         return $ case output' of
-          Nothing  -> Deleted
+          Nothing  -> Just $ Deleted name
           Just output -> let tag = etag output in
             if tag == cachetag
-              then Same
-              else Updated output tag
-      let diffmap = H.filter (not . (/= Same)) updatemap
-      let charmap = H.map diffToMaybeBS   diffmap :: H.HashMap CharName (Maybe LB.ByteString)
-      let etagmap = H.map diffToMaybeEtag diffmap :: H.HashMap CharName (Maybe Etag)
+              then Nothing
+              else Just $ Updated name output tag
+      let charmap = H.fromList . map projInfo $ updatemap
+      let etagmap = H.fromList . map projEtag $ updatemap
       -------------------------------------------
       let output = toLBS $ object
             [ "version" .= version
