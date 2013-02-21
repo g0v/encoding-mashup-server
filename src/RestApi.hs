@@ -69,6 +69,8 @@ initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
   addRoutes [ ("char",          pathArg charHandler)
             , ("chars/all",             allCharsHandler)
             , ("chars/updated",         updatedCharsHandler)
+            , ("ref/cns",       pathArg refCnsHandler)
+            , ("ref/uni",       pathArg refUniHandler)
             ]
   return $ RestApi cs es
 
@@ -191,14 +193,28 @@ updatedCharsHandler = with charDatabase $
       -------------------------------------------
       finishWithLBS jsonMime output Nothing
 
-{-
-lookupCnsHandler :: ByteString -> Handler b RestApi ()
-lookupCnsHandler unicode' = methods [GET, HEAD] . with encodingTable $
-  writeJson =<< makeJson <$> lookupCns (decodeUtf8 unicode')
-  where makeJson x = object ["unicode" .= x]
+refCnsHandler :: CnsCode -> Handler b RestApi ()
+refCnsHandler cnscode = with encodingTable $
+  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
+  where
+    getter = do
+      unichar <- E.cnsCodeToUniChar cnscode
+      let output = toLBS $ object
+            [ "version" .= version
+            , "uni"     .= unichar
+            ]
+      finishWithLBS jsonMime output Nothing
 
-lookupUnicodeHandler :: ByteString -> Handler b RestApi ()
-lookupUnicodeHandler cns' = methods [GET, HEAD] . with encodingTable $
-  writeJson =<< makeJson <$> lookupUnicode (decodeUtf8 cns')
-  where makeJson x = object ["cns" .= x]
--}
+refUniHandler :: UniChar -> Handler b RestApi ()
+refUniHandler unichar = with encodingTable $
+  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
+  where
+    getter = do
+      cnscode <- E.uniCharToCnsCode unichar
+      blacklisted <- E.isBlackListed unichar
+      let output = toLBS $ object
+            [ "version"     .= version
+            , "cns"         .= cnscode
+            , "blacklisted" .= blacklisted
+            ]
+      finishWithLBS jsonMime output Nothing

@@ -52,5 +52,5 @@ uniCharToCnsCode char = use $ cns2uniTable.at char
 
 -- | (NOT IMPLEMENTED YET!)
 --   A function to test whether the leading code point is a compatible ideograph.
-isBlackListed :: UniChar -> Bool
-isBlackListed _ = False
+isBlackListed :: UniChar -> Handler b EncodingTable Bool
+isBlackListed _ = return False
