@@ -93,7 +93,7 @@ checkMatchAndFinishWithLBS mime output = do
 
 charHandler :: ByteString -> Handler b RestApi ()
 charHandler charName = with charDatabase $
-  exhaustiveMethodRoutes [ ([GET, HEAD], getter), ([PUT], setter) ]
+  routeByMethodWith405 [([GET, HEAD], getter), ([PUT], setter)]
   -- , ([DELETE], deleter)
   where
     getChar' = fmap frameChar <$> C.getChar charName
@@ -136,7 +136,7 @@ charHandler charName = with charDatabase $
 
 allCharsHandler :: Handler b RestApi ()
 allCharsHandler = with charDatabase $
-  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
+  routeByMethodWith405 [([GET, HEAD], getter)]
   where
     getter = do
       charmap <- C.getChars
@@ -156,7 +156,7 @@ data Diff = Same | Updated LB.ByteString Etag | Deleted deriving Eq
 
 updatedCharsHandler :: Handler b RestApi ()
 updatedCharsHandler = with charDatabase $
-  exhaustiveMethodRoutes [ ([POST], getter) ]
+  routeByMethodWith405 [([POST], getter)]
   where
     diffToMaybeBS (Updated bs _) = Just bs
     diffToMaybeBS Deleted        = Nothing
@@ -195,7 +195,7 @@ updatedCharsHandler = with charDatabase $
 
 refCnsHandler :: CnsCode -> Handler b RestApi ()
 refCnsHandler cnscode = with encodingTable $
-  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
+  routeByMethodWith405 [([GET, HEAD], getter)]
   where
     getter = do
       unichar <- E.cnsCodeToUniChar cnscode
@@ -207,7 +207,7 @@ refCnsHandler cnscode = with encodingTable $
 
 refUniHandler :: UniChar -> Handler b RestApi ()
 refUniHandler unichar = with encodingTable $
-  exhaustiveMethodRoutes [ ([GET, HEAD], getter) ]
+  routeByMethodWith405 [([GET, HEAD], getter)]
   where
     getter = do
       cnscode <- E.uniCharToCnsCode unichar

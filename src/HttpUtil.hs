@@ -13,7 +13,7 @@ module HttpUtil
   , err
   , errIfNothing
   , supportedMethods
-  , exhaustiveMethodRoutes
+  , routeByMethodWith405
   , checkExpect
   , checkContent
   -- * 'Etag' manipulation and checking.
@@ -77,8 +77,8 @@ supportedMethods = [GET, HEAD, POST, PUT, DELETE]
 --
 --   Assigning a handler to an unsupported method has no effect
 --   (except increasing the computation time).
-exhaustiveMethodRoutes :: [([Method], Handler b v a)] -> Handler b v a
-exhaustiveMethodRoutes r = do
+routeByMethodWith405 :: [([Method], Handler b v a)] -> Handler b v a
+routeByMethodWith405 r = do
   m <- rqMethod <$> getRequest
   when (m `notElem` supportedMethods) $ err 501
   let handlers = matchedHandlers m
