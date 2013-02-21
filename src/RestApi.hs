@@ -218,3 +218,17 @@ refUniHandler unichar = with encodingTable $
             , "blacklisted" .= blacklisted
             ]
       finishWithLBS jsonMime output Nothing
+
+cacheTablesHandler :: Handler b RestApi ()
+cacheTablesHandler = routeByMethodWith405 [([GET, HEAD], getter)]
+  where
+    getter = do
+      chars <- with charDatabase C.getChars
+      let cnscodes = mapMaybes (view $ exact.cnscode) $ H.elems chars
+      cns2uni <- forM cnscodes E.cnsCodeToUniChar
+      let output = toLBS $ object
+            [ "version" .= version
+            , "cns2uni" .= cns2uni
+            ]
+      finishWithLBS jsonMime output Nothing
+
