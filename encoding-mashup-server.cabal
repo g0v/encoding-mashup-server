@@ -18,7 +18,7 @@ Bug-reports:         https://github.com/g0v/encoding-mashup-server/issues
 
 Data-files:
   resources/web-ui/static/*.html
-  resources/web-ui/static/css/*.css
+  -- resources/web-ui/static/css/*.css
   resources/web-ui/static/img/*.png
   resources/web-ui/static/js/*.js
   resources/encoding-table/*.json
@@ -59,7 +59,8 @@ Executable encoding-mashup-server
     postgresql-simple         >= 0.2.4 && < 0.3,
     cryptohash                >= 0.8   && < 0.10,
     attoparsec                >= 0.10  && < 0.12,
-    aeson                     >= 0.6   && < 0.8
+    aeson                     >= 0.6   && < 0.8,
+    clay                      >= 0.1   && < 0.3
 
   if flag(development)
     Build-depends:
@@ -102,6 +103,7 @@ Test-suite testsuite
         cryptohash                >= 0.8   && < 0.10,
         attoparsec                >= 0.10  && < 0.12,
         aeson                     >= 0.6   && < 0.8,
+        clay                      >= 0.1   && < 0.3,
         HUnit                      >= 1.2       && < 2,
         QuickCheck                 >= 2.4       && < 3,
         test-framework             >= 0.8       && <0.9,
