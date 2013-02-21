@@ -22,7 +22,7 @@ import           Control.Lens
 import           Snap.Snaplet
 ------------------------------------------------------------------------------
 import           Type
-import           Utils
+import           Util
 
 data EncodingTable = EncodingTable
   { _cns2uniTable :: HashMap CnsCode UniChar

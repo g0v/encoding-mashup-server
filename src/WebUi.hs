@@ -12,7 +12,7 @@ import           System.FilePath
 import           Snap.Snaplet
 import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
-import           Utils
+import           Util
 
 data WebUi = WebUi
 

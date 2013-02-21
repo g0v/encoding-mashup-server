@@ -6,7 +6,7 @@ This module contains some code to deal with HTTP 1.1
 that can possibly be used in other REST projects.
 
 -}
-module HttpUtils
+module HttpUtil
   (
   -- * HTTP 1.1 tools.
     finishWithCode

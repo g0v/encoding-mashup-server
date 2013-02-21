@@ -17,7 +17,7 @@ import           Control.Lens hiding ((.=))
 import           Snap
 ------------------------------------------------------------------------------
 import           Type
-import           HttpUtils
+import           HttpUtil
 import qualified CharDatabase as C
 import qualified EncodingTable as E
 
