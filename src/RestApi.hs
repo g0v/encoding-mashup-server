@@ -72,6 +72,7 @@ initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
             , ("chars/updated",         updatedCharsHandler)
             , ("ref/cns",       pathArg refCnsHandler)
             , ("ref/uni",       pathArg refUniHandler)
+            , ("cache/tables",          cacheTablesHandler)
             ]
   return $ RestApi cs es
 
@@ -224,8 +225,8 @@ cacheTablesHandler = routeByMethodWith405 [([GET, HEAD], getter)]
   where
     getter = do
       chars <- with charDatabase C.getChars
-      let cnscodes = mapMaybes (view $ exact.cnscode) $ H.elems chars
-      cns2uni <- forM cnscodes E.cnsCodeToUniChar
+      let cnscodes = mapMaybe (view $ exact.cns) $ H.elems chars
+      cns2uni <- forM cnscodes $ with encodingTable . E.cnsCodeToUniChar
       let output = toLBS $ object
             [ "version" .= version
             , "cns2uni" .= cns2uni
