@@ -23,9 +23,9 @@ $(makeLenses ''App)
 
 initApp :: SnapletInit App App
 initApp = makeSnaplet "app" "萌典校正系統" Nothing $ do
-  cs <- nestSnaplet "db"  charDatabase  $ initCharDatabase
-  es <- nestSnaplet "tbl" encodingTable $ initEncodingTable
-  ws <- nestSnaplet "web" webUi         $ initWebUi
+  cs <- nestSnaplet "db"  charDatabase    initCharDatabase
+  es <- nestSnaplet "tbl" encodingTable   initEncodingTable
+  ws <- nestSnaplet "web" webUi           initWebUi
   as <- nestSnaplet "api" restApi       $ initRestApi cs es
   return $ App cs es ws as
 
