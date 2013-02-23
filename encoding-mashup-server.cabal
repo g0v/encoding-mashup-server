@@ -18,9 +18,11 @@ Bug-reports:         https://github.com/g0v/encoding-mashup-server/issues
 
 Data-files:
   resources/web-ui/static/*.html
-  -- resources/web-ui/static/css/*.css
+  resources/web-ui/static/css/*.min.css
   resources/web-ui/static/img/*.png
+  resources/web-ui/static/js/*.min.js
   resources/web-ui/static/js/*.js
+  resources/web-ui/static/js/*.coffee
   resources/encoding-table/*.json
 
 Source-Repository head
