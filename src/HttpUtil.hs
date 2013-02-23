@@ -17,6 +17,8 @@ module HttpUtil
   , checkExpect
   , checkContent
   -- * 'Etag' manipulation and checking.
+  , EtagPattern
+  , pEtagPattern
   , etag
   , checkMatch
   -- * HTTP 1.1 IO.
@@ -64,6 +66,10 @@ err code = finishWithCode code Nothing
 -- | A convenience function which calls 'err' when the result is 'Nothing'.
 errIfNothing :: Int -> Maybe a -> Handler b v a
 errIfNothing code = maybe (err code) return
+
+-- | A convenience function which calls 'err' when the result is 'Left x'.
+errIfLeft :: Int -> Either a' a -> Handler b v a
+errIfLeft code = either (const $ err code) return
 
 -- | Supported methods in this module.
 supportedMethods :: [Method]
@@ -116,8 +122,10 @@ checkContent = do
 ------------------------------------------------------------------------------
 
 -- | The data type for the content of the headers @If-Match@ and @If-None-Match@.
-data NormalEtag = StrongNE Etag | WeakNE Etag deriving Eq
-data EtagPattern = WildE | NormalE [NormalEtag]
+data NormalEtag = StrongNE Etag | WeakNE Etag deriving (Eq, Show)
+
+-- | The data type for the content of the headers @If-Match@ and @If-None-Match@.
+data EtagPattern = WildE | NormalE [NormalEtag] deriving Show
 
 -- | The parser for the headers @If-Match@ and @If-None-Match@.
 pEtagPattern :: Parser EtagPattern
@@ -145,7 +153,7 @@ etag str = digestToHexByteString (hashlazy str :: Digest Skein256_256)
 
 -- | A function to quote an @ETag@ according to the standard.
 quoteEtag :: Etag -> ByteString
-quoteEtag = C8.concatMap quote
+quoteEtag tag = C8.concat ["\"", C8.concatMap quote tag, "\""]
   where
     quote '"' = "\""
     quote x   = C8.singleton x
@@ -168,7 +176,7 @@ checkMatch tag = do
   F.forM_ (getHeader "If-Match" rq) $ parseEP >=> ifMatchHandler
   F.forM_ (getHeader "If-None-Match" rq) $ parseEP >=> ifNoneMatchHandler
   where
-    parseEP = errIfNothing 400 . maybeResult . parse pEtagPattern
+    parseEP = errIfLeft 400 . parseOnly pEtagPattern
     ifMatchHandler pat = unless (pat `etagMatch` tag) $ err 412
     ifNoneMatchHandler pat = when (pat `etagMatch` tag) $
       methods [GET, HEAD] (finishWithCode 304 tag) <|> err 412
