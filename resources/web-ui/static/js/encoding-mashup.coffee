@@ -23,7 +23,7 @@ onReady = ->
     console.dir data
 
     # Bind to this file's scope
-    allCharData = data
+    allCharData = data.charinfo
 
     for key, datum of data
       view = {}
