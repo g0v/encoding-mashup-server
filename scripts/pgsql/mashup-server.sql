@@ -1,4 +1,4 @@
-CREATE TYPE STATUS AS ENUM ('exist', 'deleted')
+CREATE TYPE STATUS AS ENUM ('exist', 'deleted');
 
 CREATE TABLE IF NOT EXISTS char_info (
     charname VARCHAR(64) NOT NULL PRIMARY KEY,
