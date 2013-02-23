@@ -45,7 +45,9 @@ cssHandler fp = case fp of
 
     finishWithCss css = do
       let out = encodeUtf8 $ renderWith compact [] css
-      finishWithLBS cssMime out (Just $ etag out)
+      let tag = Just $ etag out
+      checkMatch tag
+      finishWithLBS cssMime out tag
 
 encodingMashupCss :: Css
 encodingMashupCss = do 
