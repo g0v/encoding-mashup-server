@@ -44,11 +44,11 @@ initEncodingTable = makeSnaplet name description getData $ do
 
 -- | CNS-11643 code to Unicode code point(s).
 cnsCodeToUniChar :: CnsCode -> Handler b EncodingTable (Maybe UniChar)
-cnsCodeToUniChar code = use $ uni2cnsTable.at code
+cnsCodeToUniChar code = use $ cns2uniTable.at code
 
 -- | Unicode code point(s) to CNS-11643 code.
 uniCharToCnsCode :: UniChar -> Handler b EncodingTable (Maybe CnsCode)
-uniCharToCnsCode char = use $ cns2uniTable.at char
+uniCharToCnsCode char = use $ uni2cnsTable.at char
 
 -- | (NOT IMPLEMENTED YET!)
 --   A function to test whether the leading code point is a compatible ideograph.
