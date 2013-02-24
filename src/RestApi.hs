@@ -18,26 +18,18 @@ import           Control.Lens hiding ((.=))
 import           Snap
 ------------------------------------------------------------------------------
 import           Type
+import           Mime
+import           Version
 import           HttpUtil
 import qualified CharDatabase as C
 import qualified EncodingTable as E
-
-------------------------------------------------------------------------------
--- Meta
-------------------------------------------------------------------------------
-
-version :: Int
-version = 0
 
 --------------------------------------------------------------------------------
 -- JSON tools.
 --------------------------------------------------------------------------------
 
-jsonMime :: Mime
-jsonMime = "application/json"
-
 toLBS :: ToJSON a => a -> LB.ByteString
-toLBS = encode . toJSON
+toLBS = encode
 
 fromLBS :: FromJSON a => LB.ByteString -> Handler b v a
 fromLBS = errIfNothing 400 . decode'
@@ -50,8 +42,8 @@ jsonLookup obj = errIfNothing 400 . parseMaybe (obj .:)
 
 checkVersion :: Object -> Handler b v ()
 checkVersion obj = do
-  version' <- jsonLookup obj "version"
-  when (version' /= version) $ err 400
+  version <- jsonLookup obj "version"
+  when (version /= apiVersion) $ err 400
 
 --------------------------------------------------------------------------------
 -- Snaplet state and initializer.
@@ -82,7 +74,7 @@ initRestApi cs es = makeSnaplet "rest-api" "JSON 介面" Nothing $ do
 
 frameChar :: CharInfo -> LB.ByteString
 frameChar c = toLBS $ object
-  [ "version"  .= version
+  [ "version"  .= apiVersion
   , "charinfo" .= c
   ]
 
@@ -145,7 +137,7 @@ allCharsHandler = with charDatabase $
       -- FIXME: THIS COULD BE SLOW!
       let etagmap = H.map (etag . frameChar) charmap
       let output = toLBS $ object
-            [ "version" .= version
+            [ "version" .= apiVersion
             , "charmap" .= charmap
             , "etagmap" .= etagmap
             ]
@@ -187,7 +179,7 @@ updatedCharsHandler = with charDatabase $
       let etagmap = H.fromList . map projEtag $ updatemap
       -------------------------------------------
       let output = toLBS $ object
-            [ "version" .= version
+            [ "version" .= apiVersion
             , "charmap" .= charmap
             , "etagmap" .= etagmap
             ]
@@ -201,7 +193,7 @@ refCnsHandler cnscode = with encodingTable $
     getter = do
       unichar <- E.cnsCodeToUniChar cnscode
       let output = toLBS $ object
-            [ "version" .= version
+            [ "version" .= apiVersion
             , "uni"     .= unichar
             ]
       finishWithLBS jsonMime output Nothing
@@ -214,7 +206,7 @@ refUniHandler unichar = with encodingTable $
       cnscode <- E.uniCharToCnsCode unichar
       blacklisted <- E.isBlackListed unichar
       let output = toLBS $ object
-            [ "version"     .= version
+            [ "version"     .= apiVersion
             , "cns"         .= cnscode
             , "blacklisted" .= blacklisted
             ]
@@ -228,7 +220,7 @@ cacheTablesHandler = routeByMethodWith405 [([GET, HEAD], getter)]
       let cnscodes = mapMaybe (view $ exact.cns) $ H.elems chars
       cns2uni <- forM cnscodes $ with encodingTable . E.cnsCodeToUniChar
       let output = toLBS $ object
-            [ "version" .= version
+            [ "version" .= apiVersion
             , "cns2uni" .= cns2uni
             ]
       finishWithLBS jsonMime output Nothing

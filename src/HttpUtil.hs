@@ -22,7 +22,6 @@ module HttpUtil
   , etag
   , checkMatch
   -- * HTTP 1.1 IO.
-  , Mime
   , maxBodyLen
   , readLBS
   , finishWithLBS
@@ -184,9 +183,6 @@ checkMatch tag = do
 ------------------------------------------------------------------------------
 -- HTTP 1.1 IO specilized in JSON.
 ------------------------------------------------------------------------------
-
--- | The type of a base MIME. Subjects to changes.
-type Mime = ByteString
 
 -- | Maximum length for the request body.
 maxBodyLen :: Int64

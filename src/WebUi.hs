@@ -15,6 +15,7 @@ import           Snap
 import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
 import           Util
+import           Mime
 import           HttpUtil
 
 data WebUi = WebUi
@@ -41,8 +42,6 @@ cssHandler fp = case fp of
   "encoding-mashup.css" -> finishWithCss encodingMashupCss
   _                     -> pass
   where
-    cssMime = "text/css"
-
     finishWithCss css = do
       let out = encodeUtf8 $ renderWith compact [] css
       let tag = Just $ etag out

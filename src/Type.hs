@@ -15,8 +15,16 @@ import           Control.Lens.TH
 
 type CharName = ByteString
 type CnsCode = Text
-type UniChar = Text -- 可能有 IVD, 所以不用 Char
+
+-- | 可能有 IVD, 所以不用 Char
+type UniChar = Text
+
+-- | The type of a strong Etag.
 type Etag = ByteString
+
+-- | The type of a base MIME. Subjects to changes.
+type Mime = ByteString
+
 
 -- | 字元顯示資訊
 data CharDisplay = CharDisplay
