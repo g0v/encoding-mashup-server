@@ -1,0 +1,9 @@
+exec: ../scripts/execute_snap.sh
+host: encoding-mashup.csie.org
+postgres: true
+ssl: false # true would use https scheme for approot
+
+# Static file hosts. Keter handles the serving for you.
+static-hosts:
+    - host: encoding-mashup.csie.org
+      root: ../resources/web-ui/static # relative to config file, just like the executable
