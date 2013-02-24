@@ -31,7 +31,7 @@ data CharDisplay = CharDisplay
   { _uni :: Maybe UniChar -- ^ Unicode 認同碼
   , _ids :: Maybe UniChar -- ^ Unicode 描述字串
   , _pua :: Maybe UniChar -- ^ 使用者造字
-  }
+  } deriving Show
 $(makeLenses ''CharDisplay)
 $(deriveJSON (drop 1) ''CharDisplay)
 
@@ -39,7 +39,7 @@ $(deriveJSON (drop 1) ''CharDisplay)
 data CharExact = CharExact
   { _cns :: Maybe CnsCode
   , _forcedUni :: Maybe Text
-  }
+  } deriving Show
 $(makeLenses ''CharExact)
 
 instance FromJSON CharExact where
@@ -61,7 +61,7 @@ data CharInfo = CharInfo
   , _display :: !CharDisplay -- ^ 顯示用資訊
   , _exact :: !CharExact     -- ^ 精確資訊
   , _comment :: !Text        -- ^ 註解
-  }
+  } deriving Show
 $(makeLenses ''CharInfo)
 $(deriveJSON (drop 1) ''CharInfo)
 
