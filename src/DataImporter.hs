@@ -45,7 +45,7 @@ instance RecordCommand Config where
 
 putCharInfo :: String -> CharName -> CharInfo -> IO ()
 putCharInfo basestr charname info = do
-  let output = LB.toStrict . encode $ object
+  let output = toStrict . encode $ object
         [ "version"  .= apiVersion
         , "charinfo" .= info
         ]
@@ -58,6 +58,11 @@ putCharInfo basestr charname info = do
     Right res  -> print (fullpath, rspCode res)
 
   where
+    -- old ByteString does not have this function.
+    -- Should be removed after we drop the support
+    -- of older ByteString.
+    toStrict = B.concat . LB.toChunks
+
     fullpath =
       case (path', base') of
         (Just path, Just base) -> path `relativeTo` base
