@@ -58,7 +58,7 @@ updateChar cn ci = do
     let cp = CharPair cn ci
     with db $ execute_ "begin;"
     with db $ execute "update char_info set hidden=?, tabled=?, display_uni=?, display_ids=?, display_pua=?, exact_cns=?, exact_forceduni=?, comment=? where charname like ?" (ci ^. hidden, ci ^. tabled, ci ^. display. uni, ci ^. display . ids, ci ^. display . pua, ci ^. exact . cns, ci ^. exact . forcedUni, ci ^. comment, cn)
-    with db $ execute "insert into char_info (hidden, tabled, display_uni, display_ids, display_pua, exact_cns, exact_manualuni, comment) select ?, ?, ?, ?, ?, ?, ?, ? where not exists (select 1 from char_info where charname = ?)" $ (ci ^. hidden, ci ^. tabled, ci ^. display . uni, ci ^. display . ids, ci ^. display . pua, ci ^. exact . cns, ci ^. exact . forcedUni, ci ^. comment, cn)
+    with db $ execute "insert into char_info (hidden, tabled, display_uni, display_ids, display_pua, exact_cns, exact_forceduni, comment) select ?, ?, ?, ?, ?, ?, ?, ? where not exists (select 1 from char_info where charname = ?)" $ (ci ^. hidden, ci ^. tabled, ci ^. display . uni, ci ^. display . ids, ci ^. display . pua, ci ^. exact . cns, ci ^. exact . forcedUni, ci ^. comment, cn)
     with db $ execute_ "commit;"
     return ()
 
