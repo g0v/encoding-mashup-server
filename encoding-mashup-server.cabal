@@ -34,7 +34,7 @@ Flag development
   Description: Whether to build the server in development (interpreted) mode
   Default: False
 
-Executable encoding-mashup-import
+Executable em-import
   Default-language: Haskell2010
   Hs-source-dirs: src
   Main-is: DataImporter.hs
@@ -59,7 +59,7 @@ Executable encoding-mashup-import
     cassava                   >= 0.2   && < 0.4,
     cmdlib                    >= 0.3   && < 0.5
 
-Executable encoding-mashup-server
+Executable em-server
   Default-language: Haskell2010
   Hs-source-dirs: src
   Main-is: Main.hs
