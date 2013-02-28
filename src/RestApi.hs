@@ -90,7 +90,7 @@ charHandler charName = with charDatabase $
   routeByMethodWith405 [([GET, HEAD], getter), ([PUT], setter)]
   -- , ([DELETE], deleter)
   where
-    getChar' = fmap frameChar <$> C.getChar charName
+    getChar' = fmap frameChar <$> C.getChar (fromMaybe "" $ urlDecode charName)
 
     getter = do
       checkExpect
@@ -110,8 +110,8 @@ charHandler charName = with charDatabase $
       oldtag' <- fmap etag <$> getChar'
       checkMatch oldtag'
       -------------------------------------------
-      C.updateChar charName charInfo
       let tag = etag . frameChar $ charInfo
+      C.updateChar (fromMaybe "" $ urlDecode charName) charInfo tag
       case oldtag' of
         Nothing -> finishWithCode 201 (Just tag)
         Just _  -> finishWithCode 204 (Just tag)

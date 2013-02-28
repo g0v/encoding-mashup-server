@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS char_info (
     exact_forceduni VARCHAR(8),
     comment TEXT NOT NULL DEFAULT '',
     status STATUS NOT NULL DEFAULT 'exist',
-    timestamp TIMESTAMP with time zone DEFAULT CURRENT_TIMESTAMP
+    etag VARCHAR(64) NOT NULL UNIQUE
 );
