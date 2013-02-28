@@ -1,0 +1,1321 @@
+,,如果不清楚如何幫忙對校，請參考 https://hackpad.com/3du.tw-UnicodeCNS-Map-uGgOPAFgxDM 上面的說明。只有藍底或黃底的欄位才需要手動輸入。,,,,,,,,,,,,,,,,
+,,通同字,,,,,,,,,考證（注意不要手動輸入 Unicode 相容表意字）,,,,,,,
+造字碼,原圖,疑,正,通,"Uni
+組字碼","Big5
+(自動)","TSource
+(自動)",CNS,"Uni
+(自動)","glyph
+wiki","CNS
+(請輸入)","Unicode
+(自動)","Unicode
+(手動)","Unicode
+(等效)",原圖,CNS,"glyph
+wiki",註解
+8e42,,,否,覼,,Thinking...,Thinking...,Thinking...,U+89BC,,3-5E61,Thinking...,,,,,,
+8e49,,,否,畧,,Thinking...,Thinking...,Thinking...,U+7567,,3-3749,Thinking...,,,,,,
+8e4e,,,否,玍,,Thinking...,Thinking...,Thinking...,U+738D,,3-216B,Thinking...,,,,,,
+8e50,,,否,槅,,Thinking...,Thinking...,Thinking...,U+69C5,,3-473B,Thinking...,,,,,,
+8e51,,,否,裓,,Thinking...,Thinking...,Thinking...,U+88D3,,4-4061,Thinking...,,,,,,衣戒
+8e52,,,否,个,,Thinking...,Thinking...,Thinking...,U+4E2A,,3-212C,Thinking...,,,,,,上人下｜
+8e55,,,否,匄,,Thinking...,Thinking...,Thinking...,U+5304,,3-2222,Thinking...,,,,,,
+8e58,,,否,皐,,Thinking...,Thinking...,Thinking...,U+7690,,3-374D,Thinking...,,,,,,
+8e59,,,否,槹,,Thinking...,Thinking...,Thinking...,U+69F9,,3-4C5F,Thinking...,,,,,,左木右皐
+8e5a,,,否,𢬵,,Thinking...,Thinking...,Thinking...,U+22B35,,4-2957,Thinking...,,,,,,  拚-厶+ㄊ
+8e5c,,,否,篼,,Thinking...,Thinking...,Thinking...,U+7BFC,,3-556E,Thinking...,,,,,,
+8e5d,,,否,謌,,Thinking...,Thinking...,Thinking...,U+8B0C,,3-564A,Thinking...,,,,,,
+8e60,,,否,槩,,Thinking...,Thinking...,Thinking...,U+69E9,,3-4C64,Thinking...,,,,,,
+8e65,,,否,㹠,,Thinking...,Thinking...,Thinking...,U+3E60,,3-266C,Thinking...,,,,,,犬旁+屯
+8e67,,,否,瓓,,Thinking...,Thinking...,Thinking...,U+74D3,,3-5E3D,Thinking...,,,,,,
+8e6c,,,否,駞,,Thinking...,Thinking...,Thinking...,U+99DE,,3-4F72,Thinking...,,,,,,
+8e70,,,否,槖,,Thinking...,Thinking...,Thinking...,U+69D6,,3-4744,Thinking...,,,,,,從上至下：士ㄇ石木
+8e73,,,否,䟐,,Thinking...,Thinking...,Thinking...,U+47D0,,4-6B23,Thinking...,,,,,,{走歷}
+8e74,,,是,𤱻,,Thinking...,(略),(同),U+24C7B,(同),10-6373,Thinking...,U+24C7B,U+24C7B,,,,{田U+268DE}
+8e75,,,否,綉,,Thinking...,Thinking...,Thinking...,U+7D89,,3-4369,Thinking...,,,,,,{糸秀}
+8e78,,,否,鸜,,Thinking...,Thinking...,Thinking...,U+9E1C,,3-6238,Thinking...,,,,,,
+8ea6,,,否,螠,,Thinking...,Thinking...,Thinking...,U+87A0,,4-5339,Thinking...,,,,,,
+8ea9,,,否,厓,,Thinking...,Thinking...,Thinking...,U+5393,,3-2767,Thinking...,,,,,,
+8eaa,,,否,鮋,,Thinking...,Thinking...,Thinking...,U+9B8B,,3-537C,Thinking...,,,,,,
+8eab,,,否,檿,,Thinking...,Thinking...,Thinking...,U+6ABF,,3-5823,Thinking...,,,,#N/A,,{上厭下木}
+8eae,,,否,魭,,Thinking...,Thinking...,Thinking...,U+9B6D,,4-4F37,Thinking...,,,,#N/A,,
+8eaf,,,否,猨,,Thinking...,Thinking...,Thinking...,U+7328,,3-3D2E,Thinking...,,,,,,
+8eb0,,,否,䢵,,Thinking...,Thinking...,Thinking...,U+48B5,,3-2736,Thinking...,,,,,,  {云阝}
+8eb1,,,否,鱅,,Thinking...,Thinking...,Thinking...,U+9C45,,3-6022,Thinking...,,,,,,
+8eb2,,,否,咏,,Thinking...,Thinking...,Thinking...,U+548F,,3-2773,Thinking...,,,,,,
+8eb3,,,否,伃,,Thinking...,Thinking...,Thinking...,U+4F03,,3-226D,Thinking...,,,,,,
+8eb6,,,否,擊,,Thinking...,Thinking...,Thinking...,U+64CA,,1-7364,Thinking...,,,,,,{正字與圖片相同（車山）}
+8eb9,,是,？,䖹,,Thinking...,Thinking...,Thinking...,U+45B9,,3-4447,Thinking...,,,,,,{虫芊}
+8eba,,,否,叶,,Thinking...,Thinking...,Thinking...,U+53F6,,3-222D,Thinking...,,,,,,
+8ebb,,,否,𥉐,,Thinking...,Thinking...,Thinking...,U+25250,,4-4B49,Thinking...,,,,,,{目奚}
+8ebe,,,否,鋣,,Thinking...,Thinking...,Thinking...,U+92E3,,4-4E46,Thinking...,,,,,,
+8ebf,,,否,鞵,,Thinking...,Thinking...,Thinking...,U+97B5,,3-5B60,Thinking...,,,,,,
+8ec3,,,否,皷,,Thinking...,Thinking...,Thinking...,U+76B7,,3-4830,Thinking...,,,,,,
+8ec4,,,否,疒,,Thinking...,Thinking...,Thinking...,U+7592,,3-225B,Thinking...,,,,,,
+8ec8,,,否,葜,,Thinking...,Thinking...,Thinking...,U+845C,,3-4432,Thinking...,,,,,,  {艸頭+契}
+8ec9,,,否,鼧,,Thinking...,Thinking...,Thinking...,U+9F27,,3-5A2A,Thinking...,,,,,,
+8eca,,,否,妸,,Thinking...,Thinking...,Thinking...,U+59B8,,,Thinking...,,,,,,
+8ecb,,,否,鞲,,Thinking...,Thinking...,Thinking...,U+97B2,,,Thinking...,,,,,,
+8ecc,,,否,耈,,Thinking...,Thinking...,Thinking...,U+8008,,,Thinking...,,,,,,
+8ecd,,,否,耉,,Thinking...,Thinking...,Thinking...,U+8009,,4-2B25,Thinking...,,,,,,{上老下可}
+8ecf,,,否,苷,,Thinking...,Thinking...,Thinking...,U+82F7,,,Thinking...,,,,,,
+8ed1,,,否,秆,,Thinking...,Thinking...,Thinking...,U+79C6,,,Thinking...,,,,,,
+8ed3,,,否,擀,,Thinking...,Thinking...,Thinking...,U+64C0,,3-5070,Thinking...,,,,#N/A,,
+8ed4,,,否,倝,,Thinking...,Thinking...,Thinking...,U+501D,,,Thinking...,,,,,,
+8ed6,,,否,亘,,Thinking...,Thinking...,Thinking...,U+4E98,,,Thinking...,,,,,,
+8ed7,,,否,掆,,Thinking...,Thinking...,Thinking...,U+6386,,,Thinking...,,,,,,
+8ed9,,,否,秔,,Thinking...,Thinking...,Thinking...,U+79D4,,,Thinking...,,,,,,
+8eda,,,否,稉,,Thinking...,Thinking...,Thinking...,U+7A09,,,Thinking...,,,,,,
+8edb,,,否,畊,,Thinking...,Thinking...,Thinking...,U+754A,,3-2E28,Thinking...,,,,,,{田井}
+8edc,,,否,絚,,Thinking...,Thinking...,Thinking...,U+7D5A,,,Thinking...,,,,,,
+8ede,,,否,䀇,,Thinking...,Thinking...,Thinking...,U+4007,,4-515A,Thinking...,,,,,,{上古缶下皿}
+8ef7,,是,？,彐,,Thinking...,Thinking...,Thinking...,U+5F50,,3-2140,Thinking...,,,,,,端看附近編碼好像是組字用？  {似彐} （字體差異）
+8f4e,,,否,烖,,Thinking...,Thinking...,Thinking...,U+70D6,,3-322F,Thinking...,,,,,,
+8f51,,,是,𠑹,,Thinking...,(略),(同),U+20479,(同),4-2232,U+20479,,U+20479,,,,｛...壅蔽...｝
+8f52,,,否,餶,,Thinking...,Thinking...,Thinking...,U+9936,,,,,,,,,
+8f53,,,否,苽,,Thinking...,Thinking...,Thinking...,U+82FD,,,,,,,,,
+8f54,,,否,辵,,Thinking...,Thinking...,Thinking...,U+8FB5,,,Thinking...,,,,,,
+8f55,,,否,崓,,Thinking...,Thinking...,Thinking...,U+5D13,,,Thinking...,,,,,,
+8f57,,,否,䒷,,Thinking...,Thinking...,Thinking...,U+44B7,,3-335D,Thinking...,,,,,,  {艸頭+舌}
+8f59,,,否,袿,,Thinking...,Thinking...,Thinking...,U+88BF,,,Thinking...,,,,,,
+8f5e,,,否,㶁,,Thinking...,Thinking...,Thinking...,U+3D81,,,Thinking...,,,,,,
+8f5f,,,否,菓,,Thinking...,Thinking...,Thinking...,U+83D3,,,Thinking...,,,,,,
+8f60,,,否,餜,,Thinking...,Thinking...,Thinking...,U+991C,,,Thinking...,,,,,,
+8f61,,,否,椁,,Thinking...,Thinking...,Thinking...,U+6901,,,Thinking...,,,,,,
+8f62,,,否,𠦬,,Thinking...,Thinking...,Thinking...,U+209AC,,4-3062,Thinking...,,,,,,｛上撇下傘-人｝
+8f63,,,否,𠁥,,Thinking...,Thinking...,Thinking...,U+20065,,4-2156,Thinking...,,,,,,｛...羊角...｝
+8f64,,,否,恠,,Thinking...,Thinking...,Thinking...,U+6060,,,Thinking...,,,,,,
+8f67,,,否,瓌,,Thinking...,Thinking...,Thinking...,U+74CC,,,Thinking...,,,,,,
+8f6a,,,否,恑,,Thinking...,Thinking...,Thinking...,U+6051,,,Thinking...,,,,,,
+8f6b,,,否,鞼,,Thinking...,Thinking...,Thinking...,U+97BC,,4-6771,Thinking...,,,,,,  {革貴}
+8f70,,,否,闗,,Thinking...,Thinking...,Thinking...,U+95D7,,3-594B,Thinking...,,,,,,｛上門下絲｝
+8f73,,,否,卝,,Thinking...,Thinking...,Thinking...,U+535D,,,Thinking...,,,,,,
+8f74,,是,？,衮,,Thinking...,Thinking...,Thinking...,U+886E,,3-3374,Thinking...,,,,,,"{袞，口=>ㄙ, 上面有一點點不一樣}"
+8f77,,,否,鮌,,Thinking...,Thinking...,Thinking...,U+9B8C,,,Thinking...,,,,,,
+8f78,,,否,侊,,Thinking...,Thinking...,Thinking...,U+4F8A,,,Thinking...,,,,,,
+8f79,,,否,廣,,Thinking...,Thinking...,Thinking...,U+5EE3,,13-4B32,Thinking...,,,,,,{廣（廿一合併） 異 A01230-020}
+8f7b,,,否,觵,,Thinking...,Thinking...,Thinking...,U+89F5,,,Thinking...,,,,,,
+8f7d,,,否,壳,,Thinking...,Thinking...,Thinking...,U+58F3,,,Thinking...,,,,,,{上士下冗}
+8fa2,,,否,愙,,Thinking...,Thinking...,Thinking...,U+6119,,,Thinking...,,,,,,
+8fa5,,,否,慨,,Thinking...,Thinking...,Thinking...,U+6168,,,Thinking...,,,,,,{心既}
+8fa6,,,否,嘅,,Thinking...,Thinking...,Thinking...,U+5605,,,Thinking...,,,,,,
+8fa7,,,否,嘅,,Thinking...,Thinking...,Thinking...,U+5605,,3-4636,Thinking...,,,,,,{口既}
+8fa8,,,否,丂,,Thinking...,Thinking...,Thinking...,U+4E02,,,Thinking...,,,,,,
+8fac,,,否,蔻,,Thinking...,Thinking...,Thinking...,U+853B,,,Thinking...,,,,,,
+8fad,,,否,簆,,Thinking...,Thinking...,Thinking...,U+7C06,,,Thinking...,,,,,,
+8fb2,,,否,偘,,Thinking...,Thinking...,Thinking...,U+5058,,,Thinking...,,,,,,
+8fb5,,,否,肎,,Thinking...,Thinking...,Thinking...,U+808E,,3-2436,Thinking...,,,,,,{上ㄇ下月}
+8fb7,,,否,褃,,Thinking...,Thinking...,Thinking...,U+8903,,,Thinking...,,,,,,
+8fb8,,,否,忼,,Thinking...,Thinking...,Thinking...,U+5FFC,,,Thinking...,,,,,,
+8fbd,,,否,咵,,Thinking...,Thinking...,Thinking...,U+54B5,,,Thinking...,,,,,,
+8fbe,,,否,絝,,Thinking...,Thinking...,Thinking...,U+7D5D,,,Thinking...,,,,,,
+8fc3,,,否,彍,,Thinking...,Thinking...,Thinking...,U+5F4D,,,Thinking...,,,,,,
+8fc9,,,否,騀,,Thinking...,Thinking...,Thinking...,U+9A00,,,Thinking...,,,,,,
+8fca,,,否,㺔,,Thinking...,Thinking...,Thinking...,U+3E94,,4-387A,Thinking...,,,,,,{犬為}
+8fcd,,,否,稾,,,T3-4D5A,,U+7A3E,,,,,,,,,
+8fce,,,否,况,,,T3-2459,,U+51B5,,,,,,,,,
+8fcf,,,否,裩,,,T3-4959,,U+88E9,,,,,,,,,
+8fd0,,,是,㡓,,,(略),(同),U+3853,(同),3-3B3C,U+3853,,U+3853,,,,{巾軍}
+8fd1,,,否,髠,,,T3-4032,,U+9AE0,,,,,,,,,
+8fd2,,,是,䖵,,,(略),(同),U+45B5,(同),3-3E66,U+45B5,,U+45B5,,,,{虫虫}
+8fd3,,,否,鰐,,,T3-5D73,,U+9C10,,,,,,,,,
+8fd4,,,否,鐭,,,T3-5E6D,,U+942D,,,,,,,,,
+8fd5,,,是,䴈,,,(略),(同),U+4D08,(同),4-6C52,U+4D08,,U+4D08,,,,  {奧鳥}
+8fd6,,,否,蒽,,,T3-4932,,U+84BD,,,,,,,,,
+8fd7,,,否,鱂,,,T4-6A23,,U+9C42,,,,,,,,,
+8fd8,,,否,聚,,BB45,T1-6A4D,,U+805A,,13-5372,,,,,,,{上取下豸}
+8fe3,,,是,撐,,BCB5,(略),(同),U+6490,(同),1-6C7D,U+6490,,U+6490,,,,"{手牚, 跟撐有什麼不同？}"
+8fe4,,,否,蟮,,,T3-5874,,U+87EE,,,,,,,,,
+8fe7,,,否,芪,,,T3-2A66,,U+82AA,,,,,,,,,
+8feb,,,否,鸌,,,T4-6D3A,,U+9E0C,,,,,,,,,
+8fec,,,否,鯶,,,T3-5D6F,,U+9BF6,,,,,,,,,
+8fee,,,否,壻,,,T3-3A52,,U+58FB,,,,,,,,,
+8fef,,,否,鼂,⿱日黽,,T3-5A29,,U+9F02,,,,,,,,,  {上日下黽} 似乎未編碼，建議使用「⿱日黽」或暫假借「鼂」（𣋋 有類似的字，貼不進來，但是是左日右黽）(不是通同字)（U+2A4D9 是部首筆劃相同，但不是通同字）（根據教育部異體字字典，古晁字，通鼂）
+8ff0,,,否,,⿰亻壯,,(略),(同),,(同),,,,,,,,｛亻壯｝
+8ff1,,,是,欵,,,(略),(同),U+6B35,(同),3-3662,U+6B35,,U+6B35,,,,{上匕下矢右欠}
+8ff3,,,否,堃,,,T3-3476,,U+5803,,,,,,,,,
+8ff4,,,否,崐,,,T3-3551,,U+5D10,,,,,,,,,
+8ff5,,,否,鵾,,,T3-5C26,,U+9D7E,,,,,,,,,
+8ff7,,,是,𥜾,,,(略),(同),U+2573E,(同),4-395B,U+2573E,,U+2573E,,,,{離的左側，上方是上}
+8ff9,,,否,痃,,,T3-3252,,U+75C3,,,,,,,,,
+8ffa,,,否,茝,,,T3-384D,,U+831D,,,,,,,,,
+8ffc,,,否,冗,,A4BE,T1-447D,,U+5197,,12-7377,,,,,,,{冗上加點} (依異體字字典，似乎有兩個字：其中一個是以前是「冗」的正字。另外一個是穴的異體。)
+8ffd,,,是,蜹,,,(略),(同),U+8739,(同),3-494C,U+8739,,U+8739,,,,  {虫芮}
+9042,,,是,甆,,,(略),(同),U+7506,(同),3-4828,U+7506,,U+7506,,,,
+9043,,,是,榲,,,(略),(同),U+69B2,(同),3-473E,U+69B2,,U+69B2,,,,
+9044,,,是,鰮,,,(略),(同),U+9C2E,(同),3-5F2A,U+9C2E,,U+9C2E,,,,
+9045,,,是,羣,,,(略),(同),U+7FA3,(同),3-436E,U+7FA3,,U+7FA3,,,,
+9046,,,否,麞,,,T3-5F3A,,U+9E9E,,,,,,,,,
+9048,,,否,頮,,,T3-535C,,U+982E,,,,,,,,,
+9049,,,否,眦,,,T3-3755,,U+7726,,,,,,,,,
+904c,,,否,苢,,,T3-2E78,,U+82E2,,,,,,,,,
+904d,,,否,梘,,,T3-364D,,U+6898,,,,,,,,,
+904f,,,否,寃,,,T3-3541,,U+5BC3,,,,,,,,,
+9050,,,否,蔴,,,T3-4E4E,,U+8534,,,,,,,,,
+9054,,,否,犼,,,T3-2667,,U+72BC,,,,,,,,,
+9055,,,是,崡,,,(略),(同),U+5D21,(同),3-3546,U+5D21,,U+5D21,,,, {山函}
+9057,,,否,𦬊,,,,#N/A,U+26B0A,,,,,,,,,
+9059,,,否,嗞,,,T3-3A2B,,U+55DE,,,,,,,,,
+905b,,,否,鰂,,,T3-5D6E,,U+9C02,,,,,,,,,
+905d,,,否,癔,,,T4-5B75,,U+7654,,,,,,,,,
+905f,,,否,鼂,,,T3-5A29,,U+9F02,,,,,,,,,
+9062,,,是,狓,,,(略),(同),U+72D3,(同),3-2A27,U+72D3,,U+72D3,,,,{犬皮}
+9064,,,否,从,,,T3-214B,,U+4ECE,,,,,,,,,
+9067,,,否,筯,,,T3-4354,,U+7B6F,,,,,,,,,
+9069,,,否,揸,,,T3-3B6D,,U+63F8,,,,,,,,,
+906a,,,否,倽,,,,#N/A,U+503D,,,,,,,,,
+906b,,,否,哚,,,T3-2B58,,U+54DA,,11-7A6D,,,,,,,  {左口右乃木} 很像哚可是右上角是乃
+906c,,,否,啘,,,T3-3457,,U+5558,,,,,,,,,
+906e,,,否,飡,,,T3-3967,,U+98E1,,,,,,,,,
+9070,,,否,辠,,,T3-4478,,U+8FA0,,,,,,,,,
+9071,,,否,躧,,,T3-616C,,U+8EA7,,,,,,,,,
+9073,,,否,昬,,,T3-2C7D,,U+662C,,,,,,,,,
+9079,,,是,揔,,,(略),(同),U+63D4,(同),4-3771,U+63D4,,U+63D4,,,,
+907a,,,否,陁,,,T3-2A7B,,U+9641,,,,,,,,,
+907b,,,是,㠠,,,(略),(同),U+3820,(同),4-5F5A,U+3820,,U+3820,,,, {山廬}
+907e,,,否,剗,,,T3-2F65,,U+5257,,,,,,,,,
+90a1,,,否,匌,,,T4-2551,,U+530C,,,,,,,,,
+90a2,,,否,踪,,,T3-4F2B,,U+8E2A,,,,,,,,,
+90a5,,,否,棙,,,T4-3832,,U+68D9,,,,,,,,,
+90a6,,,否,儁,,,T3-4B2D,,U+5101,,,,,,,,,
+90a8,,,否,呪,,,T3-2778,,U+546A,,,,,,,,,
+90ac,,,否,盌,,,T3-325B,,U+76CC,,,,,,,,,
+90ae,,,否,椀,,,T3-3C39,,U+6900,,,,,,,,,
+90b0,,,否,踊,,E45C,T2-4E44,,U+8E0A,,,,,,,,,"{踊, 左上角同右上角} (Unihan 疋-7 找不到，異體字典找不到,＜禮記＞用例通「踊」)"
+90b2,,,是,𠫤,,,(略),(同),U+20AE4,(同),4-2249,U+20AE4,,U+20AE4,,,,
+90b3,,,否,襀,,,T3-563D,,U+8940,,,,,,,,,
+90b8,,,否,箒,,,T3-485A,,U+7B92,,,,,,,,,
+90b9,,,否,覉,,,T3-6046,,U+8989,,11-5E4C,,,,,,,
+90ba,,,是,𥳑,,,(略),(同),U+25CD1,(同),3-584F,U+25CD1,,U+25CD1,,,,{下面是月不是日}
+90bb,,,否,倐,,,T3-2F53,,U+5010,,,,,,,,,
+90bc,,,否,礚,,,T3-5A62,,U+791A,,,,,,,,,
+90bd,,,是,擧,,,(略),(同),U+64E7,(同),3-576D,U+64E7,,U+64E7,,,, {舉}
+90bf,,,否,悤,,,T3-3572,,U+60A4,,,,,,,,,
+90c0,,,否,段,,AC71,T1-5174,,U+6BB5,,12-3D65,,,,,,,
+90c1,,,否,䦟,,,T3-4F57,,U+499F,,,,,,,,,
+90c3,,,是,䆉,,,(略),(同),U+4189,(同),4-6379,U+4189,,U+4189,,,,  {禾罷}
+90c6,,,否,譌,,,T3-5B36,,U+8B4C,,,,,,,,,
+90c7,,,是,𧳵,,,(略),(同),U+27CF5,(同),4-5879,U+27CF5,,U+27CF5,,,,  {豸尃}
+90c8,,,否,戞,,,T3-3B64,,U+621E,,,,,,,,,
+90c9,,,否,珏,,,T3-2D79,,U+73CF,,,,,,,,,
+90ca,,,是,𠻗,,,(略),(同),U+20ED7,(同),4-424D,U+20ED7,,U+20ED7,,,, {口+離-隹}
+90cb,,,否,棊,,,T3-3C38,,U+68CA,,,,,,,,,
+90cd,,,是,廻,,,(略),(同),U+5EFB,(同),3-2C4C,U+5EFB,,U+5EFB,,,, {迴}
+90ce,,,是,㪍,,,(略),(同),U+3A8D,(同),3-3635,U+3A8D,,U+3A8D,,,,
+90cf,,,否,輭,,,T3-5324,,U+8F2D,,,,,,,,,
+90d0,,,是,㨝,,,(略),(同),U+3A1D,(同),4-3D4A,U+3A1D,,U+3A1D,,,, {提手+屑}
+90d3,,,是,𦯶,,,(略),(同),U+26BF6,(同),10-7C56,,U+26BF6,U+26BF6,,,, {艸頭+冏}
+90d4,,,否,讁,,,T3-5F61,,U+8B81,,,,,,,,,
+90d5,,,是,晳,,,(略),(同),U+6673,(同),3-3C23,U+6673,,U+6673,,,,
+90d6,,,否,顇,,,T3-5728,,U+9847,,,,,,,,,
+90d7,,,是,糉,,,(略),(同),U+7CC9,(同),3-4D72,U+7CC9,,U+7CC9,,,,
+90d8,,,是,㼐,,,(略),(同),U+3F10,(同),4-4470,U+3F10,,U+3F10,,,, {扁瓜}
+90d9,,,是,𩓐,,,(略),(同),U+294D0,(同),11-3A68,,U+294D0,U+294D0,,,, {勃-力+頁}
+90da,,,否,膁,,,T3-4927,,U+8181,,,,,,,,,
+90db,,,否,顦,,,T3-5E78,,U+9866,,,,,,,,,
+90df,,,是,弃,,,(略),(同),U+5F03,(同),3-256F,U+5F03,,U+5F03,,,,
+90e0,,,否,賛,,,T3-4E7E,,U+8CDB,,,,,,,,,
+90e3,,,是,帀,,,(略),(同),U+5E00,(同),3-2163,U+5E00,,U+5E00,,,,  {倒ㄓ}
+90e4,,,否,麄,,,T3-502C,,U+9E84,,,,,,,,,
+90e5,,,否,鮝,,,T3-5745,,U+9B9D,,,,,,,,,
+90e6,,,否,慠,,,T3-4671,,U+6160,,,,,,,,,
+90e7,,,否,煊,,,T3-424E,,U+714A,,,,,,,,,
+90e9,,,是,𧫒,,,(略),(同),U+27AD2,(同),4-5D5E,U+27AD2,,U+27AD2,,,,
+90ea,,,否,歘,,,T3-5145,,U+6B58,,,,,,,,,
+90eb,,,是,㜷,,,(略),(同),U+3737,(同),4-6335,U+3737,,U+3737,,,, {上彌下女}
+90ec,,,否,鑹,,,T4-6D62,,U+9479,,,,,,,,,
+90ee,,,否,堦,,,T3-3A4C,,U+5826,,,,,,,,,
+90f2,,,是,阸,,,(略),(同),U+9638,(同),4-2833,U+9638,,U+9638,,,,
+90f3,,,否,晫,,,T3-3B7D,,U+666B,,,,,,,,,
+90f4,,,是,䌈,,,(略),(同),U+4308,(同),4-5247,U+4308,,U+4308,,,, {糸+塌-土}
+90f7,,,是,㟭,,,(略),(同),U+37ED,(同),3-3B30,U+37ED,,U+37ED,,,,
+90f8,,,是,㔶,,,(略),(同),U+3536,(同),4-6D53,U+3536,,U+3536,,,,  {匡邊+贛}
+90f9,,,否,稺,,,T3-4D56,,U+7A3A,,,,,,,,,
+90fa,,,否,䭔,,,T4-5E5A,,U+4B54,,,,,,,,,
+90fb,,,否,髤,,,T3-4A6F,,U+9AE4,,,,,,,,,
+90fc,,,否,慙,,,T3-4B7E,,U+6159,,,,,,,,,
+90fd,,,否,,⿺辶局,,(略),(同),,(同),,,,,,,, {辶邊+局}
+90fe,,,否,倸,,,T3-2F54,,U+5038,,,,,,,,,
+9141,,,否,畑,,,TF-2B7A,,U+7551,,,,,,,,,
+9143,,,否,麯,,,T3-5750,,U+9EAF,,,,,,,,,
+9144,,,否,劚,,,T3-602C,,U+529A,,,,,,,,,
+9146,,,否,絥,,,T4-3A27,,U+7D65,,,,,,,,,
+9147,,,否,麕,,,T3-5C29,,U+9E95,,,,,,,,,
+9148,,,否,ñ,,,,#N/A,U+F1,#N/A,,,,,,,,
+914a,,,是,蘂,,,(略),(同),U+8602,(同),3-5C78,U+8602,,U+8602,,,,
+914c,,,是,㿜,,,(略),(同),U+3FDC,(同),3-622D,U+3FDC,,U+3FDC,,,,{龠}
+914d,,,否,睃,,,T3-3D53,,U+7743,,,,,,,,,
+914e,,,否,恊,,,T3-2C60,,U+604A,,,,,,,,,
+914f,,,否,閦,,Thinking...,T4-4822,,U+95A6,,,,,,,,,
+9151,,,否,竱,,,T3-5230,,U+7AF1,,,,,,,,,
+9152,,,否,㑳,,,T4-3638,,U+3473,,,,,,,,,
+9153,,,是,㿈,,,(略),(同),U+3FC8,(同),4-5150,U+3FC8,,U+3FC8,,,,
+9155,,,否,効,,Thinking...,T3-2760,,U+52B9,,,,,,,,,
+9156,,,否,椉,,Thinking...,T3-3C37,,U+6909,,,,,,,,,
+9157,,,否,辬,,Thinking...,T3-5938,,U+8FAC,,,,,,,,,
+9158,,,是,緫,,Thinking...,(略),(同),U+7DEB,(同),3-4E2E,U+7DEB,,U+7DEB,,,,
+9159,,,否,藳,,Thinking...,T4-607B,,U+85F3,,,,,,,,,
+915a,,,否,巵,,Thinking...,T3-2567,,U+5DF5,,,,,,,,,
+915b,,,否,拕,,Thinking...,T3-292E,,U+62D5,,,,,,,,,
+915d,,,否,稭,,Thinking...,T3-484F,,U+7A2D,,,,,,,,,
+915e,,,否,桚,,,Thinking...,Thinking...,U+685A,,3-652D,Thinking...,,,,,,
+9160,,,否,訽,,Thinking...,T3-3F24,,U+8A3D,,,,,,,,,
+9162,,,否,綫,,Thinking...,T3-486E,,U+7DAB,,,,,,,,,
+9165,,,否,睺,,Thinking...,T3-483B,,U+777A,,,,,,,,,
+9166,,,否,勅,,Thinking...,Thinking...,Thinking...,U+52C5,,3-2B46,Thinking...,,,,,, {勒}
+9167,,,否,杘,,Thinking...,Thinking...,Thinking...,U+6758,,,Thinking...,,,,,,
+9168,,,否,䎡,,Thinking...,Thinking...,Thinking...,U+43A1,,4-2F38,Thinking...,,,,,, {上而下火}
+9169,,,否,賷,,Thinking...,Thinking...,Thinking...,U+8CF7,,3-5652,Thinking...,,,,,,
+916e,,,否,輨,,Thinking...,Thinking...,Thinking...,U+8F28,,,Thinking...,,,,,,
+9174,,,否,嘷,,Thinking...,Thinking...,Thinking...,U+5637,,3-4B44,Thinking...,,,,,,
+9177,,,否,皥,,Thinking...,Thinking...,Thinking...,U+76A5,,3-5557,Thinking...,,,,,,
+9178,,,否,晧,,Thinking...,Thinking...,Thinking...,U+6667,,,Thinking...,,,,,,
+917a,,,否,矦,,Thinking...,Thinking...,Thinking...,U+77E6,,3-2E36,Thinking...,,,,,,
+917d,,,否,噇,,Thinking...,Thinking...,Thinking...,U+5647,,,Thinking...,,,,,,
+91a1,,,否,㟏,,Thinking...,Thinking...,Thinking...,U+37CF,,4-2C5E,Thinking...,,,,,,  {山含}
+91a6,,,否,䲹,,Thinking...,Thinking...,Thinking...,U+4CB9,,4-554E,Thinking...,,,,,, {丕鳥}
+91a7,,,否,嘑,,Thinking...,Thinking...,Thinking...,U+5611,,,Thinking...,,,,,,
+91a8,,,否,唿,,Thinking...,Thinking...,Thinking...,U+553F,,3-3467,Thinking...,,,,,,  {口忽}
+91af,,,否,劐,,Thinking...,Thinking...,Thinking...,U+5290,,3-5036,Thinking...,,,,,,
+91b0,,,否,剨,,Thinking...,Thinking...,Thinking...,U+5268,,3-3450,Thinking...,,,,,,
+91b1,,,否,彠,,Thinking...,Thinking...,Thinking...,U+5F60,,,Thinking...,,,,,,
+91b2,,,否,湼,,Thinking...,Thinking...,Thinking...,U+6E7C,,3-6542,Thinking...,,,,,,
+91b3,,,否,惽,,Thinking...,Thinking...,Thinking...,U+60FD,,,Thinking...,,,,,,
+91b4,,,否,撧,,Thinking...,Thinking...,Thinking...,U+64A7,,,Thinking...,,,,,,
+91b5,,,否,旤,,Thinking...,Thinking...,Thinking...,U+65E4,,,Thinking...,,,,,,
+91b6,,,否,㸌,,Thinking...,Thinking...,Thinking...,U+3E0C,,4-635F,Thinking...,,,,,, {火霍}
+91b8,,,否,灰,,Thinking...,Thinking...,Thinking...,U+7070,,3-2429,Thinking...,,,,,, (不少網站秀出的都是U+7077的灰...)
+91bc,,,否,愞,,Thinking...,Thinking...,Thinking...,U+611E,,,Thinking...,,,,,,
+91bd,,,否,賫,,Thinking...,Thinking...,Thinking...,U+8CEB,,3-4F22,Thinking...,,,,,,
+91be,,,否,硶,,Thinking...,Thinking...,Thinking...,U+7876,,3-3D5A,Thinking...,,,,,, {石岑}
+91bf,,,否,頴,,Thinking...,Thinking...,Thinking...,U+9834,,3-5228,Thinking...,,,,,,
+91c3,,,否,竢,,Thinking...,Thinking...,Thinking...,U+7AE2,,,Thinking...,,,,,,
+91c5,,,否,滙,,Thinking...,Thinking...,Thinking...,U+6ED9,,3-4244,Thinking...,,,,,, {匯}
+91c8,,,否,𦞦,,Thinking...,Thinking...,Thinking...,U+267A6,,,Thinking...,,,,,,
+91c9,,,否,䐶,,Thinking...,Thinking...,Thinking...,U+4436,,4-5264,Thinking...,,,,,,  {月潛}
+91cb,,,否,揢,,Thinking...,Thinking...,Thinking...,U+63E2,,,Thinking...,,,,,,
+91ce,,,否,𤠾,,Thinking...,Thinking...,Thinking...,U+2483E,,4-446B,Thinking...,,,,,, {犬旁+區}
+91cf,,,否,靧,,Thinking...,Thinking...,Thinking...,U+9767,,,Thinking...,,,,,,
+91d6,,,否,黄,,Thinking...,Thinking...,Thinking...,U+9EC4,,,Thinking...,,,,,,
+91d8,,,否,璜,,Thinking...,Thinking...,Thinking...,U+749C,,13-7E47,Thinking...,,,,,," {璜, 廿一連寫}"
+91da,,,否,㬊,,Thinking...,Thinking...,Thinking...,U+3B0A,,4-3D68,Thinking...,,,,,, {上曰下爰}
+91dd,,,否,㡛,,Thinking...,Thinking...,Thinking...,U+385B,,11-4A4F,Thinking...,,,,,,  {巾荒}
+91df,,,否,簧,,Thinking...,Thinking...,Thinking...,U+7C27,,14-7427,Thinking...,,,,,,
+91e0,,,否,鉷,,Thinking...,Thinking...,Thinking...,U+9277,,15-4D22,Thinking...,,,,,, {金共}
+91e1,,,否,閧,,Thinking...,Thinking...,Thinking...,U+95A7,,,Thinking...,,,,,,
+91e2,,,否,𥝌,,Thinking...,Thinking...,Thinking...,U+2574C,,4-217E,Thinking...,,,,,,
+91e4,,,否,朞,,Thinking...,Thinking...,Thinking...,U+671E,,,Thinking...,,,,,,
+91e7,,,否,𩐋,,Thinking...,Thinking...,Thinking...,U+2940B,,4-652B,Thinking...,,,,,,  {上欶下韭}
+91eb,,,否,覊,,Thinking...,Thinking...,Thinking...,U+898A,,,Thinking...,,,,,,
+91f1,,,否,檝,,Thinking...,Thinking...,Thinking...,U+6A9D,,,Thinking...,,,,,,
+91f2,,,否,垍,,Thinking...,Thinking...,Thinking...,U+578D,,,Thinking...,,,,,,
+91f3,,,否,𧴄,,Thinking...,Thinking...,Thinking...,U+27D04,,4-5D66,Thinking...,,,,,,  {豸庸}
+91f5,,,否,鷀,,Thinking...,Thinking...,Thinking...,U+9DC0,,,Thinking...,,,,,,
+91f9,,,否,旣,,Thinking...,Thinking...,Thinking...,U+65E3,,3-3641,Thinking...,,,,,,
+9245,,,否,䛟,,Thinking...,Thinking...,Thinking...,U+46DF,,4-474A,Thinking...,,,,,,  {言夾}
+9248,,,否,矁,,Thinking...,Thinking...,Thinking...,U+77C1,,,Thinking...,,,,,,
+9249,,,否,叚,,Thinking...,Thinking...,Thinking...,U+53DA,,,Thinking...,,,,,,
+924a,,,否,斚,,Thinking...,Thinking...,Thinking...,U+659A,,3-3142,Thinking...,,,,,,
+924e,,,否,㨗,,Thinking...,Thinking...,Thinking...,U+3A17,,3-3B6E,Thinking...,,,,,, {捷}
+9255,,,是,𪠘,,Thinking...,(略),(同),U+2A818,(同),15-7374,Thinking...,U+2A818,U+2A818,,#N/A,,
+925a,,,是,唣,,Thinking...,(略),(同),U+5523,(同),14-582E,Thinking...,U+5523,U+5523,,,,
+925b,,,否,唕,,Thinking...,Thinking...,Thinking...,U+5515,,,Thinking...,,,,,,
+9260,,,否,竚,,Thinking...,Thinking...,Thinking...,U+7ADA,,,Thinking...,,,,,,
+9261,,,否,隟,,Thinking...,Thinking...,Thinking...,U+969F,,,Thinking...,,,,,,
+9263,,,否,襍,,Thinking...,Thinking...,Thinking...,U+894D,,,Thinking...,,,,,,
+9264,,,否,灾,,Thinking...,Thinking...,Thinking...,U+707E,,,Thinking...,,,,,,
+9265,,,否,蹷,,Thinking...,Thinking...,Thinking...,U+8E77,,,Thinking...,,,,,,
+9266,,,否,頔,,Thinking...,Thinking...,Thinking...,U+9814,,,Thinking...,,,,,,
+9267,,,否,衠,,Thinking...,Thinking...,Thinking...,U+8860,,4-534B,Thinking...,,,,,,
+9268,,,否,衟,,Thinking...,Thinking...,Thinking...,U+885F,,3-5264,Thinking...,,,,,,
+926b,,,否,羹,,Thinking...,Thinking...,Thinking...,U+7FB9,,1-7867,Thinking...,,,,,,  {羹} （好像是是羹的樣子）
+926c,,,否,丩,,Thinking...,Thinking...,Thinking...,U+4E29,,,Thinking...,,,,,,
+926e,,,否,奬,,Thinking...,Thinking...,Thinking...,U+596C,,3-4648,Thinking...,,,,,, {獎}
+926f,,,否,踁,,Thinking...,Thinking...,Thinking...,U+8E01,,,Thinking...,,,,,,
+9275,,,否,呌,,Thinking...,Thinking...,Thinking...,U+544C,,,Thinking...,,,,,,
+9277,,,否,敫,,Thinking...,Thinking...,Thinking...,U+656B,,,Thinking...,,,,,,
+927a,,,否,糺,,Thinking...,Thinking...,Thinking...,U+7CFA,,,Thinking...,,,,,,
+927b,,,否,桕,,Thinking...,Thinking...,Thinking...,U+6855,,,Thinking...,,,,,,
+927c,,,否,匶,,Thinking...,Thinking...,Thinking...,U+5336,,,Thinking...,,,,,,
+92a4,,,否,韀,,Thinking...,Thinking...,Thinking...,U+97C0,,,Thinking...,,,,,,
+92a5,,,否,趼,,Thinking...,Thinking...,Thinking...,U+8DBC,,3-446D,Thinking...,,,,,,
+92a7,,,否,碱,,Thinking...,Thinking...,Thinking...,U+78B1,,,Thinking...,,,,,,
+92aa,,,否,毆,,Thinking...,Thinking...,Thinking...,U+6BC6,,1-6D48,Thinking...,,,,,, {歐}
+92ac,,,否,鍳,,Thinking...,Thinking...,Thinking...,U+9373,,3-5663,Thinking...,,,,,,
+92ad,,,否,卺,,Thinking...,Thinking...,Thinking...,U+537A,,3-2766,Thinking...,,,,,,
+92b0,,,否,厪,,Thinking...,Thinking...,Thinking...,U+53AA,,3-4049,Thinking...,,,,,,
+92b1,,,否,飧,,Thinking...,Thinking...,Thinking...,U+98E7,,1-627D,Thinking...,,,,,, {飧}
+92b2,,,否,鞾,,Thinking...,Thinking...,Thinking...,U+97BE,,,Thinking...,,,,,,
+92b3,,,否,尽,,Thinking...,Thinking...,Thinking...,U+5C3D,,3-2354,Thinking...,,,,,,
+92b4,,,否,𥁞,,Thinking...,Thinking...,Thinking...,U+2505E,,4-334C,Thinking...,,,,,,
+92b7,,,否,瑨,,Thinking...,Thinking...,Thinking...,U+7468,,,Thinking...,,,,,,
+92b8,,,否,畺,,Thinking...,Thinking...,Thinking...,U+757A,,,Thinking...,,,,,,
+92ba,,,否,弆,,Thinking...,Thinking...,Thinking...,U+5F06,,,Thinking...,,,,,,
+92bb,,,否,䀠,,Thinking...,Thinking...,Thinking...,U+4020,,3-325D,Thinking...,,,,,, {目目}
+92c0,,,否,穽,,Thinking...,Thinking...,Thinking...,U+7A7D,,3-2E47,Thinking...,,,,,, {上穴下井}
+92c2,,,否,凥,,Thinking...,Thinking...,Thinking...,U+51E5,,,Thinking...,,,,,,
+92c5,,,否,强,,Thinking...,Thinking...,Thinking...,U+5F3A,,3-3B47,Thinking...,,,,,, {強}
+92c9,,,否,静,,Thinking...,Thinking...,Thinking...,U+9759,,3-4A4C,Thinking...,,,,,,
+92ca,,,否,𦊨,,Thinking...,Thinking...,Thinking...,U+262A8,,4-2A7D,Thinking...,,,,,,
+92cd,,,否,榘,,Thinking...,Thinking...,Thinking...,U+6998,,,Thinking...,,,,,,
+92ce,,,否,决,,Thinking...,Thinking...,Thinking...,U+51B3,,,Thinking...,,,,,,
+92cf,,,否,𧮫,,Thinking...,Thinking...,Thinking...,U+27BAB,,5-2477,Thinking...,,,,,, {人人口}
+92d0,,,否,橜,,Thinking...,Thinking...,Thinking...,U+6A5C,,,Thinking...,,,,,,
+92d4,,,否,勌,,Thinking...,Thinking...,Thinking...,U+52CC,,,Thinking...,,,,,,
+92dc,,,否,㕙,,Thinking...,Thinking...,Thinking...,U+3559,,4-4929,Thinking...,,,,,, {峻+兔-山}
+92dd,,,否,鵕,,Thinking...,Thinking...,Thinking...,U+9D55,,,Thinking...,,,,,,
+92e2,,,否,埛,,Thinking...,Thinking...,Thinking...,U+57DB,,3-3032,Thinking...,,,,,,
+92e5,,,否,攟,,Thinking...,Thinking...,Thinking...,U+651F,,3-5F4B,Thinking...,,,,,,
+92e6,,,否,濬,,Thinking...,Thinking...,Thinking...,U+6FEC,,1-742B,Thinking...,,,,,,
+92e7,,,否,逈,,Thinking...,Thinking...,Thinking...,U+9008,,,Thinking...,,,,,,
+92e8,,,否,䫏,,Thinking...,Thinking...,Thinking...,U+4ACF,,4-5977,Thinking...,,,,,, {其頁}
+92ea,,,否,汧,,Thinking...,Thinking...,Thinking...,U+6C67,,3-2D52,Thinking...,,,,,,
+92ef,,,否,𢙈,,Thinking...,Thinking...,Thinking...,U+22648,,4-2C7E,Thinking...,,,,,,
+92f1,,,否,噏,,Thinking...,Thinking...,Thinking...,U+564F,,,Thinking...,,,,,,
+92f2,,,否,嚱,,Thinking...,Thinking...,Thinking...,U+56B1,,,Thinking...,,,,,,
+92f5,,,否,臤,,Thinking...,Thinking...,Thinking...,U+81E4,,,Thinking...,,,,,,
+92f6,,,否,䧢,,Thinking...,Thinking...,Thinking...,U+49E2,,3-4A43,Thinking...,,,,,, {左阜+區}
+92f9,,,否,憇,,Thinking...,Thinking...,Thinking...,U+6187,,,Thinking...,,,,,,
+9340,,,否,𨵢,,Thinking...,Thinking...,Thinking...,U+28D62,,7-3476,Thinking...,,,,,,
+9341,,,否,閴,,Thinking...,Thinking...,Thinking...,U+95B4,,,Thinking...,,,,,,
+9344,,,否,琼,,Thinking...,Thinking...,Thinking...,U+743C,,3-3D37,Thinking...,,,,,,
+9348,,,否,籖,,Thinking...,Thinking...,Thinking...,U+7C56,,3-5E4B,Thinking...,,,,,,
+934e,,,否,繦,,Thinking...,Thinking...,Thinking...,U+7E66,,,Thinking...,,,,,,
+9352,,,否,卿,,Thinking...,Thinking...,Thinking...,U+537F,,3-3A26,Thinking...,,,,,, {卿}
+9359,,,否,覰,,Thinking...,Thinking...,Thinking...,U+89B0,,3-587E,Thinking...,,,,,,
+935a,,,否,𡙇,,Thinking...,Thinking...,Thinking...,U+21647,,4-3C5E,Thinking...,,,,,,  {垂夬}
+935c,,,否,慤,,Thinking...,Thinking...,Thinking...,U+6164,,,Thinking...,,,,,,
+9366,,,否,熺,,Thinking...,Thinking...,Thinking...,U+71BA,,,Thinking...,,,,,,
+9367,,,否,䤈,,Thinking...,Thinking...,Thinking...,U+4908,,3-5330,Thinking...,,,,,,
+9369,,,否,葈,,Thinking...,Thinking...,Thinking...,U+8448,,,Thinking...,,,,,,
+936a,,,否,憙,,Thinking...,Thinking...,Thinking...,U+6199,,,Thinking...,,,,,,
+936b,,,否,肹,,Thinking...,Thinking...,Thinking...,U+80B9,,,Thinking...,,,,,,
+936c,,,否,磶,,Thinking...,Thinking...,Thinking...,U+78F6,,,Thinking...,,,,,,
+9370,,,否,䦧,,Thinking...,Thinking...,Thinking...,U+49A7,,,Thinking...,,,,,,
+9371,,,否,㭘,,Thinking...,Thinking...,Thinking...,U+3B58,,4-2D57,Thinking...,,,,,, {木合}
+9372,,,否,陿,,Thinking...,Thinking...,Thinking...,U+967F,,,Thinking...,,,,,,
+9375,,,否,脇,,Thinking...,Thinking...,Thinking...,U+8107,,,Thinking...,,,,,,
+9376,,,否,衺,,Thinking...,Thinking...,Thinking...,U+887A,,,Thinking...,,,,,,
+9379,,,否,蠏,,Thinking...,Thinking...,Thinking...,U+880F,,,Thinking...,,,,,,
+937a,,,否,緤,,Thinking...,Thinking...,Thinking...,U+7DE4,,3-4E24,Thinking...,,,,,,
+937d,,,否,訩,,Thinking...,Thinking...,Thinking...,U+8A29,,,Thinking...,,,,,,
+937e,,,否,汹,,Thinking...,Thinking...,Thinking...,U+6C79,,,Thinking...,,,,,,
+93a2,,,否,歗,,Thinking...,Thinking...,Thinking...,U+6B57,,,Thinking...,,,,,,
+93a9,,,否,䘏,,Thinking...,Thinking...,Thinking...,U+460F,,3-2F25,Thinking...,,,,,,
+93af,,,否,衘,,Thinking...,Thinking...,Thinking...,U+8858,,3-444D,Thinking...,,,,,,
+93b2,,,否,蹮,,Thinking...,Thinking...,Thinking...,U+8E6E,,4-6152,Thinking...,,,,,,
+93b5,,,否,尠,,Thinking...,Thinking...,Thinking...,U+5C20,,,Thinking...,,,,,,
+93c5,,,否,栙,,Thinking...,Thinking...,Thinking...,U+6819,,,Thinking...,,,,,,
+93c8,,,否,顖,,Thinking...,Thinking...,Thinking...,U+9856,,3-5B65,Thinking...,,,,,,
+93cc,,,否,虗,,Thinking...,Thinking...,Thinking...,U+8657,,3-3863,Thinking...,,,,,,
+93d0,,,否,䰰,,Thinking...,Thinking...,Thinking...,U+4C30,,4-6C49,Thinking...,,,,,, {需鬼}
+93d6,,,否,烕,,Thinking...,Thinking...,Thinking...,U+70D5,,3-3231,Thinking...,,,,,, {滅-水}
+93d7,,,否,㑿,,Thinking...,Thinking...,Thinking...,U+347F,,4-3C2D,Thinking...,,,,,, {側人+巢}
+93d8,,,否,卐,,Thinking...,Thinking...,Thinking...,U+5350,,,Thinking...,,,,,,
+93db,,,否,瑠,,Thinking...,Thinking...,Thinking...,U+7460,,3-4825,Thinking...,,,,,,
+93df,,,否,狥,,Thinking...,Thinking...,Thinking...,U+72E5,,,Thinking...,,,,,,
+93e0,,,否,廵,,Thinking...,Thinking...,Thinking...,U+5EF5,,,Thinking...,,,,,,
+93e1,,,否,卂,,Thinking...,Thinking...,Thinking...,U+5342,,4-2130,Thinking...,,,,,,
+93e4,,,否,鼅,,Thinking...,Thinking...,Thinking...,U+9F05,,3-5F3C,Thinking...,,,,,, {上知下黽}
+93f0,,,否,剳,,Thinking...,Thinking...,Thinking...,U+5273,,,Thinking...,,,,,,
+93f4,,,否,斅,,Thinking...,Thinking...,Thinking...,U+6585,,,Thinking...,,,,,,
+93f7,,,否,袠,,Thinking...,Thinking...,Thinking...,U+88A0,,,Thinking...,,,,,,
+93f8,,,否,寘,,Thinking...,Thinking...,Thinking...,U+5BD8,,15-412B,Thinking...,,,,,,  {寘}
+93fa,,,否,𨽥,,Thinking...,Thinking...,Thinking...,U+28F65,,7-5172,Thinking...,,,,,, {左阜+上步下馬}
+93fb,,,否,穉,,Thinking...,Thinking...,Thinking...,U+7A49,,,Thinking...,,,,,,
+93fc,,,否,摣,,Thinking...,Thinking...,Thinking...,U+6463,,4-435E,Thinking...,,,,,,
+93fe,,,否,牐,,Thinking...,Thinking...,Thinking...,U+7250,,3-425C,Thinking...,,,,,,
+9440,,,否,鞧,,Thinking...,Thinking...,Thinking...,U+97A7,,,Thinking...,,,,,,
+9443,,,否,䄍,,Thinking...,Thinking...,Thinking...,U+410D,,3-433A,Thinking...,,,,,, {側示+昔}
+9444,,,否,㸙,,Thinking...,Thinking...,Thinking...,U+3E19,,4-386B,Thinking...,,,,,, {上父下者}
+9445,,,否,輙,,Thinking...,Thinking...,Thinking...,U+8F19,,,Thinking...,,,,,,
+9446,,,否,襵,,Thinking...,Thinking...,Thinking...,U+8975,,,Thinking...,,,,,,
+9448,,,否,嗻,,Thinking...,Thinking...,Thinking...,U+55FB,,,Thinking...,,,,,,
+9449,,,否,謿,,Thinking...,Thinking...,Thinking...,U+8B3F,,3-5B34,Thinking...,,,,,,
+9450,,,否,毡,,Thinking...,Thinking...,Thinking...,U+6BE1,,,Thinking...,,,,,,
+9451,,,否,氊,,Thinking...,Thinking...,Thinking...,U+6C0A,,,Thinking...,,,,,,
+9452,,,否,飦,,Thinking...,Thinking...,Thinking...,U+98E6,,,Thinking...,,,,,,
+9457,,,否,ṣ,,Thinking...,Thinking...,Thinking...,U+1E63,,,Thinking...,,,,,,
+945a,,,否,稹,,Thinking...,Thinking...,Thinking...,U+7A39,,11-7060,Thinking...,,,,,, {稹，右上角匕}
+945e,,,否,争,,Thinking...,Thinking...,Thinking...,U+4E89,,,Thinking...,,,,,,
+945f,,,否,鬇,,Thinking...,Thinking...,Thinking...,U+9B07,,3-596F,Thinking...,,,,,, {上髟下爭}
+9460,,,否,鼄,,Thinking...,Thinking...,Thinking...,U+9F04,,,Thinking...,,,,,,
+9461,,,否,猪,,Thinking...,Thinking...,Thinking...,U+732A,,,Thinking...,,,,,,
+9463,,,否,爥,,Thinking...,Thinking...,Thinking...,U+7225,,3-6142,Thinking...,,,,,,
+9467,,,否,凖,,Thinking...,Thinking...,Thinking...,U+51D6,,,Thinking...,,,,,,
+946a,,,否,斵,,Thinking...,Thinking...,Thinking...,U+65B5,,,Thinking...,,,,,,
+946c,,,否,甎,,Thinking...,Thinking...,Thinking...,U+750E,,,Thinking...,,,,,,
+946d,,,否,籑,,Thinking...,Thinking...,Thinking...,U+7C51,,3-5E4C,Thinking...,,,,,,
+9470,,,否,瘇,,Thinking...,Thinking...,Thinking...,U+7607,,3-482B,Thinking...,,,,,,
+9473,,,否,遟,,Thinking...,Thinking...,Thinking...,U+905F,,3-4A27,Thinking...,,,,,,
+9475,,,否,叱,,Thinking...,Thinking...,Thinking...,U+53F1,,1-4639,Thinking...,,,,,," {叱 (叱咤), 到底為什麼要造這個字...}"
+9478,,,否,叕,,Thinking...,Thinking...,Thinking...,U+53D5,,3-276B,Thinking...,,,,,,
+947c,,,否,义,,Thinking...,Thinking...,Thinking...,U+4E49,,3-212E,Thinking...,,,,,,
+94a2,,,否,詧,,Thinking...,Thinking...,Thinking...,U+8A67,,,Thinking...,,,,,,
+94a4,,,否,鑔,,Thinking...,Thinking...,Thinking...,U+9454,,,Thinking...,,,,,,
+94a6,,,否,姹,,Thinking...,Thinking...,Thinking...,U+59F9,,,Thinking...,,,,,,
+94a8,,,否,唓,,Thinking...,Thinking...,Thinking...,U+5513,,,Thinking...,,,,,,
+94a9,,,否,蛼,,Thinking...,Thinking...,Thinking...,U+86FC,,,Thinking...,,,,,,
+94aa,,,否,釵,,Thinking...,Thinking...,Thinking...,U+91F5,,12-612E,Thinking...,,,,,,
+94ac,,,否,麨,,Thinking...,Thinking...,Thinking...,U+9EA8,,,Thinking...,,,,,,
+94ad,,,否,犫,,Thinking...,Thinking...,Thinking...,U+72AB,,,Thinking...,,,,,,
+94ae,,,否,𠷎,,Thinking...,Thinking...,Thinking...,U+20DCE,,4-3666,Thinking...,,,,,,
+94af,,,否,酧,,Thinking...,Thinking...,Thinking...,U+9167,,,Thinking...,,,,,,
+94b0,,,否,醻,,Thinking...,Thinking...,Thinking...,U+91BB,,,Thinking...,,,,,,
+94b1,,,否,㵞,,Thinking...,Thinking...,Thinking...,U+3D5E,,,Thinking...,,,,,,
+94b2,,,否,讐,,Thinking...,Thinking...,Thinking...,U+8B90,,,Thinking...,,,,,,
+94b6,,,否,讇,,Thinking...,Thinking...,Thinking...,U+8B87,,,Thinking...,,,,,,
+94b8,,,否,韂,,Thinking...,Thinking...,Thinking...,U+97C2,,,Thinking...,,,,,,
+94bc,,,否,齓,,Thinking...,Thinking...,Thinking...,U+9F53,,,Thinking...,,,,,,
+94c3,,,否,䞓,,Thinking...,Thinking...,Thinking...,U+4793,,4-4759,Thinking...,,,,,, {赤巠}
+94c4,,,否,頳,,Thinking...,Thinking...,Thinking...,U+9833,,,Thinking...,,,,,,
+94c5,,,否,呈,,Thinking...,Thinking...,Thinking...,U+5448,,4-235B,Thinking...,,,,,, {呈}
+94c6,,,否,䟫,,Thinking...,Thinking...,Thinking...,U+47EB,,3-3F3C,Thinking...,,,,,,
+94ca,,,否,𨆼,,Thinking...,Thinking...,Thinking...,U+281BC,,15-6852,Thinking...,,,,,, {躕}
+94cd,,,是,櫉,,Thinking...,(略),(同),U+6AC9,(同),14-6B4E,Thinking...,U+6AC9,U+6AC9,,,, {櫥}
+94d2,,,否,巛,,Thinking...,Thinking...,Thinking...,U+5DDB,,,Thinking...,,,,,,
+94d4,,,否,齭,,Thinking...,Thinking...,Thinking...,U+9F6D,,4-6B61,Thinking...,,,,,, {齒所}
+94d6,,,否,膪,,Thinking...,Thinking...,Thinking...,U+81AA,,,Thinking...,,,,,,
+94d8,,,否,𪘏,,Thinking...,Thinking...,Thinking...,U+2A60F,,4-6A3E,Thinking...,,,,,, {側足+齒}
+94db,,,否,䫄,,Thinking...,Thinking...,Thinking...,U+4AC4,,4-546F,Thinking...,,,,,, {兌頁}
+94dd,,,否,窻,,Thinking...,Thinking...,Thinking...,U+7ABB,,,Thinking...,,,,,,
+94de,,,否,牕,,Thinking...,Thinking...,Thinking...,U+7255,,,Thinking...,,,,,,
+94e1,,,否,冲,,Thinking...,Thinking...,Thinking...,U+51B2,,,Thinking...,,,,,,
+94e4,,,否,蒒,,Thinking...,Thinking...,Thinking...,U+8492,,3-4935,Thinking...,,,,,, {艸頭+師}
+94eb,,,否,眡,,Thinking...,Thinking...,Thinking...,U+7721,,,Thinking...,,,,,,
+94ec,,,否,眎,,Thinking...,Thinking...,Thinking...,U+770E,,,Thinking...,,,,,,
+94ee,,是,？,示,,Thinking...,Thinking...,Thinking...,U+793A,,1-467C,Thinking...,,,,,, {示 (批示)}
+94f3,,,否,䁑,,Thinking...,Thinking...,Thinking...,U+4051,,4-4546,Thinking...,,,,,, {目昜}
+94f5,,,是,𠍽,,Thinking...,(略),(同),U+2037D,(同),10-243C,Thinking...,U+2037D,U+2037D,,,, {側人+奢}
+94f6,,,否,儍,,Thinking...,Thinking...,Thinking...,U+510D,,3-4B2C,Thinking...,,,,,, {傻}
+94f9,,,否,挱,,Thinking...,Thinking...,Thinking...,U+6331,,,Thinking...,,,,,,
+94fb,,,否,虵,,Thinking...,Thinking...,Thinking...,U+8675,,,Thinking...,,,,,,
+94fd,,,否,䈰,,Thinking...,Thinking...,Thinking...,U+4230,,3-5235,Thinking...,,,,,, {竹頭+捎}
+94fe,,,否,䈾,,Thinking...,Thinking...,Thinking...,U+423E,,4-5765,Thinking...,,,,,, {竹頭+梢}
+9545,,,否,跚,,Thinking...,Thinking...,Thinking...,U+8DDA,,1-6243,Thinking...,,,,,, {跚}
+9546,,,否,羴,,Thinking...,Thinking...,Thinking...,U+7FB4,,,Thinking...,,,,,,
+9547,,,否,饍,,Thinking...,Thinking...,Thinking...,U+994D,,,Thinking...,,,,,,
+9548,,,否,鱓,,Thinking...,Thinking...,Thinking...,U+9C53,,,Thinking...,,,,,,
+954b,,,否,慎,,Thinking...,Thinking...,Thinking...,U+614E,,13-3A56,Thinking...,,,,,, {慎}
+9551,,,否,毺,,Thinking...,Thinking...,Thinking...,U+6BFA,,,Thinking...,,,,,,
+9552,,,否,踈,,Thinking...,Thinking...,Thinking...,U+8E08,,,Thinking...,,,,,,
+9553,,,否,𨉣,,Thinking...,Thinking...,Thinking...,U+28263,,4-5431,Thinking...,,,,,, {身+暇-日}
+9554,,,否,尗,,Thinking...,Thinking...,Thinking...,U+5C17,,4-225C,Thinking...,,,,,,  {叔 - 又}
+9557,,,否,竪,,Thinking...,Thinking...,Thinking...,U+7AEA,,3-434A,Thinking...,,,,,,  {豎}
+955b,,,否,瞤,,Thinking...,Thinking...,Thinking...,U+77A4,,,Thinking...,,,,,,
+955c,,,否,冄,,Thinking...,Thinking...,Thinking...,U+5184,,3-214D,Thinking...,,,,,,
+9561,,,否,任,,Thinking...,Thinking...,Thinking...,U+4EFB,,,Thinking...,,,,,,(這是個缺圖字)
+9563,,,否,絍,,Thinking...,Thinking...,Thinking...,U+7D4D,,,Thinking...,,,,,,
+9568,,,否,刄,,Thinking...,Thinking...,Thinking...,U+5204,,3-2136,Thinking...,,,,,,{刀+捺}
+9569,,,否,衽,,Thinking...,Thinking...,Thinking...,U+887D,,,Thinking...,,,,,,
+956a,,,否,𨇯,,Thinking...,Thinking...,Thinking...,U+281EF,,4-6D28,Thinking...,,,,,, {側足+雙}
+956c,,,否,䉶,,Thinking...,Thinking...,Thinking...,U+4276,,,Thinking...,,,,,, {竹頭+雙} 為什麼雙和竹之間有多一畫?
+9572,,,否,顬,,Thinking...,Thinking...,Thinking...,U+986C,,,Thinking...,,,,,,
+9573,,,否,宂,,Thinking...,Thinking...,Thinking...,U+5B82,,,Thinking...,,,,,,
+9575,,,否,叒,,Thinking...,Thinking...,Thinking...,U+53D2,,,Thinking...,,,,,,
+9576,,,否,趦,,Thinking...,Thinking...,Thinking...,U+8DA6,,,Thinking...,,,,,,
+957c,,,否,齚,,Thinking...,Thinking...,Thinking...,U+9F5A,,,Thinking...,,,,,, {齒乍}
+957d,,,否,参,,Thinking...,Thinking...,Thinking...,U+53C2,,,Thinking...,,,,,,
+95a1,,,否,呝,,Thinking...,Thinking...,Thinking...,U+545D,,,Thinking...,,,,,,  {左口右戶乙}
+95a2,,,否,ś,,Thinking...,Thinking...,Thinking...,U+15B,#N/A,,Thinking...,,,,,,
+95aa,,,否,温,,Thinking...,Thinking...,Thinking...,U+6E29,,,Thinking...,,,,,, {溫}
+95ac,,,否,猬,,Thinking...,Thinking...,Thinking...,U+732C,,,Thinking...,,,,,,
+95af,,,否,夨,,Thinking...,Thinking...,Thinking...,U+5928,,,Thinking...,,,,,,
+95b1,,,否,㖪,,Thinking...,Thinking...,Thinking...,U+35AA,,,Thinking...,,,,,, {口或}
+95b5,,,否,愠,,Thinking...,Thinking...,Thinking...,U+6120,,,Thinking...,,,,,, {慍}
+95b6,,,否,瞘,,Thinking...,Thinking...,Thinking...,U+7798,,,Thinking...,,,,,,
+95b7,,,否,娒,,Thinking...,Thinking...,Thinking...,U+5A12,,,Thinking...,,,,,,
+95b8,,,否,𤩝,,Thinking...,Thinking...,Thinking...,U+24A5D,,,Thinking...,,,,,, {王喬}
+95b9,,,,貟,,,,,,,3-2F2E,,,,,,,
+95bb,,,否,儎,,Thinking...,Thinking...,Thinking...,U+510E,,,Thinking...,,,,,,
+95bd,,,否,贜,,Thinking...,Thinking...,Thinking...,U+8D1C,,,Thinking...,,,,,,
+95bf,,,否,𠿺,,Thinking...,Thinking...,Thinking...,U+20FFA,,,Thinking...,,,,,, {口葬}
+95c3,,,否,冣,,Thinking...,Thinking...,Thinking...,U+51A3,,,Thinking...,,,,,,
+95c6,,,否,䰖,,Thinking...,Thinking...,Thinking...,U+4C16,,,Thinking...,,,,,,  {上髟下贊}
+95c7,,,否,罇,,Thinking...,Thinking...,Thinking...,U+7F47,,,Thinking...,,,,,,
+95c8,,,否,㯶,,Thinking...,Thinking...,Thinking...,U+3BF6,,,Thinking...,,,,,,  {糭-米+木}
+95c9,,,否,嵸,,Thinking...,Thinking...,Thinking...,U+5D78,,,Thinking...,,,,,,
+95ca,,,否,鬉,,Thinking...,Thinking...,Thinking...,U+9B09,,,Thinking...,,,,,,
+95cb,,,否,偬,,Thinking...,Thinking...,Thinking...,U+506C,,,Thinking...,,,,,,
+95cc,,,否,愡,,Thinking...,Thinking...,Thinking...,U+6121,,,Thinking...,,,,,,
+95cd,,,否,憁,,Thinking...,Thinking...,Thinking...,U+6181,,,Thinking...,,,,,,  {熜-火+忄}
+95d2,,,否,糍,,Thinking...,Thinking...,Thinking...,U+7CCD,,,Thinking...,,,,,,
+95d5,,,否,辞,,Thinking...,Thinking...,Thinking...,U+8F9E,,,Thinking...,,,,,,
+95d6,,,否,刾,,Thinking...,Thinking...,Thinking...,U+523E,,,Thinking...,,,,,,
+95d7,,,否,厠,,Thinking...,Thinking...,Thinking...,U+53A0,,,Thinking...,,,,,,
+95db,,,否,凑,,Thinking...,Thinking...,Thinking...,U+51D1,,,Thinking...,,,,,,
+95df,,,否,厠,,Thinking...,Thinking...,Thinking...,U+53A0,,,Thinking...,,,,,,
+95e0,,,否,䠞,,Thinking...,Thinking...,Thinking...,U+481E,,,Thinking...,,,,,, {側足+戚}
+95e3,,,否,獕,,Thinking...,Thinking...,Thinking...,U+7355,,,Thinking...,,,,,,
+95e5,,,否,脃,,Thinking...,Thinking...,Thinking...,U+8103,,3-334E,Thinking...,,,,,,
+95e6,,,否,邨,,Thinking...,Thinking...,Thinking...,U+90A8,,,Thinking...,,,,,,
+95e8,,,否,怱,,Thinking...,Thinking...,Thinking...,U+6031,,,Thinking...,,,,,,
+95eb,,,否,厮,,Thinking...,Thinking...,Thinking...,U+53AE,,,Thinking...,,,,,, {廝}
+95ee,,,否,禩,,Thinking...,Thinking...,Thinking...,U+79A9,,,Thinking...,,,,,,
+95f3,,,否,澁,,Thinking...,Thinking...,Thinking...,U+6F81,,,Thinking...,,,,,,
+95f4,,,否,㘔,,Thinking...,Thinking...,Thinking...,U+3614,,,Thinking...,,,,,, {口賽}
+95f5,,,否,簺,,Thinking...,Thinking...,Thinking...,U+7C3A,,,Thinking...,,,,,,
+95f9,,,否,螋,,Thinking...,Thinking...,Thinking...,U+878B,,,Thinking...,,,,,,
+9640,,,否,遬,,Thinking...,Thinking...,Thinking...,U+906C,,,Thinking...,,,,,,
+9641,,,否,𦌊,,Thinking...,Thinking...,Thinking...,U+2630A,,,Thinking...,,,,,, {四蓋+欶}
+9644,,,否,遡,,Thinking...,Thinking...,Thinking...,U+9061,,,Thinking...,,,,,,
+9646,,,否,髿,,Thinking...,Thinking...,Thinking...,U+9AFF,,,Thinking...,,,,,,
+9647,,,否,鮻,,Thinking...,Thinking...,Thinking...,U+9BBB,,,Thinking...,,,,,,
+964a,,,否,鏁,,Thinking...,Thinking...,Thinking...,U+93C1,,,Thinking...,,,,,,
+9651,,,否,飱,,Thinking...,Thinking...,Thinking...,U+98F1,,,Thinking...,,,,,,
+9652,,,否,笋,,Thinking...,Thinking...,Thinking...,U+7B0B,,,Thinking...,,,,,,
+9653,,,否,凇,,Thinking...,Thinking...,Thinking...,U+51C7,,,Thinking...,,,,,,
+9655,,,否,㩳,,Thinking...,Thinking...,Thinking...,U+3A73,,,Thinking...,,,,,, {提手+雙}
+9657,,,否,峩,,Thinking...,Thinking...,Thinking...,U+5CE9,,,Thinking...,,,,,,
+9659,,,否,鵞,,Thinking...,Thinking...,Thinking...,U+9D5E,,,Thinking...,,,,,,
+965b,,,否,頟,,Thinking...,Thinking...,Thinking...,U+981F,,,Thinking...,,,,,,
+965c,,,否,𣘨,,Thinking...,Thinking...,Thinking...,U+23628,,,Thinking...,,,,,,
+965e,,,否,歺,,Thinking...,Thinking...,Thinking...,U+6B7A,,,Thinking...,,,,,,
+9660,,,否,砈,,Thinking...,Thinking...,Thinking...,U+7808,,,Thinking...,,,,,,
+9661,,,否,屵,,Thinking...,Thinking...,Thinking...,U+5C75,,,Thinking...,,,,,,
+9665,,,否,㔩,,Thinking...,Thinking...,Thinking...,U+3529,,,Thinking...,,,,,, {句-口+盍}
+9667,,,否,㤅,,Thinking...,Thinking...,Thinking...,U+3905,,,Thinking...,,,,,,
+966a,,,否,翶,,Thinking...,Thinking...,Thinking...,U+7FF6,,,Thinking...,,,,,,
+966b,,,否,抝,,Thinking...,Thinking...,Thinking...,U+629D,,,Thinking...,,,,,,
+9671,,,否,揞,,Thinking...,Thinking...,Thinking...,U+63DE,,,Thinking...,,,,,,
+9672,,,否,枊,,Thinking...,Thinking...,Thinking...,U+678A,,,Thinking...,,,,,,
+9673,,,否,轜,,Thinking...,Thinking...,Thinking...,U+8F5C,,,Thinking...,,,,,,
+9675,,,否,扅,,Thinking...,Thinking...,Thinking...,U+6245,,,Thinking...,,,,,,
+9679,,,否,彞,,Thinking...,Thinking...,Thinking...,U+5F5E,,,Thinking...,,,,,, {彞 (彞語)}
+967a,,,否,㠯,,Thinking...,Thinking...,Thinking...,U+382F,,,Thinking...,,,,,,
+967b,,,否,狀⃞,,Thinking...,Thinking...,Thinking...,U+72C0,,,Thinking...,,,,,,
+967c,,,否,㵝,,Thinking...,Thinking...,Thinking...,U+3D5D,,,Thinking...,,,,,,
+967d,,,否,坄,,Thinking...,Thinking...,Thinking...,U+5744,,,Thinking...,,,,,,
+967e,,,否,瞖,,Thinking...,Thinking...,Thinking...,U+7796,,,Thinking...,,,,,,
+96a1,,,否,鷧,,Thinking...,Thinking...,Thinking...,U+9DE7,,,Thinking...,,,,,,
+96a2,,,否,䆿,,Thinking...,Thinking...,Thinking...,U+41BF,,,Thinking...,,,,,,
+96a3,,,否,鵶,,Thinking...,Thinking...,Thinking...,U+9D76,,,Thinking...,,,,,,
+96a5,,,否,瘂,,Thinking...,Thinking...,Thinking...,U+7602,,,Thinking...,,,,,,
+96a6,,,否,嚈,,Thinking...,Thinking...,Thinking...,U+5688,,,Thinking...,,,,,,
+96a7,,,否,釾,,Thinking...,Thinking...,Thinking...,U+91FE,,,Thinking...,,,,,,
+96a8,,,否,壄,,Thinking...,Thinking...,Thinking...,U+58C4,,,Thinking...,,,,,,
+96aa,,,否,殜,,Thinking...,Thinking...,Thinking...,U+6B9C,,,Thinking...,,,,,,  {歹 + 蝶 - 虫}
+96ac,,,否,曅,,Thinking...,Thinking...,Thinking...,U+66C5,,,Thinking...,,,,,, {上日下華}
+96b0,,,否,滺,,Thinking...,Thinking...,Thinking...,U+6EFA,,,Thinking...,,,,,,
+96b1,,,否,㖡,,Thinking...,Thinking...,Thinking...,U+35A1,,,Thinking...,,,,,, {口夜}
+96b2,,,否,肬,,Thinking...,Thinking...,Thinking...,U+80AC,,,Thinking...,,,,,,
+96ba,,,否,㳂,,Thinking...,Thinking...,Thinking...,U+3CC2,,,Thinking...,,,,,,
+96bc,,,否,㫃,,Thinking...,Thinking...,Thinking...,U+3AC3,,,Thinking...,,,,,,  {方人}
+96bd,,,否,𣝓,,Thinking...,Thinking...,Thinking...,U+23753,,,Thinking...,,,,,,  {木厭} 
+96c0,,,否,灧,,Thinking...,Thinking...,Thinking...,U+7067,,,Thinking...,,,,,, {灩}
+96c2,,,否,陻,,Thinking...,Thinking...,Thinking...,U+967B,,,Thinking...,,,,,,
+96c4,,,否,侌,,Thinking...,Thinking...,Thinking...,U+4F8C,,,Thinking...,,,,,,
+96c6,,,否,㹜,,Thinking...,Thinking...,Thinking...,U+3E5C,,,Thinking...,,,,,, {犬犬}
+96c7,,,否,唫,,Thinking...,Thinking...,Thinking...,U+552B,,,Thinking...,,,,,,
+96c8,,,否,嶾,,Thinking...,Thinking...,Thinking...,U+5DBE,,,Thinking...,,,,,, {山+穩-禾}
+96cd,,,否,媖,,Thinking...,Thinking...,Thinking...,U+5A96,,,Thinking...,,,,,,
+96ce,,,否,鸎,,Thinking...,Thinking...,Thinking...,U+9E0E,,,Thinking...,,,,,,
+96d0,,,否,籝,,Thinking...,Thinking...,Thinking...,U+7C5D,,,Thinking...,,,,,,
+96d2,,,否,暎,,Thinking...,Thinking...,Thinking...,U+668E,,,Thinking...,,,,,,
+96d6,,,否,鼃,,Thinking...,Thinking...,Thinking...,U+9F03,,,Thinking...,,,,,,
+96d7,,,否,䍪,,Thinking...,Thinking...,Thinking...,U+436A,,,Thinking...,,,,,, {羊末}
+96da,,,否,韈,,Thinking...,Thinking...,Thinking...,U+97C8,,,Thinking...,,,,,, {革蔑}
+96db,,,否,韤,,Thinking...,Thinking...,Thinking...,U+97E4,,,Thinking...,,,,,, {韋蔑}
+96e0,,,否,衞,,Thinking...,Thinking...,Thinking...,U+885E,,,Thinking...,,,,,, {衛}
+96e5,,,否,尩,,Thinking...,Thinking...,Thinking...,U+5C29,,,Thinking...,,,,,,
+96e9,,,否,徃,,Thinking...,Thinking...,Thinking...,U+5F83,,,Thinking...,,,,,,
+96eb,,,否,望,,Thinking...,Thinking...,Thinking...,U+671B,,,Thinking...,,,,,, {正字與圖片相同（斜月）}
+96ee,,,否,禺,,Thinking...,Thinking...,Thinking...,U+79BA,,,Thinking...,,,,,, {禺}
+96ef,,,否,隅,,Thinking...,Thinking...,Thinking...,U+9685,,,Thinking...,,,,,, {隅}
+96f0,,,否,愚,,Thinking...,Thinking...,Thinking...,U+611A,,,Thinking...,,,,,, {愚}
+96f1,,,否,䱷,,Thinking...,Thinking...,Thinking...,U+4C77,,,Thinking...,,,,,,  {左虍魚右攵}
+96fa,,,否,欝,,Thinking...,Thinking...,Thinking...,U+6B1D,,,Thinking...,,,,,,
+96fb,,,否,籰,,Thinking...,Thinking...,Thinking...,U+7C70,,,Thinking...,,,,,,
+9743,,,否,蒕,,Thinking...,Thinking...,Thinking...,U+8495,,,Thinking...,,,,,,
+9747,,,否,顒,,Thinking...,Thinking...,Thinking...,U+9852,,,Thinking...,,,,,,
+974d,,,否,釉,,Thinking...,Thinking...,Thinking...,U+91C9,,,Thinking...,,,,,, {采由}
+974f,,,否,毌,,Thinking...,Thinking...,Thinking...,U+6BCC,,,Thinking...,,,,,, {毌}
+9750,,,否,ŋ,,Thinking...,Thinking...,Thinking...,U+14B,#N/A,,Thinking...,,,,,,
+9758,,,否,𡯓,,Thinking...,Thinking...,Thinking...,U+21BD3,,,Thinking...,,,,,, {尬}
+975b,,,否,䘿,,Thinking...,Thinking...,Thinking...,U+463F,,,Thinking...,,,,,,  {側衣 + 屈}
+9760,,,否,䀢,,Thinking...,Thinking...,Thinking...,U+4022,,,Thinking...,,,,,, {目矢}
+9761,,,否,㯶,,Thinking...,Thinking...,Thinking...,U+3BF6,,,Thinking...,,,,,,
+9762,,,否,騌,,Thinking...,Thinking...,Thinking...,U+9A0C,,,Thinking...,,,,,,
+9764,,,否,袄,,Thinking...,Thinking...,Thinking...,U+8884,,,Thinking...,,,,,,
+9765,,,否,殹,,Thinking...,Thinking...,Thinking...,U+6BB9,,,Thinking...,,,,,,
+9766,,,否,彛,,Thinking...,Thinking...,Thinking...,U+5F5B,,,Thinking...,,,,,,
+976a,,,否,烱,,Thinking...,Thinking...,Thinking...,U+70F1,,,Thinking...,,,,,,
+976b,,,否,䏿,,Thinking...,Thinking...,Thinking...,U+43FF,,,Thinking...,,,,,,
+976c,,,否,鍫,,Thinking...,Thinking...,Thinking...,U+936B,,,Thinking...,,,,,,
+976e,,,否,鰌,,Thinking...,Thinking...,Thinking...,U+9C0C,,,Thinking...,,,,,,
+976f,,,否,鵮,,Thinking...,Thinking...,Thinking...,U+9D6E,,,Thinking...,,,,,,
+9773,,,否,鰕,,Thinking...,Thinking...,Thinking...,U+9C15,,,Thinking...,,,,,,
+9779,,,否,縣,,Thinking...,Thinking...,Thinking...,U+7E23,,13-6F21,Thinking...,,,,,," {縣, CNS 13-6F21}"
+977b,,,否,喆,,Thinking...,Thinking...,Thinking...,U+5586,,,Thinking...,,,,,,
+97a2,,,否,餦,,Thinking...,Thinking...,Thinking...,U+9926,,,Thinking...,,,,,,
+97a7,,,否,鼹,,Thinking...,Thinking...,Thinking...,U+9F39,,,Thinking...,,,,,,
+97a8,,,否,䰀,,Thinking...,Thinking...,Thinking...,U+4C00,,,Thinking...,,,,,, {上髟下委}
+97ab,,,否,敎,,Thinking...,Thinking...,Thinking...,U+654E,,,Thinking...,,,,,, {教}
+97bf,,,否,颰,,Thinking...,Thinking...,Thinking...,U+98B0,,4-4857,Thinking...,,,,,,  {風邊 + 犮}
+97c0,,,否,吴,,Thinking...,Thinking...,Thinking...,U+5434,,,Thinking...,,,,,,
+97cc,,,否,餁,,Thinking...,Thinking...,Thinking...,U+9901,,,Thinking...,,,,,,
+97cd,,,否,槀,,Thinking...,Thinking...,Thinking...,U+69C0,,,Thinking...,,,,,,
+97ce,,,否,㲪,,Thinking...,Thinking...,Thinking...,U+3CAA,,,Thinking...,,,,,,  {登毛}
+97d2,,,否,→,,Thinking...,Thinking...,Thinking...,U+2192,,,Thinking...,,,,,,
+97d3,,,否,𩢷,,Thinking...,Thinking...,Thinking...,U+298B7,,,Thinking...,,,,,,  {馬百}（貼不進來）
+97d4,,,否,㞞,,Thinking...,Thinking...,Thinking...,U+379E,,14-6536,Thinking...,,,,,, {尸邊+從}
+97d7,,,否,脗,,Thinking...,Thinking...,Thinking...,U+8117,,,Thinking...,,,,,,
+97d8,,,否,𡈼,,Thinking...,Thinking...,Thinking...,U+2123C,,,Thinking...,,,,,,
+97db,,,否,敠,,Thinking...,Thinking...,Thinking...,U+6560,,,Thinking...,,,,,,
+97dd,,,否,舋,,Thinking...,Thinking...,Thinking...,U+820B,,,Thinking...,,,,,,
+97e4,,,否,䠷,,Thinking...,Thinking...,Thinking...,U+4837,,3-4471,Thinking...,,,,,, {身兆}
+97e5,,,否,䌋,,Thinking...,Thinking...,Thinking...,U+430B,,,Thinking...,,,,,, {糸荅}
+97e6,,,否,ɔ,,Thinking...,Thinking...,Thinking...,U+254,#N/A,,Thinking...,,,,,,
+97e8,,,否,鐴,,Thinking...,Thinking...,Thinking...,U+9434,,,Thinking...,,,,,,
+97e9,,,否,䩤,,Thinking...,Thinking...,Thinking...,U+4A64,,,Thinking...,,,,,, {革見}
+97ea,,,否,ŋ,,Thinking...,Thinking...,Thinking...,U+14B,#N/A,,Thinking...,,,,,,
+97ec,,,否,𤊻,,Thinking...,Thinking...,Thinking...,U+242BB,,,Thinking...,,,,,, {火冒}
+97ed,,,否,㧙,,Thinking...,Thinking...,Thinking...,U+39D9,,,Thinking...,,,,,,  {提手 + 必}
+97ef,,,否,𩍐,,Thinking...,Thinking...,Thinking...,U+29350,,11-3A2A,Thinking...,,,,,, {革登}
+97f3,,,否,誵,,Thinking...,Thinking...,Thinking...,U+8AB5,,,Thinking...,,,,,,
+97f4,,,否,䁆,,Thinking...,Thinking...,Thinking...,U+4046,,,Thinking...,,,,,,  {目奄}
+97f5,,,否,㘉,,Thinking...,Thinking...,Thinking...,U+3609,,,Thinking...,,,,,,  {口節}
+97f9,,,否,𪑦,,Thinking...,Thinking...,Thinking...,U+2A466,,,Thinking...,,,,,, {黑曷}
+97fa,,,否,䔿,,Thinking...,Thinking...,Thinking...,U+453F,,,Thinking...,,,,,,  {艸頭 + 尊}
+97fe,,,否,㗙,,Thinking...,Thinking...,Thinking...,U+35D9,,,Thinking...,,,,,,
+9841,,,否,磆,,Thinking...,Thinking...,Thinking...,U+78C6,,3-4D48,Thinking...,,,,,,
+9842,,,否,曃,,Thinking...,Thinking...,Thinking...,U+66C3,,,Thinking...,,,,,,
+9844,,,否,𪘥,,Thinking...,Thinking...,Thinking...,U+2A625,,,Thinking...,,,,,, {上制下齒}
+9845,,,否,𪆵,,Thinking...,Thinking...,Thinking...,U+2A1B5,,,Thinking...,,,,,,
+9848,,,否,䞤,,Thinking...,Thinking...,Thinking...,U+47A4,,,Thinking...,,,,,,  {走邊 + 句}
+9849,,,否,礲,,Thinking...,Thinking...,Thinking...,U+7932,,,Thinking...,,,,,,
+984b,,,否,夋,,Thinking...,Thinking...,Thinking...,U+590B,,,Thinking...,,,,,,
+984c,,,否,𤍤,,Thinking...,Thinking...,Thinking...,U+24364,,,Thinking...,,,,,, {火章}
+984d,,,否,叀,,Thinking...,Thinking...,Thinking...,U+53C0,,4-2559,Thinking...,,,,,,
+984e,,,否,憕,,Thinking...,Thinking...,Thinking...,U+6195,,,Thinking...,,,,,,
+984f,,,否,鱲,,Thinking...,Thinking...,Thinking...,U+9C72,,,Thinking...,,,,,,
+9850,,,否,𥫱,,Thinking...,Thinking...,Thinking...,U+25AF1,,,Thinking...,,,,,, {上⺮下屯}  
+9851,,,否,篅,,Thinking...,Thinking...,Thinking...,U+7BC5,,,Thinking...,,,,,, {上⺮下耑}
+9852,,,否,䉛,,Thinking...,Thinking...,Thinking...,U+425B,,,Thinking...,,,,,,  {竹頭 + 奧}
+9853,,,否,䕷,,Thinking...,Thinking...,Thinking...,U+4577,,,Thinking...,,,,,,
+9854,,,否,䯼,,Thinking...,Thinking...,Thinking...,U+4BFC,,4-543B,Thinking...,,,,,, {上髟下狄}
+9855,,,否,𩽆,,Thinking...,Thinking...,Thinking...,U+29F46,,,Thinking...,,,,,, {魚賣}
+9856,,,否,璹,,Thinking...,Thinking...,Thinking...,U+74B9,,,Thinking...,,,,,,
+9857,,,否,俌,,Thinking...,Thinking...,Thinking...,U+4FCC,,,Thinking...,,,,,,
+9858,,,否,吖,,Thinking...,Thinking...,Thinking...,U+5416,,,Thinking...,,,,,,
+9859,,,否,㗇,,Thinking...,Thinking...,Thinking...,U+35C7,,3-3A30,Thinking...,,,,,,
+985a,,,否,祬,,Thinking...,Thinking...,Thinking...,U+796C,,,Thinking...,,,,,, {側衣+至}
+985b,,,否,𦳚,,Thinking...,Thinking...,Thinking...,U+26CDA,,,Thinking...,,,,,, {艸頭+是}
+985c,,,否,晗,,Thinking...,Thinking...,Thinking...,U+6657,,,Thinking...,,,,,,
+985d,,,否,袼,,Thinking...,Thinking...,Thinking...,U+88BC,,,Thinking...,,,,,,
+985e,,,否,𣜂,,Thinking...,Thinking...,Thinking...,U+23702,,,Thinking...,,,,,,{左木上夭下韭} (似 U+23702 ，但上面是天，Unihan 木-13 找不到更相似的，與「榼」連寫時應為正字)
+985f,,,否,䫜,,Thinking...,Thinking...,Thinking...,U+4ADC,,4-5E4C,Thinking...,,,,,,  {幽頁}
+9860,,,否,哯,,Thinking...,Thinking...,Thinking...,U+54EF,,,Thinking...,,,,,,
+9861,,,否,𨐖,,Thinking...,Thinking...,Thinking...,U+28416,,,Thinking...,,,,,,
+9862,,,否,㜕,,Thinking...,Thinking...,Thinking...,U+3715,,,Thinking...,,,,,, {女連}
+9863,,,否,𠛡,,Thinking...,Thinking...,Thinking...,U+206E1,,10-2725,Thinking...,,,,,, {必刂}
+9864,,,否,𣄕,,Thinking...,Thinking...,Thinking...,U+23115,,10-4D38,Thinking...,,,,,, {族-矢+音}
+9865,,,否,榼,,Thinking...,Thinking...,Thinking...,U+69BC,,,Thinking...,,,,,,{左木上去下韭}
+9866,,,否,猢,,Thinking...,Thinking...,Thinking...,U+7322,,,Thinking...,,,,,, {犬旁+活} (Unihan 犬-9 找不到，僅出現在例句西遊記「猢」猻處)
+9868,,,否,,,Thinking...,(略),(同),,(同),,Thinking...,,,,,,{上撇+水/下撇+十... 這是一張篆書的圖，=>組字}
+9869,,,否,㢝,,Thinking...,Thinking...,Thinking...,U+389D,,4-5F5E,Thinking...,,,,,,  {廯-羊+禾}
+986a,,,否,𣑱,,Thinking...,Thinking...,Thinking...,U+23471,,,Thinking...,,,,,, {染}
+986b,,,否,𥿽,,Thinking...,Thinking...,Thinking...,U+25FFD,,,Thinking...,,,,,, {糸安}
+986d,,,否,𩭯,,Thinking...,Thinking...,Thinking...,U+29B6F,,,Thinking...,,,,,, {上髟下亞}
+986e,,,否,罤,,Thinking...,Thinking...,Thinking...,U+7F64,,,Thinking...,,,,,,
+986f,,,否,𨭈,,Thinking...,Thinking...,Thinking...,U+28B48,,,Thinking...,,,,,, {金貓} (通U+28B48金猫，CNS11643 未錄)
+9870,,,否,𦞚,,Thinking...,Thinking...,Thinking...,U+2679A,,5-487B,Thinking...,,,,,,
+9871,,,否,㘚,,Thinking...,Thinking...,Thinking...,U+361A,,,Thinking...,,,,,,
+9872,,,否,䘕,,Thinking...,Thinking...,Thinking...,U+4615,,,Thinking...,,,,,,
+9873,,,否,衏,,Thinking...,Thinking...,Thinking...,U+884F,,,Thinking...,,,,,,
+9874,,,否,䵝,,Thinking...,Thinking...,Thinking...,U+4D5D,,,Thinking...,,,,,,
+9875,,,否,艧,,Thinking...,Thinking...,Thinking...,U+8267,,,Thinking...,,,,,,
+9876,,,否,鴴,,Thinking...,Thinking...,Thinking...,U+9D34,,4-5A56,Thinking...,,,,,,
+9877,,,否,𦚼,,Thinking...,Thinking...,Thinking...,U+266BC,,,Thinking...,,,,,,
+9878,,,否,䐐,,Thinking...,Thinking...,Thinking...,U+4410,,,Thinking...,,,,,,
+9879,,,否,𦞂,,Thinking...,Thinking...,Thinking...,U+26782,,,Thinking...,,,,,,  {月荅}
+987a,,,否,謩,,Thinking...,Thinking...,Thinking...,U+8B29,,,Thinking...,,,,,,
+987b,,是,？,禵,,Thinking...,Thinking...,Thinking...,U+79B5,,11-543B,Thinking...,,,,,, {側衣+題} CNS 11-543B (通同字 (多羅恂郡王允禵)(該輩份是示字輩，此字也出於清史人名，但圖卻寫成衣部... (yeah... 傾向作為編輯手誤處理)))
+987c,,,否,𣝡,,Thinking...,Thinking...,Thinking...,U+23761,,,Thinking...,,,,,, {木養}
+987e,,,否,𡟥,,Thinking...,Thinking...,Thinking...,U+217E5,,,Thinking...,,,,,, {女禹}
+98a1,,,否,嗗,,Thinking...,Thinking...,Thinking...,U+55D7,,,Thinking...,,,,,,
+98a2,,,否,𤟧,,Thinking...,Thinking...,Thinking...,U+247E7,,,Thinking...,,,,,, {犬旁+思}
+98a4,,,否,删,,Thinking...,Thinking...,Thinking...,U+5220,,3-2461,Thinking...,,,,,,{分冊}
+98aa,,,否,㕒,,Thinking...,Thinking...,Thinking...,U+3552,,,Thinking...,,,,,,  {厂義}
+98ab,,,否,仫,,Thinking...,Thinking...,Thinking...,U+4EEB,,14-4C5E,Thinking...,,,,,," {側人+麼, CNS 無收錄}"
+98ac,,,否,傈,,Thinking...,Thinking...,Thinking...,U+5088,,,Thinking...,,,,,,
+98ae,,,否,䊸,,Thinking...,Thinking...,Thinking...,U+42B8,,,Thinking...,,,,,,
+98b1,,,否,礶,,Thinking...,Thinking...,Thinking...,U+7936,,,Thinking...,,,,,,
+98b2,,,否,䏽,,Thinking...,Thinking...,Thinking...,U+43FD,,,Thinking...,,,,,,
+98b3,,,否,𠟪,,Thinking...,Thinking...,Thinking...,U+207EA,,5-4C26,Thinking...,,,,,,  {業刂}
+98b4,,,否,㗘,,Thinking...,Thinking...,Thinking...,U+35D8,,,Thinking...,,,,,,
+98b6,,,否,𨄅,,Thinking...,Thinking...,Thinking...,U+28105,,,Thinking...,,,,,,  {側足 + 區}
+98b7,,,否,譞,,Thinking...,Thinking...,Thinking...,U+8B5E,,,Thinking...,,,,,,
+98b8,,,否,啓,,Thinking...,Thinking...,Thinking...,U+5553,,,Thinking...,,,,,, {啟}
+98b9,,,否,䱁,,Thinking...,Thinking...,Thinking...,U+4C41,,,Thinking...,,,,,, {魚本}
+98bb,,,否,玘,,Thinking...,Thinking...,Thinking...,U+7398,,3-266E,Thinking...,,,,,,
+98bc,,,否,癀,,Thinking...,Thinking...,Thinking...,U+7640,,,Thinking...,,,,,, {疒黃}
+98c2,,,否,㩍,,Thinking...,Thinking...,Thinking...,U+3A4D,,,Thinking...,,,,,,  {提手 + 策}
+98c6,,,否,㞦,,Thinking...,Thinking...,Thinking...,U+37A6,,,Thinking...,,,,,, {山几}
+98ca,,,否,睉,,Thinking...,Thinking...,Thinking...,U+7749,,,Thinking...,,,,,,
+98cb,,,否,𥐪,,Thinking...,Thinking...,Thinking...,U+2542A,,4-2A63,Thinking...,,,,,, {石+紘-糸}
+98cc,,,否,伷,,Thinking...,Thinking...,Thinking...,U+4F37,,,Thinking...,,,,,,
+98cd,,,否,𡍋,,Thinking...,Thinking...,Thinking...,U+2134B,,,Thinking...,,,,,, {土奔}
+98ce,,是,？,鑾,,Thinking...,Thinking...,Thinking...,U+947E,,,Thinking...,,,,,,{上示示下金} 
+98d0,,,否,磓,,Thinking...,Thinking...,Thinking...,U+78D3,,,Thinking...,,,,,,
+98d4,,,否,輢,,Thinking...,Thinking...,Thinking...,U+8F22,,,Thinking...,,,,,,
+98d5,,,否,軎,,Thinking...,Thinking...,Thinking...,U+8ECE,,,Thinking...,,,,,,  {上車下口}
+98d6,,,否,𢼨,,Thinking...,Thinking...,Thinking...,U+22F28,,,Thinking...,,,,,, {危攴}
+98d8,,,否,涹,,Thinking...,Thinking...,Thinking...,U+6DB9,,,Thinking...,,,,,,
+98da,,,否,𣈶,,Thinking...,Thinking...,Thinking...,U+23236,,6-533E,Thinking...,,,,,, {日恆}
+98db,,,否,𤨕,,Thinking...,Thinking...,Thinking...,U+24A15,,,Thinking...,,,,,, {王勒}
+98dd,,,否,䇓,,Thinking...,Thinking...,Thinking...,U+41D3,,,Thinking...,,,,,,  {上須下立}
+98de,,,否,㵽,,Thinking...,Thinking...,Thinking...,U+3D7D,,,Thinking...,,,,,,
+98df,,,否,㧗,,Thinking...,Thinking...,Thinking...,U+39D7,,,Thinking...,,,,,, {提手+此}
+98e0,,,否,𩿡,,Thinking...,Thinking...,Thinking...,U+29FE1,,4-554C,Thinking...,,,,,, {鳥台}
+98e2,,,否,㟼,,Thinking...,Thinking...,Thinking...,U+37FC,,,Thinking...,,,,,, {上山下敖}
+98e3,,,否,墄,,Thinking...,Thinking...,Thinking...,U+5884,,,Thinking...,,,,,,
+98e5,,,否,慜,,Thinking...,Thinking...,Thinking...,U+615C,,,Thinking...,,,,,,
+98e6,,,否,䃴,,Thinking...,Thinking...,Thinking...,U+40F4,,,Thinking...,,,,,,  {石諸}
+98e7,,,否,𨧱,,Thinking...,Thinking...,Thinking...,U+289F1,,4-5444,Thinking...,,,,,, {金屈}
+98e8,,,否,𤫫,,Thinking...,Thinking...,Thinking...,U+24AEB,,,Thinking...,,,,,, {分瓜}
+98e9,,,否,𤬁,,Thinking...,Thinking...,Thinking...,U+24B01,,,Thinking...,,,,,, {果瓜}
+98ea,,,否,𤫶,,Thinking...,Thinking...,Thinking...,U+24AF6,,,Thinking...,,,,,, {吉瓜}
+98eb,,,否,裑,,Thinking...,Thinking...,Thinking...,U+88D1,,,Thinking...,,,,,,
+98ec,,,否,𠐍,,Thinking...,Thinking...,Thinking...,U+2040D,,,Thinking...,,,,,,  {側人 + 數}
+98ed,,,否,暅,,Thinking...,Thinking...,Thinking...,U+6685,,4-3D69,Thinking...,,,,,,
+98ef,,,否,禟,,Thinking...,Thinking...,Thinking...,U+799F,,,Thinking...,,,,,,
+98f0,,,否,㬇,,Thinking...,Thinking...,Thinking...,U+3B07,,,Thinking...,,,,,, {日奐} (有些字型看起來不一樣，但 Unicode.org 上的圖跟萌典的圖是一樣的)
+98f1,,,否,魪,,Thinking...,Thinking...,Thinking...,U+9B6A,,,Thinking...,,,,,, {魚介}
+98f3,,,否,溭,,Thinking...,Thinking...,Thinking...,U+6EAD,,,Thinking...,,,,,,
+98f4,,,否,摚,,Thinking...,Thinking...,Thinking...,U+645A,,,Thinking...,,,,,,
+98f5,,,否,頢,,Thinking...,Thinking...,Thinking...,U+9822,,3-4F67,Thinking...,,,,,,
+98f7,,,否,𤍟,,Thinking...,Thinking...,Thinking...,U+2435F,,,Thinking...,,,,,, {上票下火點}
+98f8,,,否,㩴,,Thinking...,Thinking...,Thinking...,U+3A74,,,Thinking...,,,,,,  {提手 + 瞿}
+98fa,,,否,崈,,Thinking...,Thinking...,Thinking...,U+5D08,,,Thinking...,,,,,,
+98fb,,,否,鐗,,Thinking...,Thinking...,Thinking...,U+9417,,3-5D3D,Thinking...,,,,,, {金間}
+98fc,,,否,𠎦,,Thinking...,Thinking...,Thinking...,U+203A6,,13-764B,Thinking...,,,,,, {側人+強}
+98fd,,,否,䯀,,Thinking...,Thinking...,Thinking...,U+4BC0,,,Thinking...,,,,,, {馬聶}
+98fe,,,否,㣥,,Thinking...,Thinking...,Thinking...,U+38E5,,,Thinking...,,,,,,  {彳侍}
+9940,,,否,𠗌,,Thinking...,Thinking...,Thinking...,U+205CC,,,Thinking...,,,,,,
+9941,,,否,䞟,,Thinking...,Thinking...,Thinking...,U+479F,,3-3F36,Thinking...,,,,,,  {走邊 + 白}
+9942,,,否,跭,,Thinking...,Thinking...,Thinking...,U+8DED,,,Thinking...,,,,,,
+9944,,,否,娽,,Thinking...,Thinking...,Thinking...,U+5A3D,,,Thinking...,,,,,,  {女彔}
+9945,,,否,䋶,,Thinking...,Thinking...,Thinking...,U+42F6,,,Thinking...,,,,,,  {糸頁}
+9946,,,否,𥢧,,Thinking...,Thinking...,Thinking...,U+258A7,,15-5B53,Thinking...,,,,,,  {禾 + 幟 - 巾}
+9947,,,否,𨃓,,Thinking...,Thinking...,Thinking...,U+280D3,,,Thinking...,,,,,,  {側足 + 茶}
+9948,,,否,䦯,,Thinking...,Thinking...,Thinking...,U+49AF,,,Thinking...,,,,,,
+9949,,,否,㩻,,Thinking...,Thinking...,Thinking...,U+3A7B,,,Thinking...,,,,,, {危支}
+994a,,,否,蒾,,Thinking...,Thinking...,Thinking...,U+84BE,,,Thinking...,,,,,,
+994b,,,否,𠵣,,Thinking...,Thinking...,Thinking...,U+20D63,,10-2C2C,Thinking...,,,,,, {口軋}
+994c,,,否,珦,,Thinking...,Thinking...,Thinking...,U+73E6,,,Thinking...,,,,,,
+994d,,,否,𦳝,,Thinking...,Thinking...,Thinking...,U+26CDD,,,Thinking...,,,,,, {艸頭+昜}
+994e,,,否,丢,,Thinking...,Thinking...,Thinking...,U+4E22,,3-2263,Thinking...,,,,,, {丟}
+9951,,,否,譌,,Thinking...,Thinking...,Thinking...,U+8B4C,,,Thinking...,,,,,,
+9954,,,否,匀,,Thinking...,Thinking...,Thinking...,U+5300,,,Thinking...,,,,,, {勻}
+9956,,,否,比,,Thinking...,Thinking...,Thinking...,U+6BD4,,,Thinking...,,,,,, {比} 
+995a,,,否,勺,,Thinking...,Thinking...,Thinking...,U+52FA,,4-212F,Thinking...,,,,,, {句-口+一}
+995d,,,否,它,,Thinking...,Thinking...,Thinking...,U+5B83,,,Thinking...,,,,,, {它，撇改為橫，CNS 11643 未錄此異體字}
+9961,,,否,考,,Thinking...,Thinking...,Thinking...,U+8003,,,Thinking...,,,,,," {考, 下面不是ㄎ, 疑似 異 A03252-005}"
+9963,,,否,旨,,Thinking...,Thinking...,Thinking...,U+65E8,,,Thinking...,,,,,," {旨, 上半部結尾無勾, 應是 異 A01774-009}"
+9965,,,否,呑,,Thinking...,Thinking...,Thinking...,U+5451,,3-2522,Thinking...,,,,,, {吞}
+9967,,,否,𡈼,,Thinking...,Thinking...,Thinking...,U+2123C,,,Thinking...,,,,,, {壬}
+9968,,,否,風,,Thinking...,Thinking...,Thinking...,U+98A8,,,Thinking...,,,,,," {風, 上撇, CNS11643 未錄此異體字}"
+996a,,,否,奏,,Thinking...,Thinking...,Thinking...,U+594F,,,Thinking...,,,,,," {奏, 下撇, CNS11643 未錄此異體字}"
+996d,,,否,刋,,Thinking...,Thinking...,Thinking...,U+520B,,3-217D,Thinking...,,,,,, {刊}
+9973,,是,？,差,,Thinking...,Thinking...,Thinking...,U+5DEE,,,Thinking...,,,,,, {差，羊撇連寫，CNS11643 未錄此異體字}
+9977,,,否,縁,,Thinking...,Thinking...,Thinking...,U+7E01,,,Thinking...,,,,,, {緣}
+997b,,,否,,⿻𠃊丨,Thinking...,(略),(同),,(同),,Thinking...,,,,,,{丩 的異體字… CNS11632 未錄，但此是異體條目，故重疊組字。}
+997d,,,否,咎,,Thinking...,Thinking...,Thinking...,U+548E,,,Thinking...,,,,,, {咎，右上改為豎人，CNS11643 未錄此異體字}
+99a3,,,否,者,,Thinking...,Thinking...,Thinking...,U+8005,,,Thinking...,,,,,, {者加點，CNS11643 未錄此異體字，者}
+99a8,,,否,丸,,Thinking...,Thinking...,Thinking...,U+4E38,,6-2131,Thinking...,,,,,,{丸，點在左側}
+99ab,,,否,垂,,Thinking...,Thinking...,Thinking...,U+5782,,,Thinking...,,,,,,  {垂}
+99ac,,,否,華,,Thinking...,Thinking...,Thinking...,U+83EF,,,Thinking...,,,,,,  {華}
+99b0,,,否,别,,Thinking...,Thinking...,Thinking...,U+522B,,,Thinking...,,,,,, {別，左下為力}
+99b2,,,否,沒,,Thinking...,Thinking...,Thinking...,U+6C92,,,Thinking...,,,,,, {沒，右上角為刀，CNS11643 未錄此異體字}
+99b4,,,否,黃,,Thinking...,Thinking...,Thinking...,U+9EC3,,,Thinking...,,,,,," {黃 (黃庭堅), 異 A04767-002}"
+99b5,,,否,寬,,Thinking...,Thinking...,Thinking...,U+5BEC,,13-7B6B,Thinking...,,,,,," {寬, 雙十連寫，CNS 13-7B6B, Unicode 尚未收錄此異體}"
+99b6,,,否,免,,Thinking...,Thinking...,Thinking...,U+514D,,3-2452,Thinking...,,,,,, {免，CNS 3-2452}
+99b9,,,否,豪,,Thinking...,Thinking...,Thinking...,U+8C6A,,13-7D2F,Thinking...,,,,,," {豪, 上方連寫, CNS 13-7D2F, Unicode 未錄}"
+99ba,,,否,夢,,Thinking...,Thinking...,Thinking...,U+5922,,,Thinking...,,,,,," {夢 (短如春夢), 異 A00846-002?}"
+99c0,,,否,賴,,Thinking...,Thinking...,Thinking...,U+8CF4,,,Thinking...,,,,,," {賴 (死求白賴), 右上不是刀, 異 A03971-004, CNS 未收錄}"
+99c4,,,否,充,,Thinking...,Thinking...,Thinking...,U+5145,,6-2352,Thinking...,,,,,," {充 (王充˙論衡), Unicode 統一成「充」後又收了 U+2F80D}"
+99c6,,,否,曼,,Thinking...,Thinking...,Thinking...,U+66FC,,,Thinking...,,,,,, {曼 (奧圖曼)}
+99c8,,,否,唐,,Thinking...,Thinking...,Thinking...,U+5510,,6-357E,Thinking...,,,,,," {唐 (大唐三藏), Unicode 統一成「唐」後又收了 U+2F842}"
+99c9,,,否,害,,Thinking...,Thinking...,Thinking...,U+5BB3,,,Thinking...,,,,,," {害 (消弭禍害), 接近異 A01025-012}"
+99cb,,,否,周,,Thinking...,Thinking...,Thinking...,U+5468,,6-2A3C,Thinking...,,,,,,"{周 (繞行地球一周), Unicode 相容表意 U+2F83F}"
+99cd,,,否,善,,Thinking...,Thinking...,Thinking...,U+5584,,,Thinking...,,,,,,  {善}
+99cf,,是,？,勸,,Thinking...,Thinking...,Thinking...,U+52F8,,,Thinking...,,,,,," {勸 (勸也勸不聽), CNS 未錄雙十艸頭勸}"
+99d0,,是,？,獲,,Thinking...,Thinking...,Thinking...,U+7372,,,Thinking...,,,,,," {獲 (經常獲勝), CNS 未錄雙十艸頭獲}"
+99d3,,,否,益,,Thinking...,Thinking...,Thinking...,U+76CA,,,Thinking...,,,,,, {益的異體字，八一八皿，益}
+99d7,,,否,米,,Thinking...,Thinking...,Thinking...,U+7C73,,,Thinking...,,,,,," {米 (敝寺借米), 疑似異體？}"
+99d8,,,否,兑,,Thinking...,Thinking...,Thinking...,U+5151,,3-2451,Thinking...,,,,,, {兌 (人名。上方兩點，不是八)}
+99e0,,是,？,契,,Thinking...,Thinking...,Thinking...,U+5951,,,Thinking...,,,,,," {契 (默契十足), 為什麼要造這個字？}"
+99e3,,,否,,⿹乁乄,Thinking...,(略),(同),,(同),,Thinking...,,,,,,{卂的異體字，十的橫畫改為點，=>組字 *⿹乁乄*}
+99e4,,,否,焿,,Thinking...,Thinking...,Thinking...,U+713F,,3-6552,Thinking...,,,,,,
+99e5,,是,？,瓜,,Thinking...,Thinking...,Thinking...,U+74DC,,,Thinking...,,,,,," {瓜 (菜瓜), 似乎是異體（中間筆劃有點不同）}"
+99e6,,是,？,寺,,Thinking...,Thinking...,Thinking...,U+5BFA,,,Thinking...,,,,,," {寺 (國清寺), 但上面是土, CNS 未錄}"
+99e7,,是,？,衷,,Thinking...,Thinking...,Thinking...,U+8877,,,Thinking...,,,,,," {衷 (感佩于衷，筆舌難盡), 異 A03713-001}"
+99e9,,,否,㳌,,Thinking...,Thinking...,Thinking...,U+3CCC,,,Thinking...,,,,,,
+99ea,,,否,𩨳,,Thinking...,Thinking...,Thinking...,U+29A33,,,Thinking...,,,,,, {出骨}
+99ec,,,否,帉,,Thinking...,Thinking...,Thinking...,U+5E09,,,Thinking...,,,,,,
+99ed,,,否,㕹,,Thinking...,Thinking...,Thinking...,U+3579,,,Thinking...,,,,,,
+99ef,,,否,硣,,Thinking...,Thinking...,Thinking...,U+7863,,,Thinking...,,,,,,
+99f0,,,否,䅳,,Thinking...,Thinking...,Thinking...,U+4173,,,Thinking...,,,,,,  {禾芻}
+99f1,,,是,𥽈,,Thinking...,(略),(同),U+25F48,(同),10-7368,Thinking...,U+25F48,U+25F48,,,,  {米 + 醴 - 酉}
+99f3,,,否,𢴲,,Thinking...,Thinking...,Thinking...,U+22D32,,,Thinking...,,,,,, {提手+絜}
+99f4,,,否,䍮,,Thinking...,Thinking...,Thinking...,U+436E,,,Thinking...,,,,,,  {羊兆}
+99f5,,,否,𤍿,,Thinking...,Thinking...,Thinking...,U+2437F,,,Thinking...,,,,,,  {火專}（貼不進來）
+99f6,,,否,䍤,,Thinking...,Thinking...,Thinking...,U+4364,,4-606D,Thinking...,,,,,,  {四蓋+齊}
+99f7,,,否,𦠆,,Thinking...,Thinking...,Thinking...,U+26806,,,Thinking...,,,,,,
+99f8,,,否,㴆,,Thinking...,Thinking...,Thinking...,U+3D06,,,Thinking...,,,,,,
+99f9,,,否,𦇎,,Thinking...,Thinking...,Thinking...,U+261CE,,,Thinking...,,,,,,  {糸蔥}（貼不進來）
+99fa,,,否,朌,,Thinking...,Thinking...,Thinking...,U+670C,,,Thinking...,,,,,,
+99fb,,,否,䬀,,Thinking...,Thinking...,Thinking...,U+4B00,,4-4859,Thinking...,,,,,,  {風邊+幼}
+99fc,,,否,晐,,Thinking...,Thinking...,Thinking...,U+6650,,3-3143,Thinking...,,,,,,
+99fd,,,否,䯱,,Thinking...,Thinking...,Thinking...,U+4BF1,,,Thinking...,,,,,, {上髟下不}
+99fe,,,否,𤊹,,Thinking...,Thinking...,Thinking...,U+242B9,,,Thinking...,,,,,, {火勃}
+9a40,,,否,䰄,,Thinking...,Thinking...,Thinking...,U+4C04,,,Thinking...,,,,,,  {上髟下思}
+9a41,,,否,鬏,,Thinking...,Thinking...,Thinking...,U+9B0F,,,Thinking...,,,,,, {上髟下秋}
+9a42,,,否,𠳹,,Thinking...,Thinking...,Thinking...,U+20CF9,,5-2C39,Thinking...,,,,,,
+9a43,,,否,𧂒,,Thinking...,Thinking...,Thinking...,U+27092,,,Thinking...,,,,,, {艸頭+燋}
+9a44,,,否,砊,,Thinking...,Thinking...,Thinking...,U+780A,,,Thinking...,,,,,,{石+亢}
+9a46,,,否,𩂣,,Thinking...,Thinking...,Thinking...,U+290A3,,,Thinking...,,,,,,  {上雨下各}
+9a47,,,否,藖,,Thinking...,Thinking...,Thinking...,U+85D6,,,Thinking...,,,,,,
+9a4a,,,否,㵠,,Thinking...,Thinking...,Thinking...,U+3D60,,,Thinking...,,,,,,
+9a4b,,,否,聄,,Thinking...,Thinking...,Thinking...,U+8044,,3-383D,Thinking...,,,,,,  {耳㐱}
+9a4c,,,否,岻,,Thinking...,Thinking...,Thinking...,U+5CBB,,,Thinking...,,,,,,
+9a51,,,否,肷,,Thinking...,Thinking...,Thinking...,U+80B7,,,Thinking...,,,,,,
+9a52,,,否,䭅,,Thinking...,Thinking...,Thinking...,U+4B45,,,Thinking...,,,,,,
+9a54,,,否,ㄫ,,Thinking...,Thinking...,Thinking...,U+312B,,,Thinking...,,,,,," {兀, 閏音符號 ng}"
+9a55,,,否,糂,,Thinking...,Thinking...,Thinking...,U+7CC2,,,Thinking...,,,,,,
+9a57,,,否,癧,,Thinking...,Thinking...,Thinking...,U+7667,,3-5E3F,Thinking...,,,,,,
+9a58,,,否,黣,,Thinking...,Thinking...,Thinking...,U+9EE3,,,Thinking...,,,,,,
+9a59,,,否,䶕,,Thinking...,Thinking...,Thinking...,U+4D95,,,Thinking...,,,,,, {齒巴}
+9a5a,,,否,𡧮,,Thinking...,Thinking...,Thinking...,U+219EE,,,Thinking...,,,,,, {宀日七} (異體字字典只有宀日匕，以異體字字典為準)
+9a5b,,,否,𤎖,,Thinking...,Thinking...,Thinking...,U+24396,,,Thinking...,,,,,,  {火康}
+9a5c,,,否,槩,,Thinking...,Thinking...,Thinking...,U+69E9,,,Thinking...,,,,,,
+9a5e,,,否,璙,,Thinking...,Thinking...,Thinking...,U+7499,,4-5138,Thinking...,,,,,,
+9a61,,,否,嘣,,Thinking...,Thinking...,Thinking...,U+5623,,,Thinking...,,,,,,
+9a62,,,否,𣾴,,Thinking...,Thinking...,Thinking...,U+23FB4,,,Thinking...,,,,,,
+9a63,,,否,䚻,,Thinking...,Thinking...,Thinking...,U+46BB,,,Thinking...,,,,,,  {上月下言}
+9a65,,,否,鰧,,Thinking...,Thinking...,Thinking...,U+9C27,,,Thinking...,,,,,,
+9a66,,,否,𦠛,,Thinking...,Thinking...,Thinking...,U+2681B,,,Thinking...,,,,,,
+9a67,,,否,𠾱,,Thinking...,Thinking...,Thinking...,U+20FB1,,10-2F37,Thinking...,,,,,, {口替}
+9a69,,,否,䨴,,Thinking...,Thinking...,Thinking...,U+4A34,,,Thinking...,,,,,, {上雨下對}
+9a6a,,,否,蘽,,Thinking...,Thinking...,Thinking...,U+863D,,,Thinking...,,,,,, {上艹下櫐}
+9a6b,,,否,㠥,,Thinking...,Thinking...,Thinking...,U+3825,,,Thinking...,,,,,, {山壘}
+9a6c,,,否,𧂭,,Thinking...,Thinking...,Thinking...,U+270AD,,,Thinking...,,,,,,  {艸頭+耨}
+9a6d,,,否,㴐,,Thinking...,Thinking...,Thinking...,U+3D10,,4-3856,Thinking...,,,,,,
+9a6e,,,否,裒,,Thinking...,Thinking...,Thinking...,U+88D2,,,Thinking...,,,,,,
+9a76,,,否,偄,,Thinking...,Thinking...,Thinking...,U+5044,,,Thinking...,,,,,,
+9a78,,,否,㺜,,Thinking...,Thinking...,Thinking...,U+3E9C,,,Thinking...,,,,,,  {犬旁+農}
+9a79,,,否,䍽,,Thinking...,Thinking...,Thinking...,U+437D,,,Thinking...,,,,,,  {羊歷}
+9a7b,,,否,𡽁,,Thinking...,Thinking...,Thinking...,U+21F41,,4-5024,Thinking...,,,,,,{山上自下辛}
+9a7c,,,否,䱇,,Thinking...,Thinking...,Thinking...,U+4C47,,,Thinking...,,,,,,  {魚旦}
+9a7d,,,否,奞,,Thinking...,Thinking...,Thinking...,U+595E,,,Thinking...,,,,,,
+9a7e,,,否,䪻,,Thinking...,Thinking...,Thinking...,U+4ABB,,,Thinking...,,,,,,  {弁頁}
+9aa1,,,否,炌,,Thinking...,Thinking...,Thinking...,U+708C,,,Thinking...,,,,,,
+9aa2,,,否,㵣,,Thinking...,Thinking...,Thinking...,U+3D63,,,Thinking...,,,,,,  {水點+歇}
+9aa3,,,是,䚕,,Thinking...,(略),(同),U+4695,(同),5-7A38,Thinking...,U+4695,U+4695,,,, {麗見} CNS 和 Unihan 對照表不吻合。採用 CNS 的對照表
+9aa4,,,否,醶,,Thinking...,Thinking...,Thinking...,U+91B6,,,Thinking...,,,,,,
+9aa5,,,否,㝢,,Thinking...,Thinking...,Thinking...,U+3762,,,Thinking...,,,,,, {寶蓋+禹}
+9aa6,,,否,閄,,Thinking...,Thinking...,Thinking...,U+9584,,,Thinking...,,,,,,
+9aa8,,,否,珤,,Thinking...,Thinking...,Thinking...,U+73E4,,3-3246,Thinking...,,,,,,
+9aa9,,,否,𧿼,,Thinking...,Thinking...,Thinking...,U+27FFC,,,Thinking...,,,,,, {側足+瓜}
+9aaa,,,否,𧑐,,Thinking...,Thinking...,Thinking...,U+27450,,,Thinking...,,,,,, {虫+橘-木}
+9aab,,,否,蟩,,Thinking...,Thinking...,Thinking...,U+87E9,,,Thinking...,,,,,,
+9aac,,,否,䚟,,Thinking...,Thinking...,Thinking...,U+469F,,,Thinking...,,,,,, {角得}
+9aad,,,否,𦁊,,Thinking...,Thinking...,Thinking...,U+2604A,,5-4852,Thinking...,,,,,,  {糸卦}
+9aae,,,否,𥒜,,Thinking...,Thinking...,Thinking...,U+2549C,,,Thinking...,,,,,,  {石冰} （貼不進來）
+9aaf,,,否,𥲤,,Thinking...,Thinking...,Thinking...,U+25CA4,,,Thinking...,,,,,,  {竹頭+虛}
+9ab0,,,否,腨,,Thinking...,Thinking...,Thinking...,U+8168,,,Thinking...,,,,,,
+9ab1,,,否,鉂,,Thinking...,Thinking...,Thinking...,U+9242,,,Thinking...,,,,,,
+9ab3,,,否,䫉,,Thinking...,Thinking...,Thinking...,U+4AC9,,,Thinking...,,,,,,  {豸頁}
+9ab5,,,否,𠂉,,Thinking...,Thinking...,Thinking...,U+20089,,10-2165,Thinking...,,,,,,{每的上端二畫}
+9ab6,,,否,𤅢,,Thinking...,Thinking...,Thinking...,U+24162,,,Thinking...,,,,,,
+9ab7,,,否,腝,,Thinking...,Thinking...,Thinking...,U+815D,,,Thinking...,,,,,,
+9ab9,,,否,𧝉,,Thinking...,Thinking...,Thinking...,U+27749,,,Thinking...,,,,,, {側衣+黹}
+9aba,,,否,䌨,,Thinking...,Thinking...,Thinking...,U+4328,,,Thinking...,,,,,, {糸蔡}
+9abb,,,否,矑,,Thinking...,Thinking...,Thinking...,U+77D1,,3-5E42,Thinking...,,,,,,
+9abd,,,否,㵒,,Thinking...,Thinking...,Thinking...,U+3D52,,,Thinking...,,,,,,
+9abe,,,否,䗐,,Thinking...,Thinking...,Thinking...,U+45D0,,,Thinking...,,,,,, {上施下虫}
+9abf,,,否,剹,,Thinking...,Thinking...,Thinking...,U+5279,,,Thinking...,,,,,,
+9ac0,,,否,吔,,Thinking...,Thinking...,Thinking...,U+5414,,,Thinking...,,,,,,
+9ac1,,,否,ṇ,,Thinking...,Thinking...,Thinking...,U+1E47,,,Thinking...,,,,,,
+9ac2,,,否,嵈,,Thinking...,Thinking...,Thinking...,U+5D48,,,Thinking...,,,,,,
+9ac4,,,否,嵛,,Thinking...,Thinking...,Thinking...,U+5D5B,,3-3B2D,Thinking...,,,,,, {上山下俞}
+9ac5,,,否,𪕋,,Thinking...,Thinking...,Thinking...,U+2A54B,,5-6747,Thinking...,,,,,, {鼠邊+卯}
+9ac6,,是,？,畢,,Thinking...,Thinking...,Thinking...,U+7562,,,Thinking...,,,,,, {畢，豎畫連寫，CNS11643 未錄此異體字}
+9ac7,,,否,䒀,,Thinking...,Thinking...,Thinking...,U+4480,,,Thinking...,,,,,, {舟符}
+9ac8,,,否,㥮,,Thinking...,Thinking...,Thinking...,U+396E,,,Thinking...,,,,,,
+9ac9,,,否,蠚,,Thinking...,Thinking...,Thinking...,U+881A,,,Thinking...,,,,,,{上若下虫虫}
+9aca,,,否,獹,,Thinking...,Thinking...,Thinking...,U+7379,,,Thinking...,,,,,,
+9acb,,,否,篗,,Thinking...,Thinking...,Thinking...,U+7BD7,,5-5669,Thinking...,,,,,,
+9acc,,,否,捒,,Thinking...,Thinking...,Thinking...,U+6352,,,Thinking...,,,,,,
+9acf,,,否,𦶜,,Thinking...,Thinking...,Thinking...,U+26D9C,,,Thinking...,,,,,, {艸頭+水點+姬-女}
+9ad0,,,否,ṃ,,Thinking...,Thinking...,Thinking...,U+1E43,,,Thinking...,,,,,,
+9ad1,,,否,𤽥,,Thinking...,Thinking...,Thinking...,U+24F65,,,Thinking...,,,,,, {白各}
+9ad2,,,否,㕭,,Thinking...,Thinking...,Thinking...,U+356D,,4-2354,Thinking...,,,,,,
+9ad3,,,否,㘤,,Thinking...,Thinking...,Thinking...,U+3624,,,Thinking...,,,,,, {囗內淵}
+9ad4,,,否,琗,,Thinking...,Thinking...,Thinking...,U+7417,,,Thinking...,,,,,,
+9ad5,,,否,𡾔,,Thinking...,Thinking...,Thinking...,U+21F94,,,Thinking...,,,,,, {上畾下山}
+9ad6,,,否,䡾,,Thinking...,Thinking...,Thinking...,U+487E,,,Thinking...,,,,,, {車獻}
+9ad7,,,否,,⿰扌層,Thinking...,(略),(同),,(同),,Thinking...,,,,,, {提手+層}
+9ad8,,,否,㣿,,Thinking...,Thinking...,Thinking...,U+38FF,,4-2270,Thinking...,,,,,,
+9ad9,,,否,樳,,Thinking...,Thinking...,Thinking...,U+6A33,,,Thinking...,,,,,,
+9ada,,是,？,灟,,Thinking...,Thinking...,Thinking...,U+705F,,,Thinking...,,,,,,{水属} 
+9adb,,,否,鐁,,Thinking...,Thinking...,Thinking...,U+9401,,,Thinking...,,,,,,
+9adc,,,否,搠,,Thinking...,Thinking...,Thinking...,U+6420,,,Thinking...,,,,,,
+9ade,,,否,䛒,,Thinking...,Thinking...,Thinking...,U+46D2,,3-3F25,Thinking...,,,,,, {上巧下言}
+9adf,,,否,ə,,Thinking...,Thinking...,Thinking...,U+259,#N/A,,Thinking...,,,,,,
+9ae1,,,否,昪,,Thinking...,Thinking...,Thinking...,U+662A,,,Thinking...,,,,,,
+9ae2,,,否,𤧗,,Thinking...,Thinking...,Thinking...,U+249D7,,,Thinking...,,,,,, {王咼}
+9ae5,,,否,愺,,Thinking...,Thinking...,Thinking...,U+613A,,,Thinking...,,,,,,
+9ae7,,是,？,𢺈,,Thinking...,Thinking...,Thinking...,U+22E88,,,Thinking...,,,,,," {提手+欒，維基文庫的金瓶梅版本「這彈箏的是花二哥令翠──勾欄後巷吳銀兒」，也有擽箏，揉箏版本, Unihan 沒有 手-23, 異 c04524-001 通 U+22E88}"
+9ae9,,,否,䵬,,Thinking...,Thinking...,Thinking...,U+4D6C,,,Thinking...,,,,,, {黑沓}
+9aec,,是,？,𪓟,,Thinking...,Thinking...,Thinking...,U+2A4DF,,,Thinking...,,,,,," {上勾下黽} (Unihan 黽-4 找不到,異體字字典找不到,＜吳都賦＞用例應通「U+2A4DF」{上句下黽})"
+9aef,,,否,㫤,,Thinking...,Thinking...,Thinking...,U+3AE4,,,Thinking...,,,,,, {上曰下永}
+9af0,,,否,泿,,Thinking...,Thinking...,Thinking...,U+6CFF,,,Thinking...,,,,,,
+9af3,,,否,渒,,Thinking...,Thinking...,Thinking...,U+6E12,,,Thinking...,,,,,,
+9af5,,,否,𢱉,,Thinking...,Thinking...,Thinking...,U+22C49,,,Thinking...,,,,,, {提手+歪}
+9af6,,,否,ṅ,,Thinking...,Thinking...,Thinking...,U+1E45,,,Thinking...,,,,,,
+9af7,,,否,𣏌,,Thinking...,Thinking...,Thinking...,U+233CC,,,Thinking...,,,,,, {木巳}
+9af9,,,否,㮚,,Thinking...,Thinking...,Thinking...,U+3B9A,,,Thinking...,,,,,,
+9afb,,,否,巊,,Thinking...,Thinking...,Thinking...,U+5DCA,,3-5C3C,Thinking...,,,,,,
+9afc,,,否,𠴰,,Thinking...,Thinking...,Thinking...,U+20D30,,,Thinking...,,,,,, {口咎}
+9afd,,,否,,⿰𤣩巳,Thinking...,(略),(同),,(同),,Thinking...,,,,,," {王巳, CNS11643 部件檢索未錄}"
+9afe,,,否,䳨,,Thinking...,Thinking...,Thinking...,U+4CE8,,,Thinking...,,,,,, {皇鳥}
+9b40,,,否,㮮,,Thinking...,Thinking...,Thinking...,U+3BAE,,,Thinking...,,,,,, {木挈}
+9b41,,,否,𣵿,,Thinking...,Thinking...,Thinking...,U+23D7F,,6-4143,Thinking...,,,,,,
+9b42,,,否,𩰾,,Thinking...,Thinking...,Thinking...,U+29C3E,,,Thinking...,,,,,, {上沸下鬲}
+9b43,,,否,𠌫,,Thinking...,Thinking...,Thinking...,U+2032B,,,Thinking...,,,,,, {側人+畢}
+9b44,,,否,𩸆,,Thinking...,Thinking...,Thinking...,U+29E06,,,Thinking...,,,,,, {魚奄}
+9b47,,,否,厷,,Thinking...,Thinking...,Thinking...,U+53B7,,3-215C,Thinking...,,,,,,
+9b48,,,否,䪤,,Thinking...,Thinking...,Thinking...,U+4AA4,,,Thinking...,,,,,, {韭番}
+9b49,,,否,𠸄,,Thinking...,Thinking...,Thinking...,U+20E04,,,Thinking...,,,,,, {口英}
+9b4a,,,否,鲬,,Thinking...,Thinking...,Thinking...,U+9CAC,,,Thinking...,,,,,,
+9b4b,,,否,墢,,Thinking...,Thinking...,Thinking...,U+58A2,,3-4B46,Thinking...,,,,,,
+9b4c,,,否,熷,,Thinking...,Thinking...,Thinking...,U+71B7,,,Thinking...,,,,,,
+9b4d,,,否,ʒ,,Thinking...,Thinking...,Thinking...,U+292,#N/A,,Thinking...,,,,,,
+9b4e,,,否,𤣳,,Thinking...,Thinking...,Thinking...,U+248F3,,10-607B,Thinking...,,,,,, {王千}
+9b50,,,否,𡨋,,Thinking...,Thinking...,Thinking...,U+21A0B,,,Thinking...,,,,,, {⿱宀具}
+9b53,,,否,䘳,,Thinking...,Thinking...,Thinking...,U+4633,,,Thinking...,,,,,, {側衣+金}
+9b54,,,否,䴚,,Thinking...,Thinking...,Thinking...,U+4D1A,,,Thinking...,,,,,, {鹵亢}
+9b55,,是,？,喙,,Thinking...,Thinking...,Thinking...,U+5599,,12-453E,Thinking...,,,,,," {口豕, CNS 12-453E, 據 CNS 是通「啄」，但用例「長頸鳥喙」應通「喙」}"
+c6c7,#N/A,,否,匸,,Thinking...,Thinking...,Thinking...,U+5338,,,Thinking...,,,#N/A,,,
+f9d6,#N/A,,否,碁,,Thinking...,Thinking...,Thinking...,U+7881,,,Thinking...,,,#N/A,,,
+f9d8,#N/A,,否,裏,,Thinking...,Thinking...,Thinking...,U+88CF,,,Thinking...,,,#N/A,,,
+f9d9,#N/A,,否,墻,,Thinking...,Thinking...,Thinking...,U+58BB,,,Thinking...,,,#N/A,,,
+f9da,#N/A,,否,恒,,Thinking...,Thinking...,Thinking...,U+6052,,,Thinking...,,,#N/A,,,
+f9dc,#N/A,,否,嫺,,Thinking...,Thinking...,Thinking...,U+5AFA,,,Thinking...,,,#N/A,,,
+fa44,,,否,愗,,Thinking...,Thinking...,Thinking...,U+6117,,,Thinking...,,,,,,
+fa48,,,否,皀,,Thinking...,Thinking...,Thinking...,U+7680,,,Thinking...,,,,,, {皂} 匕中間是平的？
+fa49,,,否,貛,,Thinking...,Thinking...,Thinking...,U+8C9B,,,Thinking...,,,,,,  {獾}
+fa4b,,,否,繮,,Thinking...,Thinking...,Thinking...,U+7E6E,,,Thinking...,,,,,,
+fa4c,,,否,䍡,,Thinking...,Thinking...,Thinking...,U+4361,,4-524F,Thinking...,,,,,,
+fa4d,,,否,羓,,Thinking...,Thinking...,Thinking...,U+7F93,,,Thinking...,,,,,,
+fa4f,,,否,蒭,,Thinking...,Thinking...,Thinking...,U+84AD,,,Thinking...,,,,,,
+fa51,,,否,溂,,Thinking...,Thinking...,Thinking...,U+6E82,,,Thinking...,,,,,,
+fa52,,,否,䬪,,Thinking...,Thinking...,Thinking...,U+4B2A,,,Thinking...,,,,,,
+fa53,,,否,礴,,Thinking...,Thinking...,Thinking...,U+7934,,,Thinking...,,,,,,
+fa55,,,否,鸔,,Thinking...,Thinking...,Thinking...,U+9E14,,,Thinking...,,,,,,
+fa56,,,否,𪇰,,Thinking...,Thinking...,Thinking...,U+2A1F0,,,Thinking...,,,,,,
+fa58,,,否,㓦,,Thinking...,Thinking...,Thinking...,U+34E6,,14-513D,Thinking...,,,,,, {百刂}
+fa5b,,,否,迹,,Thinking...,Thinking...,Thinking...,U+8FF9,,,Thinking...,,,,,,
+fa5c,,,否,鉢,,Thinking...,Thinking...,Thinking...,U+9262,,,Thinking...,,,,,,
+fa5d,,,否,愽,,Thinking...,Thinking...,Thinking...,U+613D,,,Thinking...,,,,,,
+fa5f,,,否,髀,,Thinking...,Thinking...,Thinking...,U+9AC0,,,Thinking...,,,,,, {髀 (周髀算經)}
+fa60,,,否,覇,,Thinking...,Thinking...,Thinking...,U+8987,,,Thinking...,,,,,,  {霸}
+fa65,,,否,栢,,Thinking...,Thinking...,Thinking...,U+6822,,,Thinking...,,,,,,
+fa67,,,否,𣖾,,Thinking...,Thinking...,Thinking...,U+235BE,,,Thinking...,,,,,,
+fa68,,,否,骲,,Thinking...,Thinking...,Thinking...,U+9AB2,,,Thinking...,,,,,,
+fa6f,,,否,僃,,Thinking...,Thinking...,Thinking...,U+50C3,,,Thinking...,,,,,,
+fa70,,,否,鞴,,Thinking...,Thinking...,Thinking...,U+97B4,,,Thinking...,,,,,,
+fa71,,,否,襃,,Thinking...,Thinking...,Thinking...,U+8943,,,Thinking...,,,,,,  {似:褒}
+fa72,,,否,緥,,Thinking...,Thinking...,Thinking...,U+7DE5,,,Thinking...,,,,,,
+fa74,,,否,勹,,Thinking...,Thinking...,Thinking...,U+52F9,,,Thinking...,,,,,,
+fa76,,,否,𩱚,,Thinking...,Thinking...,Thinking...,U+29C5A,,,Thinking...,,,,,,
+fa78,,,否,癶,,Thinking...,Thinking...,Thinking...,U+7676,,,Thinking...,,,,,,
+fa7b,,,否,靫,,Thinking...,Thinking...,Thinking...,U+976B,,,Thinking...,,,,,, {革叉}
+faa1,,,否,螌,,Thinking...,Thinking...,Thinking...,U+878C,,,Thinking...,,,,,,
+faa2,,,否,坂,,Thinking...,Thinking...,Thinking...,U+5742,,,Thinking...,,,,,,
+faa7,,,否,犇,,Thinking...,Thinking...,Thinking...,U+7287,,,Thinking...,,,,,,
+faa8,,,否,夲,,Thinking...,Thinking...,Thinking...,U+5932,,,Thinking...,,,,,,
+faa9,,,否,逩,,Thinking...,Thinking...,Thinking...,U+9029,,,Thinking...,,,,,,
+faad,,,否,竝,,Thinking...,Thinking...,Thinking...,U+7ADD,,,Thinking...,,,,,,
+faae,,,否,蜯,,Thinking...,Thinking...,Thinking...,U+872F,,,Thinking...,,,,,,
+fab4,,,否,笔,,Thinking...,Thinking...,Thinking...,U+7B14,,,Thinking...,,,,,,
+fab8,,,否,𡚁,,Thinking...,Thinking...,Thinking...,U+21681,,,Thinking...,,,,,,{底下是大不是犬}
+fab9,,,否,䟆,,Thinking...,Thinking...,Thinking...,U+47C6,,,Thinking...,,,,,,  {走邊+畢}
+faba,,,否,鞸,,Thinking...,Thinking...,Thinking...,U+97B8,,,Thinking...,,,,,, {革畢}
+fabc,,,否,躃,,Thinking...,Thinking...,Thinking...,U+8E83,,,Thinking...,,,,,,
+fabd,,,否,鼈,,Thinking...,Thinking...,Thinking...,U+9F08,,,Thinking...,,,,,,
+fabf,,,否,飇,,Thinking...,Thinking...,Thinking...,U+98C7,,,Thinking...,,,,,,
+fac0,,,否,飈,,Thinking...,Thinking...,Thinking...,U+98C8,,,Thinking...,,,,,,
+fac1,,,否,边,,Thinking...,Thinking...,Thinking...,U+8FB9,,,Thinking...,,,,,,
+fac3,,,否,辡,,Thinking...,Thinking...,Thinking...,U+8FA1,,,Thinking...,,,,,,
+fac5,,,否,禀,,Thinking...,Thinking...,Thinking...,U+7980,,,Thinking...,,,,,,  {稟}
+faca,,,否,浜,,Thinking...,Thinking...,Thinking...,U+6D5C,,,Thinking...,,,,,,
+fad2,,,否,髩,,Thinking...,Thinking...,Thinking...,U+9AE9,,,Thinking...,,,,,,
+fad5,,,否,冫,,Thinking...,Thinking...,Thinking...,U+51AB,,,Thinking...,,,,,,
+fad6,,,否,幷,,Thinking...,Thinking...,Thinking...,U+5E77,,,Thinking...,,,,,,
+fada,,,否,昞,,Thinking...,Thinking...,Thinking...,U+661E,,,Thinking...,,,,,,
+fadc,,,否,餠,,Thinking...,Thinking...,Thinking...,U+9920,,,Thinking...,,,,,, {餅}
+fae1,,,否,㕷,,Thinking...,Thinking...,Thinking...,U+3577,,,Thinking...,,,,,,
+fae3,,,否,递,,Thinking...,Thinking...,Thinking...,U+9012,,,Thinking...,,,,,,
+fae4,,,否,痆,,Thinking...,Thinking...,Thinking...,U+75C6,,,Thinking...,,,,,,
+fae5,,,否,驁,,Thinking...,Thinking...,Thinking...,U+9A41,,,Thinking...,,,,,,
+fae7,,,否,饊,,Thinking...,Thinking...,Thinking...,U+994A,,,Thinking...,,,,,,
+fae8,,,否,烟,,Thinking...,Thinking...,Thinking...,U+70DF,,,Thinking...,,,,,,
+faea,,,否,鴂,,Thinking...,Thinking...,Thinking...,U+9D02,,,Thinking...,,,,,,
+faec,,,否,噍,,Thinking...,Thinking...,Thinking...,U+564D,,,Thinking...,,,,,,
+faef,,,否,粃,,Thinking...,Thinking...,Thinking...,U+7C83,,,Thinking...,,,,,,
+faf0,,,否,佊,,Thinking...,Thinking...,Thinking...,U+4F4A,,,Thinking...,,,,,,
+faf1,,,否,吡,,Thinking...,Thinking...,Thinking...,U+5421,,,Thinking...,,,,,,
+faf3,,,否,骶,,Thinking...,Thinking...,Thinking...,U+9AB6,,,Thinking...,,,,,,
+faf4,,,否,戹,,Thinking...,Thinking...,Thinking...,U+6239,,,Thinking...,,,,,,
+faf5,,,否,饆,,Thinking...,Thinking...,Thinking...,U+9946,,,Thinking...,,,,,,
+faf6,,,否,韠,,Thinking...,Thinking...,Thinking...,U+97E0,,,Thinking...,,,,,,
+faf7,,,否,煏,,Thinking...,Thinking...,Thinking...,U+714F,,,Thinking...,,,,,,
+faf8,,,否,鈎,,Thinking...,Thinking...,Thinking...,U+920E,,,Thinking...,,,,,,
+faf9,,,否,𧦧,,Thinking...,Thinking...,Thinking...,U+279A7,,,Thinking...,,,,,, {言+施-方}
+fafa,,,否,覩,,Thinking...,Thinking...,Thinking...,U+89A9,,,Thinking...,,,,,,
+fafb,,,否,饠,,Thinking...,Thinking...,Thinking...,U+9960,,,Thinking...,,,,,,
+fafe,,,否,臯,,Thinking...,Thinking...,Thinking...,U+81EF,,,Thinking...,,,,,,
+fb41,,,否,穅,,Thinking...,Thinking...,Thinking...,U+7A45,,,Thinking...,,,,,,
+fb44,,,否,腭,,Thinking...,Thinking...,Thinking...,U+816D,,,Thinking...,,,,,,
+fb45,,,否,髴,,Thinking...,Thinking...,Thinking...,U+9AF4,,,Thinking...,,,,,,
+fb46,,,否,莂,,Thinking...,Thinking...,Thinking...,U+8382,,,Thinking...,,,,,,
+fb47,,,否,𢠳,,Thinking...,Thinking...,Thinking...,U+22833,,,Thinking...,,,,,,
+fb48,,,否,姙,,Thinking...,Thinking...,Thinking...,U+59D9,,,Thinking...,,,,,,
+fb4a,,,否,屓,,Thinking...,Thinking...,Thinking...,U+5C53,,,Thinking...,,,,,,
+fb4f,,,否,倈,,Thinking...,Thinking...,Thinking...,U+5008,,,Thinking...,,,,,,
+fb52,,,否,鯿,,Thinking...,Thinking...,Thinking...,U+9BFF,,,Thinking...,,,,,,
+fb53,,,否,苄,,Thinking...,Thinking...,Thinking...,U+82C4,,,Thinking...,,,,,, {艸頭+卞}
+fb54,,,否,儛,,Thinking...,Thinking...,Thinking...,U+511B,,,Thinking...,,,,,,
+fb55,,,否,疎,,Thinking...,Thinking...,Thinking...,U+758E,,,Thinking...,,,,,,
+fb59,,,否,妬,,Thinking...,Thinking...,Thinking...,U+59AC,,,Thinking...,,,,,,
+fb5b,,,否,𦙍,,Thinking...,Thinking...,Thinking...,U+2664D,,,Thinking...,,,,,, {胤-乚}
+fb5c,,,否,揑,,Thinking...,Thinking...,Thinking...,U+63D1,,,Thinking...,,,,,, {捏}
+fb5d,,,否,𤸬,,Thinking...,Thinking...,Thinking...,U+24E2C,,,Thinking...,,,,,, {疒衰}
+fb5f,,,否,筢,,Thinking...,Thinking...,Thinking...,U+7B62,,,Thinking...,,,,,,
+fb61,,,否,尀,,Thinking...,Thinking...,Thinking...,U+5C00,,,Thinking...,,,,,,
+fb63,,,否,駊,,Thinking...,Thinking...,Thinking...,U+99CA,,,Thinking...,,,,,,
+fb66,,,否,𠂢,,Thinking...,Thinking...,Thinking...,U+200A2,,,Thinking...,,,,,,
+fb68,,,否,阫,,Thinking...,Thinking...,Thinking...,U+962B,,,Thinking...,,,,,,
+fb69,,,否,斾,,Thinking...,Thinking...,Thinking...,U+65BE,,,Thinking...,,,,,,
+fb6a,,,否,抛,,Thinking...,Thinking...,Thinking...,U+629B,,,Thinking...,,,,,,{手九力}
+fb6b,,,否,麅,,Thinking...,Thinking...,Thinking...,U+9E85,,,Thinking...,,,,,,
+fb6c,,,否,疱,,Thinking...,Thinking...,Thinking...,U+75B1,,,Thinking...,,,,,,
+fb6d,,,否,礮,,Thinking...,Thinking...,Thinking...,U+792E,,,Thinking...,,,,,,
+fb70,,,否,𣶐,,Thinking...,Thinking...,Thinking...,U+23D90,,,Thinking...,,,,,,
+fb74,,,否,曕,,Thinking...,Thinking...,Thinking...,U+66D5,,,Thinking...,,,,,,
+fb75,,,否,靭,,Thinking...,Thinking...,Thinking...,U+976D,,,Thinking...,,,,,,
+fb77,,,否,牀,,Thinking...,Thinking...,Thinking...,U+7240,,,Thinking...,,,,,,
+fb78,,,否,腈,,Thinking...,Thinking...,Thinking...,U+8148,,,Thinking...,,,,,,
+fb79,,,否,劈,,Thinking...,Thinking...,Thinking...,U+5288,,,Thinking...,,,,,, {劈 (一劈出)}
+fb7b,,,否,欛,,Thinking...,Thinking...,Thinking...,U+6B1B,,,Thinking...,,,,,,
+fb7c,,,否,竈,,Thinking...,Thinking...,Thinking...,U+7AC8,,,Thinking...,,,,,, {上空下黽}
+fba6,,,否,鸊,,Thinking...,Thinking...,Thinking...,U+9E0A,,,Thinking...,,,,,,
+fba7,,,否,氕,,Thinking...,Thinking...,Thinking...,U+6C15,,,Thinking...,,,,,, {氕}
+fba8,,,否,撆,,Thinking...,Thinking...,Thinking...,U+6486,,,Thinking...,,,,,,
+fba9,,,否,飃,,Thinking...,Thinking...,Thinking...,U+98C3,,,Thinking...,,,,,,
+fbab,,,否,㛹,,Thinking...,Thinking...,Thinking...,U+36F9,,,Thinking...,,,,,, {女便}
+fbaf,,,否,𢓳,,Thinking...,Thinking...,Thinking...,U+224F3,,,Thinking...,,,,,,  {彳甹} （貼不進來）
+fbb4,,是,？,幈,,Thinking...,Thinking...,Thinking...,U+5E48,,,Thinking...,,,,,,{巾屏，但裏頭寫作幷不是并}
+fbb5,,,否,幈,,Thinking...,Thinking...,Thinking...,U+5E48,,,Thinking...,,,,,,
+fbb7,,,否,甁,,Thinking...,Thinking...,Thinking...,U+7501,,,Thinking...,,,,,,
+fbbd,,,否,凭,,Thinking...,Thinking...,Thinking...,U+51ED,,,Thinking...,,,,,,
+fbbf,,,否,攴,,Thinking...,Thinking...,Thinking...,U+6534,,,Thinking...,,,,,,
+fbc0,,,否,攵,,Thinking...,Thinking...,Thinking...,U+6535,,,Thinking...,,,,,,
+fbc1,,,否,幞,,Thinking...,Thinking...,Thinking...,U+5E5E,,,Thinking...,,,,,,
+fbc4,,,否,麽,,Thinking...,Thinking...,Thinking...,U+9EBD,,,Thinking...,,,,,, {麼}
+fbc5,,,否,蟇,,Thinking...,Thinking...,Thinking...,U+87C7,,,Thinking...,,,,,,
+fbc7,,,否,𡠜,,Thinking...,Thinking...,Thinking...,U+2181C,,,Thinking...,,,,,, (看起來也很像 U+215B6)
+fbc8,,,否,饝,,Thinking...,Thinking...,Thinking...,U+995D,,,Thinking...,,,,,,
+fbc9,,,否,袜,,Thinking...,Thinking...,Thinking...,U+889C,,3-386B,Thinking...,,,,,,
+fbca,,,否,没,,Thinking...,Thinking...,Thinking...,U+6CA1,,,Thinking...,,,,,,
+fbcc,,,否,脉,,Thinking...,Thinking...,Thinking...,U+8109,,,Thinking...,,,,,,
+fbd0,,,否,霡,,Thinking...,Thinking...,Thinking...,U+9721,,,Thinking...,,,,,,"(霡 but more like this: http://www.chise.org/chisewiki/view.cgi?char=&CB01483;，Unihan 雨-10找不到更像的, 「霡霂」是小雨的意思無誤　)"
+fbd5,,,否,酶,,Thinking...,Thinking...,Thinking...,U+9176,,,Thinking...,,,,,,
+fbda,,,否,猫,,Thinking...,Thinking...,Thinking...,U+732B,,3-3D2B,Thinking...,,,,,,
+fbdf,,,否,皃,,Thinking...,Thinking...,Thinking...,U+7683,,,Thinking...,,,,,,
+fbe1,,,否,鞪,,Thinking...,Thinking...,Thinking...,U+97AA,,,Thinking...,,,,,,  {上務下革}
+fbe2,,,否,畮,,Thinking...,Thinking...,Thinking...,U+756E,,,Thinking...,,,,,,
+fbe6,,,否,𣙷,,Thinking...,Thinking...,Thinking...,U+23677,,10-5234,Thinking...,,,,,, {木莽}
+fbe7,,,否,蝱,,Thinking...,Thinking...,Thinking...,U+8771,,,Thinking...,,,,,,
+fbeb,,,否,醿,,Thinking...,Thinking...,Thinking...,U+91BF,,,Thinking...,,,,,,
+fbf4,,,否,冖,,Thinking...,Thinking...,Thinking...,U+5196,,,Thinking...,,,,,,
+fbf8,,,否,䄙,,Thinking...,Thinking...,Thinking...,U+4119,,,Thinking...,,,,,,  {側衣+冥}
+fbfd,,,否,宀,,Thinking...,Thinking...,Thinking...,U+5B80,,,Thinking...,,,,,,
+fbfe,,,否,緜,,Thinking...,Thinking...,Thinking...,U+7DDC,,,Thinking...,,,,,,
+fc40,,,否,勔,,Thinking...,Thinking...,Thinking...,U+52D4,,,Thinking...,,,,,,
+fc41,,,否,腼,,Thinking...,Thinking...,Thinking...,U+817C,,,Thinking...,,,,,,
+fc45,,,否,珉,,Thinking...,Thinking...,Thinking...,U+73C9,,,Thinking...,,,,,,
+fc46,,,否,瑉,,Thinking...,Thinking...,Thinking...,U+7449,,,Thinking...,,,,,,
+fc47,,,否,䃉,,Thinking...,Thinking...,Thinking...,U+40C9,,,Thinking...,,,,,,
+fc48,,,否,緍,,Thinking...,Thinking...,Thinking...,U+7DCD,,3-4871,Thinking...,,,,,,
+fc49,,,否,𪰋,,Thinking...,Thinking...,Thinking...,U+2AC0B,,,Thinking...,,,,,,  {日攵}  （貼不進來）
+fc4b,,,否,鰵,,Thinking...,Thinking...,Thinking...,U+9C35,,,Thinking...,,,,,,
+fc50,,,否,㝠,,Thinking...,Thinking...,Thinking...,U+3760,,,Thinking...,,,,,,
+fc51,,,否,獏,,Thinking...,Thinking...,Thinking...,U+734F,,,Thinking...,,,,,,
+fc52,,,否,䥈,,Thinking...,Thinking...,Thinking...,U+4948,,,Thinking...,,,,,, {金莽}
+fc54,,,否,灋,,Thinking...,Thinking...,Thinking...,U+704B,,,Thinking...,,,,,,
+fc57,,,否,㘺,,Thinking...,Thinking...,Thinking...,U+363A,,,Thinking...,,,,,,
+fc58,,,否,珐,,Thinking...,Thinking...,Thinking...,U+73D0,,3-2D7C,Thinking...,,,,,,
+fc5a,,,否,䬠,,Thinking...,Thinking...,Thinking...,U+4B20,,,Thinking...,,,,,,  {上雨下飛}
+fc5d,,,否,飜,,Thinking...,Thinking...,Thinking...,U+98DC,,,Thinking...,,,,,,
+fc60,,,否,飰,,Thinking...,Thinking...,Thinking...,U+98F0,,,Thinking...,,,,,,
+fc61,,,否,餴,,Thinking...,Thinking...,Thinking...,U+9934,,,Thinking...,,,,,,
+fc63,,,否,坆,,Thinking...,Thinking...,Thinking...,U+5746,,,Thinking...,,,,,,
+fc64,,,否,旊,,Thinking...,Thinking...,Thinking...,U+65CA,,,Thinking...,,,,,,
+fc66,,,否,峯,,Thinking...,Thinking...,Thinking...,U+5CEF,,,Thinking...,,,,,,  {峰}
+fc67,,,否,舚,,Thinking...,Thinking...,Thinking...,U+821A,,,Thinking...,,,,,,
+fc69,,,否,䴸,,Thinking...,Thinking...,Thinking...,U+4D38,,,Thinking...,,,,,, {麥邊+孚}
+fc6b,,,否,旉,,Thinking...,Thinking...,Thinking...,U+65C9,,,Thinking...,,,,,,
+fc6d,,,否,鳬,,Thinking...,Thinking...,Thinking...,U+9CEC,,,Thinking...,,,,,,
+fc6e,,,否,鬴,,Thinking...,Thinking...,Thinking...,U+9B34,,,Thinking...,,,,,,
+fc73,,是,？,負,,Thinking...,Thinking...,Thinking...,U+8CA0,,,Thinking...,,,,,, {負} （A03929-002）
+fc74,,,否,媍,,Thinking...,Thinking...,Thinking...,U+5A8D,,,Thinking...,,,,,,
+fc75,,,否,垡,,Thinking...,Thinking...,Thinking...,U+57A1,,,Thinking...,,,,,,
+fc76,,,否,袴,,Thinking...,Thinking...,Thinking...,U+88B4,,,Thinking...,,,,,,
+fc77,,,否,丿,,Thinking...,Thinking...,Thinking...,U+4E3F,,,Thinking...,,,,,,
+fc79,,,否,疴,,Thinking...,Thinking...,Thinking...,U+75B4,,,Thinking...,,,,,,
+fc7a,,,否,𠺕,,Thinking...,Thinking...,Thinking...,U+20E95,,10-2D5C,Thinking...,,,,,, {口留}
+fc7e,,,否,栐,,Thinking...,Thinking...,Thinking...,U+6810,,,Thinking...,,,,,,
+fca1,,,否,癯,,Thinking...,Thinking...,Thinking...,U+766F,,,Thinking...,,,,,,
+fca2,,,否,䙏,,Thinking...,Thinking...,Thinking...,U+464F,,,Thinking...,,,,,,
+fca7,,,否,虬,,Thinking...,Thinking...,Thinking...,U+866C,,,Thinking...,,,,,,
+fca8,,,否,搭,,Thinking...,Thinking...,Thinking...,U+642D,,,Thinking...,,,,,,
+fca9,,,否,嘚,,Thinking...,Thinking...,Thinking...,U+561A,,,Thinking...,,,,,,
+fcab,,,否,惪,,Thinking...,Thinking...,Thinking...,U+60EA,,,Thinking...,,,,,,
+fcac,,,否,瑇,,Thinking...,Thinking...,Thinking...,U+7447,,,Thinking...,,,,,,
+fcad,,,否,隶,,Thinking...,Thinking...,Thinking...,U+96B6,,,Thinking...,,,,,,
+fcb0,,,否,衜,,Thinking...,Thinking...,Thinking...,U+885C,,,Thinking...,,,,,,
+fcb6,,,否,鬭,,Thinking...,Thinking...,Thinking...,U+9B2D,,,Thinking...,,,,,, {鬥 + 斲}
+fcb7,,,否,躭,,Thinking...,Thinking...,Thinking...,U+8EAD,,,Thinking...,,,,,,
+fcb8,,,否,耼,,Thinking...,Thinking...,Thinking...,U+803C,,,Thinking...,,,,,,
+fcba,,,否,担,,Thinking...,Thinking...,Thinking...,U+62C5,,,Thinking...,,,,,,
+fcbd,,,否,𤺺,,Thinking...,Thinking...,Thinking...,U+24EBA,,,Thinking...,,,,,,  {疒亶}
+fcbe,,,否,㩐,,Thinking...,Thinking...,Thinking...,U+3A50,,,Thinking...,,,,,, {提手+等}
+fcc3,,,否,銱,,Thinking...,Thinking...,Thinking...,U+92B1,,,Thinking...,,,,,,
+fcc4,,,否,乣,,Thinking...,Thinking...,Thinking...,U+4E63,,,Thinking...,,,,,,
+fcc5,,,否,丟,,Thinking...,Thinking...,Thinking...,U+4E1F,,1-3723,Thinking...,,,,#N/A,, {正字與圖片相同（平王）}
+fcc8,,,否,攧,,Thinking...,Thinking...,Thinking...,U+6527,,,Thinking...,,,,,,
+fcca,,,否,㣔,,Thinking...,Thinking...,Thinking...,U+38D4,,3-224B,Thinking...,,,,,, {彳丁}
+fccc,,,否,矴,,Thinking...,Thinking...,Thinking...,U+77F4,,,Thinking...,,,,,,
+fccf,,,否,凟,,Thinking...,Thinking...,Thinking...,U+51DF,,,Thinking...,,,,,,
+fcd0,,,否,匵,,Thinking...,Thinking...,Thinking...,U+5335,,,Thinking...,,,,,,
+fcd2,,,否,蠧,,Thinking...,Thinking...,Thinking...,U+8827,,,Thinking...,,,,,, {蠹}
+fcd3,,,否,朶,,Thinking...,Thinking...,Thinking...,U+6736,,,Thinking...,,,,,, {朵}
+fcd4,,,否,軃,,Thinking...,Thinking...,Thinking...,U+8EC3,,,Thinking...,,,,,,
+fcd8,,,否,噔,,Thinking...,Thinking...,Thinking...,U+5654,,,Thinking...,,,,,,
+fcdb,,,否,櫈,,Thinking...,Thinking...,Thinking...,U+6AC8,,,Thinking...,,,,,,
+fcdc,,,否,隥,,Thinking...,Thinking...,Thinking...,U+96A5,,,Thinking...,,,,,,
+fcde,,,否,廸,,Thinking...,Thinking...,Thinking...,U+5EF8,,,Thinking...,,,,,, {迪}
+fce6,,,否,曡,,Thinking...,Thinking...,Thinking...,U+66E1,,,Thinking...,,,,,,
+fce7,,,否,氎,,Thinking...,Thinking...,Thinking...,U+6C0E,,,Thinking...,,,,,,
+fce8,,是,？,氎,,Thinking...,Thinking...,Thinking...,U+6C0E,,,Thinking...,,,,,,{叠毛}
+fce9,,,否,飿,,Thinking...,Thinking...,Thinking...,U+98FF,,,Thinking...,,,,,,
+fceb,,,否,媠,,Thinking...,Thinking...,Thinking...,U+5AA0,,,Thinking...,,,,,,
+fcef,,,否,煅,,Thinking...,Thinking...,Thinking...,U+7145,,,Thinking...,,,,,,
+fcf2,,,否,𣎴,,Thinking...,Thinking...,Thinking...,U+233B4,,4-214E,Thinking...,,,,#N/A,,{似為兩字共用圖檔。詞條為「白U+233B4」，他條內文為「不」，一為 CNS 4-214E 異 C05000}
+fcf4,,,否,峝,,Thinking...,Thinking...,Thinking...,U+5CDD,,,Thinking...,,,,,,
+fcf7,,,否,墖,,Thinking...,Thinking...,Thinking...,U+5896,,,Thinking...,,,,,,
+fcf8,,,否,狧,,Thinking...,Thinking...,Thinking...,U+72E7,,,Thinking...,,,,,,
+fcf9,,,否,㒓,,Thinking...,Thinking...,Thinking...,U+3493,,,Thinking...,,,,,,  {側人+達}
+fcfd,,,否,忲,,Thinking...,Thinking...,Thinking...,U+5FF2,,,Thinking...,,,,,,
+fcfe,,,否,肽,,Thinking...,Thinking...,Thinking...,U+80BD,,,Thinking...,,,,,,
+fd40,,,否,謟,,Thinking...,Thinking...,Thinking...,U+8B1F,,,Thinking...,,,,,,
+fd41,,,否,縧,,Thinking...,Thinking...,Thinking...,U+7E27,,,Thinking...,,,,,,
+fd44,,,否,鼗,,Thinking...,Thinking...,Thinking...,U+9F17,,,Thinking...,,,,,,
+fd46,,,否,鞉,,Thinking...,Thinking...,Thinking...,U+9789,,,Thinking...,,,,,,
+fd48,,,否,鍮,,Thinking...,Thinking...,Thinking...,U+936E,,,Thinking...,,,,,,
+fd49,,,否,亠,,Thinking...,Thinking...,Thinking...,U+4EA0,,,Thinking...,,,,,,
+fd4f,,,否,壜,,Thinking...,Thinking...,Thinking...,U+58DC,,,Thinking...,,,,,,
+fd50,,,否,罎,,Thinking...,Thinking...,Thinking...,U+7F4E,,,Thinking...,,,,,, {缶曇}
+fd51,,,否,䗊,,Thinking...,Thinking...,Thinking...,U+45CA,,,Thinking...,,,,,,  {虫炎}
+fd53,,,否,餹,,Thinking...,Thinking...,Thinking...,U+9939,,,Thinking...,,,,,,
+fd55,,,否,幐,,Thinking...,Thinking...,Thinking...,U+5E50,,,Thinking...,,,,,,
+fd57,,,否,嗁,,Thinking...,Thinking...,Thinking...,U+55C1,,,Thinking...,,,,,,
+fd58,,,否,蹏,,Thinking...,Thinking...,Thinking...,U+8E4F,,,Thinking...,,,,,,
+fd5b,,,否,鬀,,Thinking...,Thinking...,Thinking...,U+9B00,,,Thinking...,,,,,,
+fd5c,,,否,𩮜,,Thinking...,Thinking...,Thinking...,U+29B9C,,,Thinking...,,,,,,  {上髟下剔}
+fd5e,,,否,逷,,Thinking...,Thinking...,Thinking...,U+9037,,,Thinking...,,,,,,
+fd60,,,否,髢,,Thinking...,Thinking...,Thinking...,U+9AE2,,,Thinking...,,,,,,
+fd63,,,否,岹,,Thinking...,Thinking...,Thinking...,U+5CB9,,,Thinking...,,,,,,
+fd65,,,否,䩦,,Thinking...,Thinking...,Thinking...,U+4A66,,,Thinking...,,,,,,  {上攸下革}
+fd6e,,,否,舚,,Thinking...,Thinking...,Thinking...,U+821A,,,Thinking...,,,,,,
+fd6f,,,否,㥏,,Thinking...,Thinking...,Thinking...,U+394F,,4-3164,Thinking...,,,,,,
+fd70,,,否,覥,,Thinking...,Thinking...,Thinking...,U+89A5,,,Thinking...,,,,,, {典見}
+fd71,,,否,郄,,Thinking...,Thinking...,Thinking...,U+90C4,,,Thinking...,,,,,,
+fd74,,,否,鉳,,Thinking...,Thinking...,Thinking...,U+9273,,,Thinking...,,,,,,
+fd75,,,否,𦡯,,Thinking...,Thinking...,Thinking...,U+2686F,,,Thinking...,,,,,,
+fd77,,,否,鞓,,Thinking...,Thinking...,Thinking...,U+9793,,,Thinking...,,,,,,
+fd78,,,否,𠅘,,Thinking...,Thinking...,Thinking...,U+20158,,,Thinking...,,,,,,{亭}
+fd79,,,否,疃,,Thinking...,Thinking...,Thinking...,U+7583,,,Thinking...,,,,,,
+fd7c,,,否,碯,,Thinking...,Thinking...,Thinking...,U+78AF,,,Thinking...,,,,,,
+fd7d,,,否,憹,,Thinking...,Thinking...,Thinking...,U+61B9,,,Thinking...,,,,,,
+fda1,,,否,硇,,Thinking...,Thinking...,Thinking...,U+7847,,,Thinking...,,,,,,
+fda5,,,否,𪏆,,Thinking...,Thinking...,Thinking...,U+2A3C6,,,Thinking...,,,,,, {享黃}
+fda7,,,否,𠜶,,Thinking...,Thinking...,Thinking...,U+20736,,,Thinking...,,,,,,  {左止止右刂}
+fda8,,,否,閙,,Thinking...,Thinking...,Thinking...,U+9599,,,Thinking...,,,,,,
+fda9,,,否,枏,,Thinking...,Thinking...,Thinking...,U+678F,,3-294F,Thinking...,,,,,,
+fdad,,,否,儞,,Thinking...,Thinking...,Thinking...,U+511E,,,Thinking...,,,,,,
+fdaf,,,否,籋,,Thinking...,Thinking...,Thinking...,U+7C4B,,,Thinking...,,,,,,
+fdb0,,,否,孴,,Thinking...,Thinking...,Thinking...,U+5B74,,,Thinking...,,,,,,
+fdb2,,,否,孼,,Thinking...,Thinking...,Thinking...,U+5B7C,,,Thinking...,,,,,,  {孼}
+fdb3,,,否,䨲,,Thinking...,Thinking...,Thinking...,U+4A32,,,Thinking...,,,,,, {需兔}
+fdb4,,,否,傉,,Thinking...,Thinking...,Thinking...,U+5089,,,Thinking...,,,,,,
+fdb5,,,否,掿,,Thinking...,Thinking...,Thinking...,U+63BF,,,Thinking...,,,,,,
+fdb7,,,否,埝,,Thinking...,Thinking...,Thinking...,U+57DD,,,Thinking...,,,,,,
+fdb8,,,否,泪,,Thinking...,Thinking...,Thinking...,U+6CEA,,,Thinking...,,,,,,
+fdb9,,,否,哰,,Thinking...,Thinking...,Thinking...,U+54F0,,,Thinking...,,,,,,
+fdbc,,,否,靁,,Thinking...,Thinking...,Thinking...,U+9741,,,Thinking...,,,,,,
+fdbd,,,否,攂,,Thinking...,Thinking...,Thinking...,U+6502,,,Thinking...,,,,,,
+fdbe,,,否,黁,,Thinking...,Thinking...,Thinking...,U+9EC1,,,Thinking...,,,,,,
+fdc0,,,否,秊,,Thinking...,Thinking...,Thinking...,U+79CA,,,Thinking...,,,,,,
+fdc1,,,否,㛂,,Thinking...,Thinking...,Thinking...,U+36C2,,,Thinking...,,,,,,  {左女右厂巴}
+fdc4,,,否,稬,,Thinking...,Thinking...,Thinking...,U+7A2C,,,Thinking...,,,,,,
+fdc9,,,否,鮎,,Thinking...,Thinking...,Thinking...,U+9B8E,,,Thinking...,,,,,,
+fdca,,,否,鐗,,Thinking...,Thinking...,Thinking...,U+9417,,,Thinking...,,,,,,
+fdcc,,,否,䗶,,Thinking...,Thinking...,Thinking...,U+45F6,,,Thinking...,,,,,,  {虫葛}
+fdce,,,否,蝲,,Thinking...,Thinking...,Thinking...,U+8772,,,Thinking...,,,,,,
+fdd0,,,否,衂,,Thinking...,Thinking...,Thinking...,U+8842,,,Thinking...,,,,,,
+fdd3,,,否,嫏,,Thinking...,Thinking...,Thinking...,U+5ACF,,,Thinking...,,,,,,
+fdd5,,,否,棃,,Thinking...,Thinking...,Thinking...,U+68C3,,,Thinking...,,,,,, {梨}
+fdd6,,,否,䍦,,Thinking...,Thinking...,Thinking...,U+4366,,,Thinking...,,,,,, {四蓋+離}
+fdd7,,,否,涖,,Thinking...,Thinking...,Thinking...,U+6D96,,,Thinking...,,,,,,
+fdda,,是,？,鬲,,Thinking...,Thinking...,Thinking...,U+9B32,,,Thinking...,,,,,, {鬲} (兩套點陣字兩種不同寫法）
+fddd,,,否,欖,,Thinking...,Thinking...,Thinking...,U+6B16,,,Thinking...,,,,,,
+fde0,,,否,擥,,Thinking...,Thinking...,Thinking...,U+64E5,,,Thinking...,,,,,,
+fde3,,,否,孏,,Thinking...,Thinking...,Thinking...,U+5B4F,,,Thinking...,,,,,,
+fde9,,,否,𣓨,,Thinking...,Thinking...,Thinking...,U+234E8,,,Thinking...,,,,,,  {上卥下木}（貼不進來）
+fdec,,,否,勑,,Thinking...,Thinking...,Thinking...,U+52D1,,,Thinking...,,,,,,
+fded,,,否,㲯,,Thinking...,Thinking...,Thinking...,U+3CAF,,,Thinking...,,,,,, {監毛}
+fdf0,,,否,㶟,,Thinking...,Thinking...,Thinking...,U+3D9F,,,Thinking...,,,,,,
+fdfb,,,否,瘘,,Thinking...,Thinking...,Thinking...,U+7618,,,Thinking...,,,,,,
+fdfc,,,否,瘻,,Thinking...,Thinking...,Thinking...,U+763B,,,Thinking...,,,,,,
+fdfe,,,否,𧑗,,Thinking...,Thinking...,Thinking...,U+27457,,,Thinking...,,,,,, {虫甯}
+fe41,,,否,甯,,Thinking...,Thinking...,Thinking...,U+752F,,,Thinking...,,,,,,
+fe44,,,否,鬡,,Thinking...,Thinking...,Thinking...,U+9B21,,,Thinking...,,,,,,
+fe46,,,否,䰐,,Thinking...,Thinking...,Thinking...,U+4C10,,,Thinking...,,,,,, {上髟下監}
+fe47,,,否,罱,,Thinking...,Thinking...,Thinking...,U+7F71,,,Thinking...,,,,,,
+fe4f,,,否,寗,,Thinking...,Thinking...,Thinking...,U+5BD7,,,Thinking...,,,,,,
+fea9,,,否,流,,Thinking...,Thinking...,Thinking...,U+6D41,,,Thinking...,,,,,, {流}
+feac,,,否,駵,,Thinking...,Thinking...,Thinking...,U+99F5,,,Thinking...,,,,,,
+feaf,,,否,疁,,Thinking...,Thinking...,Thinking...,U+7581,,,Thinking...,,,,,,
+feb4,,,否,臁,,Thinking...,Thinking...,Thinking...,U+81C1,,,Thinking...,,,,,,
+feb6,,,否,匳,,Thinking...,Thinking...,Thinking...,U+5333,,,Thinking...,,,,,,
+febe,,,否,隣,,Thinking...,Thinking...,Thinking...,U+96A3,,,Thinking...,,,,,,
+febf,,,否,麐,,Thinking...,Thinking...,Thinking...,U+9E90,,,Thinking...,,,,,,
+fec0,,,否,澟,,Thinking...,Thinking...,Thinking...,U+6F9F,,,Thinking...,,,,,,
+fec3,,,否,鉕,,Thinking...,Thinking...,Thinking...,U+9255,,,Thinking...,,,,,,
+fec4,,,否,鍅,,Thinking...,Thinking...,Thinking...,U+9345,,,Thinking...,,,,,,
+fec7,,,否,凉,,Thinking...,Thinking...,Thinking...,U+51C9,,,Thinking...,,,,,,
+fecc,,,否,㥄,,Thinking...,Thinking...,Thinking...,U+3944,,,Thinking...,,,,,,
+fedb,,,否,鮟,,Thinking...,Thinking...,Thinking...,U+9B9F,,,Thinking...,,,,,,
+fedc,,,否,鱇,,Thinking...,Thinking...,Thinking...,U+9C47,,,Thinking...,,,,,, {魚康}
+fede,,,否,顋,,Thinking...,Thinking...,Thinking...,U+984B,,,Thinking...,,,,,,
+fee6,,,否,脔,,Thinking...,Thinking...,Thinking...,U+8114,,,Thinking...,,,,,,{臠的簡字}
+feed,,,否,倮,,Thinking...,Thinking...,Thinking...,U+502E,,,Thinking...,,,,,,
+feee,,,否,躶,,Thinking...,Thinking...,Thinking...,U+8EB6,,,Thinking...,,,,,,
+feef,,,否,勠,,Thinking...,Thinking...,Thinking...,U+52E0,,,Thinking...,,,,,,
+fef3,,,否,鑥,,Thinking...,Thinking...,Thinking...,U+9465,,,Thinking...,,,,,,
+fef4,,,否,攞,,Thinking...,Thinking...,Thinking...,U+651E,,,Thinking...,,,,,,
+fef7,,,否,壠,,Thinking...,Thinking...,Thinking...,U+58E0,,,Thinking...,,,,,,
+fefc,,,否,驘,,Thinking...,Thinking...,Thinking...,U+9A58,,3-6062,Thinking...,,,,,,
