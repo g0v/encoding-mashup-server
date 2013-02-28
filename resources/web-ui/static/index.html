@@ -21,7 +21,7 @@
     </style>
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="navbar" style="display:none;">
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="#">中文造字圖檔檢字系統</a>
@@ -31,6 +31,12 @@
         </div>
       </div>
     </div>
-    <div class="container" id="context"></div>
+    <div class="container" id="context" style="display: none;">
+    </div>
+    <div class="container" id="load-progress-bar-container">
+        <div class="progress progress-striped active">
+            <div class="bar" style="width: 10%;" id="load-progress-bar">10%</div>
+        </div>
+    </div>
   </body>
 </html>

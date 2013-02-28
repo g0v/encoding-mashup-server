@@ -7,7 +7,7 @@ template = Handlebars.compile("""
         <span>{{{view.exact}}}</span>
       </div>
       <input type="text" name="cns" value="{{exact.cns}}"></input>
-      <input type="text" name="comments" value="{{comments}}"></input>
+      <input type="text" name="comment" value="{{comment}}"></input>
       <button class="btn btn-small btn-primary" type="button">儲存</button>
       <span class="saved" style="display: none">已儲存！</span>
     </form>
@@ -18,14 +18,18 @@ allCharData = {}
 
 onReady = ->
   $context = $('#context')
+  $navbar = $('#navbar')
+  $load_progress_bar = $('#load-progress-bar')
+  $load_progress_bar_container = $('#load-progress-bar-container')
+
+  #FIXME: Fake progress bar
+  $load_progress_bar.width('100%').text('100%');
 
   $.getJSON('/api/chars/all', (data) ->
-    console.dir data
-
     # Bind to this file's scope
-    allCharData = data.charinfo
+    allCharData = data.charmap
 
-    for key, datum of data
+    for key, datum of data.charmap
       view = {}
 
       view.id = key
@@ -48,7 +52,7 @@ onReady = ->
 
       datum.view = view
 
-    for key, datum of data
+    for key, datum of data.charmap
       html = template(datum)
       $context.append(html)
 
@@ -61,9 +65,9 @@ onReady = ->
       datum = JSON.parse(JSON.stringify(datum))
 
       cns = $form.children('input[name="cns"]').val()
-      comments = $form.children('input[name="comments"]').val()
+      comment = $form.children('input[name="comment"]').val()
 
-      datum.comments = comments
+      datum.comment = comment
       datum.exact.cns = cns
 
       url = "/api/char/#{encodeURIComponent(datum.view.id)}"
@@ -75,13 +79,17 @@ onReady = ->
       $.ajax {
         url: url
         type: 'PUT'
-        data: JSON.stringify(datum)
+        data: JSON.stringify({ version: 0, charinfo: datum })
         success: ->
           $saved.show()
           $saved.fadeOut(1000)
       }
 
     )
+
+    $context.show()
+    $navbar.show()
+    $load_progress_bar_container.hide()
   )
 
 $(onReady)
