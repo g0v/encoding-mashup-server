@@ -87,7 +87,7 @@ Executable em-server
     cryptohash                >= 0.8   && < 0.10,
     attoparsec                >= 0.10  && < 0.12,
     aeson                     >= 0.6   && < 0.8,
-    clay                      >= 0.1   && < 0.3
+    clay                      >= 0.2   && < 0.4
 
   if flag(development)
     Build-depends:
@@ -130,7 +130,7 @@ Test-suite testsuite
         cryptohash                >= 0.8   && < 0.10,
         attoparsec                >= 0.10  && < 0.12,
         aeson                     >= 0.6   && < 0.8,
-        clay                      >= 0.1   && < 0.3,
+        clay                      >= 0.2   && < 0.4,
         HUnit                      >= 1.2       && < 2,
         QuickCheck                 >= 2.4       && < 3,
         test-framework             >= 0.8       && <0.9,
