@@ -49,20 +49,20 @@ cssHandler fp = case fp of
       finishWithLBS cssMime out tag
 
 encodingMashupCss :: Css
-encodingMashupCss = do 
+encodingMashupCss = do
   star # byClass "char-info" ? do
     margin 2 2 2 2
     height $ px 40
-    float sideLeft
+    float floatLeft
 
   star # byClass "char-info-display" ? do
-    float sideLeft 
+    float floatLeft
     fontSize $ px 24
     lineHeight $ px 24
     height $ px 30
     width $ px 100
     border solid (px 2) black
-    borderRadius $ px 8
+    borderRadius (px 8) (px 8) (px 8) (px 8)
 
   input ? do
-    float sideLeft
+    float floatLeft
