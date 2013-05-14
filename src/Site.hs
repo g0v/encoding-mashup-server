@@ -31,4 +31,4 @@ initApp = makeSnaplet "app" "萌典校正系統" Nothing $ do
   return $ App cs es ws as
 
 indexHandler :: Handler b App ()
-indexHandler = finishWith $ setResponseCode 301 $ setHeader "Location" "web/index.html" $ emptyResponse
+indexHandler = ifTop $ finishWith $ setResponseCode 301 $ setHeader "Location" "web/index.html" $ emptyResponse
